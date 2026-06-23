@@ -1,0 +1,68 @@
+* A22OD4 : abstract conversion of sky130_fd_sc_hd__a22o_4
+* 60 abstract devices (width -> parallel min-width fingers)
+.subckt A22OD4 A1 A2 B1 B2 VGND VPWR X
+XA22OD4B A1 A2 B1 B2 VGND VGND VPWR VPWR X A22OD4B
+.ends A22OD4
+
+.subckt A22OD4B A1 A2 B1 B2 VGND VNB VPB VPWR X
+X0 a_484_297# A1 VPWR VPB abpmos
+X1 a_484_297# A1 VPWR VPB abpmos
+X2 a_484_297# A1 VPWR VPB abpmos
+X3 X a_96_21# VPWR VPB abpmos
+X4 X a_96_21# VPWR VPB abpmos
+X5 X a_96_21# VPWR VPB abpmos
+X6 a_96_21# B2 a_484_297# VPB abpmos
+X7 a_96_21# B2 a_484_297# VPB abpmos
+X8 a_96_21# B2 a_484_297# VPB abpmos
+X9 a_566_47# B2 VGND VNB abnmos
+X10 a_566_47# B2 VGND VNB abnmos
+X11 X a_96_21# VGND VNB abnmos
+X12 X a_96_21# VGND VNB abnmos
+X13 X a_96_21# VPWR VPB abpmos
+X14 X a_96_21# VPWR VPB abpmos
+X15 X a_96_21# VPWR VPB abpmos
+X16 a_484_297# A2 VPWR VPB abpmos
+X17 a_484_297# A2 VPWR VPB abpmos
+X18 a_484_297# A2 VPWR VPB abpmos
+X19 a_918_47# A1 a_96_21# VNB abnmos
+X20 a_918_47# A1 a_96_21# VNB abnmos
+X21 X a_96_21# VGND VNB abnmos
+X22 X a_96_21# VGND VNB abnmos
+X23 X a_96_21# VPWR VPB abpmos
+X24 X a_96_21# VPWR VPB abpmos
+X25 X a_96_21# VPWR VPB abpmos
+X26 a_484_297# A2 VPWR VPB abpmos
+X27 a_484_297# A2 VPWR VPB abpmos
+X28 a_484_297# A2 VPWR VPB abpmos
+X29 X a_96_21# VPWR VPB abpmos
+X30 X a_96_21# VPWR VPB abpmos
+X31 X a_96_21# VPWR VPB abpmos
+X32 X a_96_21# VGND VNB abnmos
+X33 X a_96_21# VGND VNB abnmos
+X34 a_918_47# A2 VGND VNB abnmos
+X35 a_918_47# A2 VGND VNB abnmos
+X36 a_484_297# A1 VPWR VPB abpmos
+X37 a_484_297# A1 VPWR VPB abpmos
+X38 a_484_297# A1 VPWR VPB abpmos
+X39 a_96_21# B1 a_566_47# VNB abnmos
+X40 a_96_21# B1 a_566_47# VNB abnmos
+X41 a_918_47# A2 VGND VNB abnmos
+X42 a_918_47# A2 VGND VNB abnmos
+X43 a_484_297# B2 a_96_21# VPB abpmos
+X44 a_484_297# B2 a_96_21# VPB abpmos
+X45 a_484_297# B2 a_96_21# VPB abpmos
+X46 a_96_21# A1 a_918_47# VNB abnmos
+X47 a_96_21# A1 a_918_47# VNB abnmos
+X48 a_484_297# B1 a_96_21# VPB abpmos
+X49 a_484_297# B1 a_96_21# VPB abpmos
+X50 a_484_297# B1 a_96_21# VPB abpmos
+X51 a_566_47# B1 a_96_21# VNB abnmos
+X52 a_566_47# B1 a_96_21# VNB abnmos
+X53 a_96_21# B1 a_484_297# VPB abpmos
+X54 a_96_21# B1 a_484_297# VPB abpmos
+X55 a_96_21# B1 a_484_297# VPB abpmos
+X56 a_566_47# B2 VGND VNB abnmos
+X57 a_566_47# B2 VGND VNB abnmos
+X58 X a_96_21# VGND VNB abnmos
+X59 X a_96_21# VGND VNB abnmos
+.ends A22OD4B

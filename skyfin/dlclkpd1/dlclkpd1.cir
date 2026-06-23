@@ -1,0 +1,39 @@
+* DLCLKPD1 : abstract conversion of sky130_fd_sc_hd__dlclkp_1
+* 31 abstract devices (width -> parallel min-width fingers)
+.subckt DLCLKPD1 CLK GATE VGND VPWR GCLK
+XDLCLKPD1B CLK GATE VGND VGND VPWR VPWR GCLK DLCLKPD1B
+.ends DLCLKPD1
+
+.subckt DLCLKPD1B CLK GATE VGND VNB VPB VPWR GCLK
+X0 a_957_369# CLK VPWR VPB abpmos
+X1 a_957_369# CLK VPWR VPB abpmos
+X2 GCLK a_957_369# VGND VNB abnmos
+X3 GCLK a_957_369# VGND VNB abnmos
+X4 a_642_307# a_476_413# VPWR VPB abpmos
+X5 a_642_307# a_476_413# VPWR VPB abpmos
+X6 a_642_307# a_476_413# VPWR VPB abpmos
+X7 a_476_413# a_27_47# a_600_413# VPB abpmos
+X8 a_600_413# a_642_307# VPWR VPB abpmos
+X9 a_396_119# GATE VGND VNB abnmos
+X10 a_381_369# GATE VPWR VPB abpmos
+X11 a_381_369# GATE VPWR VPB abpmos
+X12 a_476_413# a_193_47# a_651_47# VNB abnmos
+X13 a_957_369# a_642_307# a_1042_47# VNB abnmos
+X14 a_957_369# a_642_307# VPWR VPB abpmos
+X15 a_957_369# a_642_307# VPWR VPB abpmos
+X16 a_396_119# a_27_47# a_476_413# VNB abnmos
+X17 a_1042_47# CLK VGND VNB abnmos
+X18 a_193_47# a_27_47# VGND VNB abnmos
+X19 a_27_47# CLK VGND VNB abnmos
+X20 a_27_47# CLK VPWR VPB abpmos
+X21 a_27_47# CLK VPWR VPB abpmos
+X22 a_651_47# a_642_307# VGND VNB abnmos
+X23 a_193_47# a_27_47# VPWR VPB abpmos
+X24 a_193_47# a_27_47# VPWR VPB abpmos
+X25 a_642_307# a_476_413# VGND VNB abnmos
+X26 a_642_307# a_476_413# VGND VNB abnmos
+X27 GCLK a_957_369# VPWR VPB abpmos
+X28 GCLK a_957_369# VPWR VPB abpmos
+X29 GCLK a_957_369# VPWR VPB abpmos
+X30 a_381_369# a_193_47# a_476_413# VPB abpmos
+.ends DLCLKPD1B

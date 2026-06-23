@@ -1,0 +1,58 @@
+* EBUFND4 : abstract conversion of sky130_fd_sc_hd__ebufn_4
+* 50 abstract devices (width -> parallel min-width fingers)
+.subckt EBUFND4 A TE_B VGND VPWR Z
+XEBUFND4B A TE_B VGND VGND VPWR VPWR Z EBUFND4B
+.ends EBUFND4
+
+.subckt EBUFND4B A TE_B VGND VNB VPB VPWR Z
+X0 a_393_47# a_214_47# VGND VNB abnmos
+X1 a_393_47# a_214_47# VGND VNB abnmos
+X2 a_214_47# TE_B VGND VNB abnmos
+X3 a_214_47# TE_B VGND VNB abnmos
+X4 Z a_27_47# a_320_309# VPB abpmos
+X5 Z a_27_47# a_320_309# VPB abpmos
+X6 Z a_27_47# a_320_309# VPB abpmos
+X7 Z a_27_47# a_393_47# VNB abnmos
+X8 Z a_27_47# a_393_47# VNB abnmos
+X9 Z a_27_47# a_320_309# VPB abpmos
+X10 Z a_27_47# a_320_309# VPB abpmos
+X11 Z a_27_47# a_320_309# VPB abpmos
+X12 a_393_47# a_214_47# VGND VNB abnmos
+X13 a_393_47# a_214_47# VGND VNB abnmos
+X14 Z a_27_47# a_393_47# VNB abnmos
+X15 Z a_27_47# a_393_47# VNB abnmos
+X16 a_393_47# a_214_47# VGND VNB abnmos
+X17 a_393_47# a_214_47# VGND VNB abnmos
+X18 a_214_47# TE_B VPWR VPB abpmos
+X19 a_214_47# TE_B VPWR VPB abpmos
+X20 a_214_47# TE_B VPWR VPB abpmos
+X21 a_320_309# a_27_47# Z VPB abpmos
+X22 a_320_309# a_27_47# Z VPB abpmos
+X23 a_320_309# a_27_47# Z VPB abpmos
+X24 a_393_47# a_214_47# VGND VNB abnmos
+X25 a_393_47# a_214_47# VGND VNB abnmos
+X26 a_320_309# TE_B VPWR VPB abpmos
+X27 a_320_309# TE_B VPWR VPB abpmos
+X28 a_320_309# TE_B VPWR VPB abpmos
+X29 a_320_309# TE_B VPWR VPB abpmos
+X30 a_320_309# TE_B VPWR VPB abpmos
+X31 a_320_309# TE_B VPWR VPB abpmos
+X32 a_27_47# A VGND VNB abnmos
+X33 a_27_47# A VGND VNB abnmos
+X34 a_27_47# A VPWR VPB abpmos
+X35 a_27_47# A VPWR VPB abpmos
+X36 a_27_47# A VPWR VPB abpmos
+X37 a_320_309# TE_B VPWR VPB abpmos
+X38 a_320_309# TE_B VPWR VPB abpmos
+X39 a_320_309# TE_B VPWR VPB abpmos
+X40 a_320_309# TE_B VPWR VPB abpmos
+X41 a_320_309# TE_B VPWR VPB abpmos
+X42 a_320_309# TE_B VPWR VPB abpmos
+X43 a_393_47# a_27_47# Z VNB abnmos
+X44 a_393_47# a_27_47# Z VNB abnmos
+X45 a_320_309# a_27_47# Z VPB abpmos
+X46 a_320_309# a_27_47# Z VPB abpmos
+X47 a_320_309# a_27_47# Z VPB abpmos
+X48 a_393_47# a_27_47# Z VNB abnmos
+X49 a_393_47# a_27_47# Z VNB abnmos
+.ends EBUFND4B

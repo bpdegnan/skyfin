@@ -1,0 +1,46 @@
+* DLRTPD2 : abstract conversion of sky130_fd_sc_hd__dlrtp_2
+* 38 abstract devices (width -> parallel min-width fingers)
+.subckt DLRTPD2 D GATE RESET_B VGND VPWR Q
+XDLRTPD2B D GATE RESET_B VGND VGND VPWR VPWR Q DLRTPD2B
+.ends DLRTPD2
+
+.subckt DLRTPD2B D GATE RESET_B VGND VNB VPB VPWR Q
+X0 a_560_47# a_193_47# a_644_413# VPB abpmos
+X1 a_644_413# a_711_307# VPWR VPB abpmos
+X2 a_711_307# RESET_B VPWR VPB abpmos
+X3 a_711_307# RESET_B VPWR VPB abpmos
+X4 a_711_307# RESET_B VPWR VPB abpmos
+X5 Q a_711_307# VGND VNB abnmos
+X6 Q a_711_307# VGND VNB abnmos
+X7 a_465_369# a_27_47# a_560_47# VPB abpmos
+X8 a_465_369# a_299_47# VPWR VPB abpmos
+X9 a_465_369# a_299_47# VPWR VPB abpmos
+X10 a_940_47# RESET_B VGND VNB abnmos
+X11 a_940_47# RESET_B VGND VNB abnmos
+X12 Q a_711_307# VGND VNB abnmos
+X13 Q a_711_307# VGND VNB abnmos
+X14 a_299_47# D VPWR VPB abpmos
+X15 a_299_47# D VPWR VPB abpmos
+X16 Q a_711_307# VPWR VPB abpmos
+X17 Q a_711_307# VPWR VPB abpmos
+X18 Q a_711_307# VPWR VPB abpmos
+X19 a_560_47# a_27_47# a_657_47# VNB abnmos
+X20 a_465_47# a_299_47# VGND VNB abnmos
+X21 a_711_307# a_560_47# VPWR VPB abpmos
+X22 a_711_307# a_560_47# VPWR VPB abpmos
+X23 a_711_307# a_560_47# VPWR VPB abpmos
+X24 a_193_47# a_27_47# VGND VNB abnmos
+X25 a_27_47# GATE VGND VNB abnmos
+X26 a_27_47# GATE VPWR VPB abpmos
+X27 a_27_47# GATE VPWR VPB abpmos
+X28 a_657_47# a_711_307# VGND VNB abnmos
+X29 a_193_47# a_27_47# VPWR VPB abpmos
+X30 a_193_47# a_27_47# VPWR VPB abpmos
+X31 a_299_47# D VGND VNB abnmos
+X32 a_465_47# a_193_47# a_560_47# VNB abnmos
+X33 a_711_307# a_560_47# a_940_47# VNB abnmos
+X34 a_711_307# a_560_47# a_940_47# VNB abnmos
+X35 Q a_711_307# VPWR VPB abpmos
+X36 Q a_711_307# VPWR VPB abpmos
+X37 Q a_711_307# VPWR VPB abpmos
+.ends DLRTPD2B

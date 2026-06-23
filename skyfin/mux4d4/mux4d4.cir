@@ -1,0 +1,60 @@
+* MUX4D4 : abstract conversion of sky130_fd_sc_hd__mux4_4
+* 52 abstract devices (width -> parallel min-width fingers)
+.subckt MUX4D4 A0 A1 A2 A3 S0 S1 VGND VPWR X
+XMUX4D4B A0 A1 A2 A3 S0 S1 VGND VGND VPWR VPWR X MUX4D4B
+.ends MUX4D4
+
+.subckt MUX4D4B A0 A1 A2 A3 S0 S1 VGND VNB VPB VPWR X
+X0 a_1061_369# A1 VPWR VPB abpmos
+X1 a_1061_369# A1 VPWR VPB abpmos
+X2 a_288_47# S1 a_789_316# VNB abnmos
+X3 a_193_47# a_27_47# a_288_47# VNB abnmos
+X4 X a_789_316# VGND VNB abnmos
+X5 X a_789_316# VGND VNB abnmos
+X6 a_873_316# a_27_47# a_1282_47# VNB abnmos
+X7 a_1280_413# A0 VPWR VPB abpmos
+X8 a_1280_413# A0 VPWR VPB abpmos
+X9 X a_789_316# VPWR VPB abpmos
+X10 X a_789_316# VPWR VPB abpmos
+X11 X a_789_316# VPWR VPB abpmos
+X12 X a_789_316# VGND VNB abnmos
+X13 X a_789_316# VGND VNB abnmos
+X14 a_1065_47# A1 VGND VNB abnmos
+X15 a_193_369# S0 a_288_47# VPB abpmos
+X16 X a_789_316# VPWR VPB abpmos
+X17 X a_789_316# VPWR VPB abpmos
+X18 X a_789_316# VPWR VPB abpmos
+X19 a_398_47# A3 VGND VNB abnmos
+X20 X a_789_316# VPWR VPB abpmos
+X21 X a_789_316# VPWR VPB abpmos
+X22 X a_789_316# VPWR VPB abpmos
+X23 a_601_345# S1 VGND VNB abnmos
+X24 a_373_413# A3 VPWR VPB abpmos
+X25 a_373_413# A3 VPWR VPB abpmos
+X26 a_288_47# S0 a_398_47# VNB abnmos
+X27 a_1282_47# A0 VGND VNB abnmos
+X28 X a_789_316# VGND VNB abnmos
+X29 X a_789_316# VGND VNB abnmos
+X30 a_288_47# a_27_47# a_373_413# VPB abpmos
+X31 X a_789_316# VPWR VPB abpmos
+X32 X a_789_316# VPWR VPB abpmos
+X33 X a_789_316# VPWR VPB abpmos
+X34 a_789_316# a_601_345# a_873_316# VNB abnmos
+X35 a_27_47# S0 VPWR VPB abpmos
+X36 a_27_47# S0 VPWR VPB abpmos
+X37 a_193_369# A2 VPWR VPB abpmos
+X38 a_193_369# A2 VPWR VPB abpmos
+X39 a_601_345# S1 VPWR VPB abpmos
+X40 a_601_345# S1 VPWR VPB abpmos
+X41 a_1065_47# S0 a_873_316# VNB abnmos
+X42 a_193_47# A2 VGND VNB abnmos
+X43 a_27_47# S0 VGND VNB abnmos
+X44 a_288_47# a_601_345# a_789_316# VPB abpmos
+X45 a_288_47# a_601_345# a_789_316# VPB abpmos
+X46 a_1061_369# a_27_47# a_873_316# VPB abpmos
+X47 a_789_316# S1 a_873_316# VPB abpmos
+X48 a_789_316# S1 a_873_316# VPB abpmos
+X49 X a_789_316# VGND VNB abnmos
+X50 X a_789_316# VGND VNB abnmos
+X51 a_873_316# S0 a_1280_413# VPB abpmos
+.ends MUX4D4B

@@ -1,0 +1,25 @@
+* NAND3BD1 : abstract conversion of sky130_fd_sc_hd__nand3b_1
+* 17 abstract devices (width -> parallel min-width fingers)
+.subckt NAND3BD1 A_N B C VGND VPWR Y
+XNAND3BD1B A_N B C VGND VGND VPWR VPWR Y NAND3BD1B
+.ends NAND3BD1
+
+.subckt NAND3BD1B A_N B C VGND VNB VPB VPWR Y
+X0 a_53_93# A_N VGND VNB abnmos
+X1 a_232_47# B a_316_47# VNB abnmos
+X2 a_232_47# B a_316_47# VNB abnmos
+X3 a_53_93# A_N VPWR VPB abpmos
+X4 Y C VPWR VPB abpmos
+X5 Y C VPWR VPB abpmos
+X6 Y C VPWR VPB abpmos
+X7 a_316_47# a_53_93# Y VNB abnmos
+X8 a_316_47# a_53_93# Y VNB abnmos
+X9 Y a_53_93# VPWR VPB abpmos
+X10 Y a_53_93# VPWR VPB abpmos
+X11 Y a_53_93# VPWR VPB abpmos
+X12 Y B VPWR VPB abpmos
+X13 Y B VPWR VPB abpmos
+X14 Y B VPWR VPB abpmos
+X15 a_232_47# C VGND VNB abnmos
+X16 a_232_47# C VGND VNB abnmos
+.ends NAND3BD1B

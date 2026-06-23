@@ -1,0 +1,28 @@
+* A211OID1 : abstract conversion of sky130_fd_sc_hd__a211oi_1
+* 20 abstract devices (width -> parallel min-width fingers)
+.subckt A211OID1 A1 A2 B1 C1 VGND VPWR Y
+XA211OID1B A1 A2 B1 C1 VGND VGND VPWR VPWR Y A211OID1B
+.ends A211OID1
+
+.subckt A211OID1B A1 A2 B1 C1 VGND VNB VPB VPWR Y
+X0 a_139_47# A2 VGND VNB abnmos
+X1 a_139_47# A2 VGND VNB abnmos
+X2 a_311_297# C1 Y VPB abpmos
+X3 a_311_297# C1 Y VPB abpmos
+X4 a_311_297# C1 Y VPB abpmos
+X5 a_56_297# A1 VPWR VPB abpmos
+X6 a_56_297# A1 VPWR VPB abpmos
+X7 a_56_297# A1 VPWR VPB abpmos
+X8 a_56_297# A2 VPWR VPB abpmos
+X9 a_56_297# A2 VPWR VPB abpmos
+X10 a_56_297# A2 VPWR VPB abpmos
+X11 a_56_297# B1 a_311_297# VPB abpmos
+X12 a_56_297# B1 a_311_297# VPB abpmos
+X13 a_56_297# B1 a_311_297# VPB abpmos
+X14 a_139_47# A1 Y VNB abnmos
+X15 a_139_47# A1 Y VNB abnmos
+X16 Y B1 VGND VNB abnmos
+X17 Y B1 VGND VNB abnmos
+X18 Y C1 VGND VNB abnmos
+X19 Y C1 VGND VNB abnmos
+.ends A211OID1B

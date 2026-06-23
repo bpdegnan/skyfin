@@ -1,0 +1,88 @@
+* NAND4D4 : abstract conversion of sky130_fd_sc_hd__nand4_4
+* 80 abstract devices (width -> parallel min-width fingers)
+.subckt NAND4D4 A B C D VGND VPWR Y
+XNAND4D4B A B C D VGND VGND VPWR VPWR Y NAND4D4B
+.ends NAND4D4
+
+.subckt NAND4D4B A B C D VGND VNB VPB VPWR Y
+X0 Y A VPWR VPB abpmos
+X1 Y A VPWR VPB abpmos
+X2 Y A VPWR VPB abpmos
+X3 a_803_47# B a_445_47# VNB abnmos
+X4 a_803_47# B a_445_47# VNB abnmos
+X5 a_27_47# C a_445_47# VNB abnmos
+X6 a_27_47# C a_445_47# VNB abnmos
+X7 a_27_47# C a_445_47# VNB abnmos
+X8 a_27_47# C a_445_47# VNB abnmos
+X9 a_803_47# B a_445_47# VNB abnmos
+X10 a_803_47# B a_445_47# VNB abnmos
+X11 Y A a_803_47# VNB abnmos
+X12 Y A a_803_47# VNB abnmos
+X13 Y C VPWR VPB abpmos
+X14 Y C VPWR VPB abpmos
+X15 Y C VPWR VPB abpmos
+X16 Y C VPWR VPB abpmos
+X17 Y C VPWR VPB abpmos
+X18 Y C VPWR VPB abpmos
+X19 a_27_47# D VGND VNB abnmos
+X20 a_27_47# D VGND VNB abnmos
+X21 Y C VPWR VPB abpmos
+X22 Y C VPWR VPB abpmos
+X23 Y C VPWR VPB abpmos
+X24 a_445_47# C a_27_47# VNB abnmos
+X25 a_445_47# C a_27_47# VNB abnmos
+X26 Y B VPWR VPB abpmos
+X27 Y B VPWR VPB abpmos
+X28 Y B VPWR VPB abpmos
+X29 Y A VPWR VPB abpmos
+X30 Y A VPWR VPB abpmos
+X31 Y A VPWR VPB abpmos
+X32 Y B VPWR VPB abpmos
+X33 Y B VPWR VPB abpmos
+X34 Y B VPWR VPB abpmos
+X35 a_27_47# D VGND VNB abnmos
+X36 a_27_47# D VGND VNB abnmos
+X37 Y A a_803_47# VNB abnmos
+X38 Y A a_803_47# VNB abnmos
+X39 Y B VPWR VPB abpmos
+X40 Y B VPWR VPB abpmos
+X41 Y B VPWR VPB abpmos
+X42 a_27_47# D VGND VNB abnmos
+X43 a_27_47# D VGND VNB abnmos
+X44 Y D VPWR VPB abpmos
+X45 Y D VPWR VPB abpmos
+X46 Y D VPWR VPB abpmos
+X47 a_27_47# D VGND VNB abnmos
+X48 a_27_47# D VGND VNB abnmos
+X49 a_803_47# A Y VNB abnmos
+X50 a_803_47# A Y VNB abnmos
+X51 Y B VPWR VPB abpmos
+X52 Y B VPWR VPB abpmos
+X53 Y B VPWR VPB abpmos
+X54 Y C VPWR VPB abpmos
+X55 Y C VPWR VPB abpmos
+X56 Y C VPWR VPB abpmos
+X57 Y A VPWR VPB abpmos
+X58 Y A VPWR VPB abpmos
+X59 Y A VPWR VPB abpmos
+X60 a_803_47# A Y VNB abnmos
+X61 a_803_47# A Y VNB abnmos
+X62 Y D VPWR VPB abpmos
+X63 Y D VPWR VPB abpmos
+X64 Y D VPWR VPB abpmos
+X65 Y D VPWR VPB abpmos
+X66 Y D VPWR VPB abpmos
+X67 Y D VPWR VPB abpmos
+X68 Y A VPWR VPB abpmos
+X69 Y A VPWR VPB abpmos
+X70 Y A VPWR VPB abpmos
+X71 a_445_47# B a_803_47# VNB abnmos
+X72 a_445_47# B a_803_47# VNB abnmos
+X73 a_445_47# C a_27_47# VNB abnmos
+X74 a_445_47# C a_27_47# VNB abnmos
+X75 Y D VPWR VPB abpmos
+X76 Y D VPWR VPB abpmos
+X77 Y D VPWR VPB abpmos
+X78 a_445_47# B a_803_47# VNB abnmos
+X79 a_445_47# B a_803_47# VNB abnmos
+.ends NAND4D4B

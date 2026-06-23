@@ -1,0 +1,56 @@
+* LPFLOW_LSBUF_LH_ISOWELLD4 : abstract conversion of sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4
+* 48 abstract devices (width -> parallel min-width fingers) ; secondary power ['LOWLVPWR'] collapsed onto VPWR
+.subckt LPFLOW_LSBUF_LH_ISOWELLD4 A VGND VPWR X
+XLPFLOW_LSBUF_LH_ISOWELLD4B A VPWR VGND VGND VPWR VPWR X LPFLOW_LSBUF_LH_ISOWELLD4B
+.ends LPFLOW_LSBUF_LH_ISOWELLD4
+
+.subckt LPFLOW_LSBUF_LH_ISOWELLD4B A LOWLVPWR VGND VNB VPB VPWR X
+X0 a_424_82# a_1032_911# X VNB abnmos
+X1 a_424_82# a_1032_911# X VNB abnmos
+X2 X a_1032_911# VPWR VPB abpmos
+X3 X a_1032_911# VPWR VPB abpmos
+X4 X a_1032_911# VPWR VPB abpmos
+X5 X a_1032_911# VPWR VPB abpmos
+X6 X a_1032_911# VPWR VPB abpmos
+X7 X a_1032_911# VPWR VPB abpmos
+X8 X a_1032_911# a_424_82# VNB abnmos
+X9 X a_1032_911# a_424_82# VNB abnmos
+X10 a_714_47# a_620_911# VPWR VPB abpmos
+X11 a_714_47# a_620_911# VPWR VPB abpmos
+X12 a_620_911# a_505_297# VGND VNB abnmos
+X13 a_620_911# a_505_297# VGND VNB abnmos
+X14 a_620_911# a_505_297# VGND VNB abnmos
+X15 a_620_911# a_505_297# VGND VNB abnmos
+X16 X a_1032_911# VPWR VPB abpmos
+X17 X a_1032_911# VPWR VPB abpmos
+X18 X a_1032_911# VPWR VPB abpmos
+X19 a_424_82# A a_714_47# VNB abnmos
+X20 a_424_82# A a_714_47# VNB abnmos
+X21 LOWLVPWR A a_505_297# LOWLVPWR abpmos
+X22 LOWLVPWR A a_505_297# LOWLVPWR abpmos
+X23 LOWLVPWR A a_505_297# LOWLVPWR abpmos
+X24 a_714_47# A a_424_82# VNB abnmos
+X25 a_714_47# A a_424_82# VNB abnmos
+X26 X a_1032_911# VPWR VPB abpmos
+X27 X a_1032_911# VPWR VPB abpmos
+X28 X a_1032_911# VPWR VPB abpmos
+X29 a_1032_911# a_620_911# VPWR VPB abpmos
+X30 a_1032_911# a_620_911# VPWR VPB abpmos
+X31 a_424_82# a_1032_911# X VNB abnmos
+X32 a_424_82# a_1032_911# X VNB abnmos
+X33 a_620_911# a_505_297# VGND VNB abnmos
+X34 a_620_911# a_505_297# VGND VNB abnmos
+X35 X a_1032_911# a_424_82# VNB abnmos
+X36 X a_1032_911# a_424_82# VNB abnmos
+X37 a_620_911# a_505_297# VGND VNB abnmos
+X38 a_620_911# a_505_297# VGND VNB abnmos
+X39 a_424_82# A a_714_47# VNB abnmos
+X40 a_424_82# A a_714_47# VNB abnmos
+X41 a_714_47# A a_424_82# VNB abnmos
+X42 a_714_47# A a_424_82# VNB abnmos
+X43 a_1032_911# a_620_911# VGND VNB abnmos
+X44 a_1032_911# a_620_911# VGND VNB abnmos
+X45 a_620_911# a_714_47# VPWR VPB abpmos
+X46 a_620_911# a_714_47# VPWR VPB abpmos
+X47 a_424_82# A a_505_297# VNB abnmos
+.ends LPFLOW_LSBUF_LH_ISOWELLD4B

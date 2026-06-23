@@ -1,0 +1,13 @@
+* LPFLOW_BLEEDERD1 : abstract conversion of sky130_fd_sc_hd__lpflow_bleeder_1
+* 5 abstract devices (width -> parallel min-width fingers)
+.subckt LPFLOW_BLEEDERD1 SHORT VGND VPWR
+XLPFLOW_BLEEDERD1B SHORT VGND VGND VPWR VPWR LPFLOW_BLEEDERD1B
+.ends LPFLOW_BLEEDERD1
+
+.subckt LPFLOW_BLEEDERD1B SHORT VGND VNB VPB VPWR
+X0 a_291_105# SHORT a_363_105# VNB abnmos
+X1 a_219_105# SHORT a_291_105# VNB abnmos
+X2 a_147_105# SHORT VGND VNB abnmos
+X3 a_363_105# SHORT VPWR VNB abnmos
+X4 a_147_105# SHORT a_219_105# VNB abnmos
+.ends LPFLOW_BLEEDERD1B

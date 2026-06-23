@@ -1,0 +1,21 @@
+* OR3BD1 : abstract conversion of sky130_fd_sc_hd__or3b_1
+* 13 abstract devices (width -> parallel min-width fingers)
+.subckt OR3BD1 A B C_N VGND VPWR X
+XOR3BD1B A B C_N VGND VGND VPWR VPWR X OR3BD1B
+.ends OR3BD1
+
+.subckt OR3BD1B A B C_N VGND VNB VPB VPWR X
+X0 a_215_53# a_109_93# VGND VNB abnmos
+X1 X a_215_53# VGND VNB abnmos
+X2 X a_215_53# VGND VNB abnmos
+X3 a_215_53# a_109_93# a_297_297# VPB abpmos
+X4 a_297_297# B a_369_297# VPB abpmos
+X5 a_369_297# A VPWR VPB abpmos
+X6 X a_215_53# VPWR VPB abpmos
+X7 X a_215_53# VPWR VPB abpmos
+X8 X a_215_53# VPWR VPB abpmos
+X9 a_215_53# A VGND VNB abnmos
+X10 a_109_93# C_N VGND VNB abnmos
+X11 a_215_53# B VGND VNB abnmos
+X12 a_109_93# C_N VPWR VPB abpmos
+.ends OR3BD1B

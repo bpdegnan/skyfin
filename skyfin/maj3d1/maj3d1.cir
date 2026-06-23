@@ -1,0 +1,25 @@
+* MAJ3D1 : abstract conversion of sky130_fd_sc_hd__maj3_1
+* 17 abstract devices (width -> parallel min-width fingers)
+.subckt MAJ3D1 A B C VGND VPWR X
+XMAJ3D1B A B C VGND VGND VPWR VPWR X MAJ3D1B
+.ends MAJ3D1
+
+.subckt MAJ3D1B A B C VGND VNB VPB VPWR X
+X0 a_109_341# A VPWR VPB abpmos
+X1 a_265_47# B a_27_47# VNB abnmos
+X2 a_27_47# B a_421_47# VNB abnmos
+X3 X a_27_47# VGND VNB abnmos
+X4 X a_27_47# VGND VNB abnmos
+X5 a_265_47# A VGND VNB abnmos
+X6 a_109_47# A VGND VNB abnmos
+X7 a_27_47# B a_421_341# VPB abpmos
+X8 a_421_341# C VPWR VPB abpmos
+X9 X a_27_47# VPWR VPB abpmos
+X10 X a_27_47# VPWR VPB abpmos
+X11 X a_27_47# VPWR VPB abpmos
+X12 a_421_47# C VGND VNB abnmos
+X13 a_27_47# C a_109_47# VNB abnmos
+X14 a_27_47# C a_109_341# VPB abpmos
+X15 a_265_341# A VPWR VPB abpmos
+X16 a_265_341# B a_27_47# VPB abpmos
+.ends MAJ3D1B

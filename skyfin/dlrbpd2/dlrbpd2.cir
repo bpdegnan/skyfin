@@ -1,0 +1,59 @@
+* DLRBPD2 : abstract conversion of sky130_fd_sc_hd__dlrbp_2
+* 51 abstract devices (width -> parallel min-width fingers)
+.subckt DLRBPD2 D GATE RESET_B VGND VPWR Q Q_N
+XDLRBPD2B D GATE RESET_B VGND VGND VPWR VPWR Q Q_N DLRBPD2B
+.ends DLRBPD2
+
+.subckt DLRBPD2B D GATE RESET_B VGND VNB VPB VPWR Q Q_N
+X0 a_561_413# a_193_47# a_645_413# VPB abpmos
+X1 Q_N a_1316_47# VGND VNB abnmos
+X2 Q_N a_1316_47# VGND VNB abnmos
+X3 a_645_413# a_711_307# VPWR VPB abpmos
+X4 a_561_413# a_27_47# a_659_47# VNB abnmos
+X5 a_942_47# RESET_B VGND VNB abnmos
+X6 a_942_47# RESET_B VGND VNB abnmos
+X7 Q a_711_307# VGND VNB abnmos
+X8 Q a_711_307# VGND VNB abnmos
+X9 a_465_369# a_299_47# VPWR VPB abpmos
+X10 a_465_369# a_299_47# VPWR VPB abpmos
+X11 a_465_369# a_27_47# a_561_413# VPB abpmos
+X12 a_659_47# a_711_307# VGND VNB abnmos
+X13 a_711_307# RESET_B VPWR VPB abpmos
+X14 a_711_307# RESET_B VPWR VPB abpmos
+X15 a_711_307# RESET_B VPWR VPB abpmos
+X16 Q a_711_307# VPWR VPB abpmos
+X17 Q a_711_307# VPWR VPB abpmos
+X18 Q a_711_307# VPWR VPB abpmos
+X19 a_299_47# D VPWR VPB abpmos
+X20 a_299_47# D VPWR VPB abpmos
+X21 a_711_307# a_561_413# a_942_47# VNB abnmos
+X22 a_711_307# a_561_413# a_942_47# VNB abnmos
+X23 a_1316_47# a_711_307# VPWR VPB abpmos
+X24 a_1316_47# a_711_307# VPWR VPB abpmos
+X25 Q_N a_1316_47# VPWR VPB abpmos
+X26 Q_N a_1316_47# VPWR VPB abpmos
+X27 Q_N a_1316_47# VPWR VPB abpmos
+X28 Q_N a_1316_47# VPWR VPB abpmos
+X29 Q_N a_1316_47# VPWR VPB abpmos
+X30 Q_N a_1316_47# VPWR VPB abpmos
+X31 Q a_711_307# VGND VNB abnmos
+X32 Q a_711_307# VGND VNB abnmos
+X33 a_465_47# a_299_47# VGND VNB abnmos
+X34 a_193_47# a_27_47# VGND VNB abnmos
+X35 a_27_47# GATE VGND VNB abnmos
+X36 a_27_47# GATE VPWR VPB abpmos
+X37 a_27_47# GATE VPWR VPB abpmos
+X38 a_711_307# a_561_413# VPWR VPB abpmos
+X39 a_711_307# a_561_413# VPWR VPB abpmos
+X40 a_711_307# a_561_413# VPWR VPB abpmos
+X41 a_465_47# a_193_47# a_561_413# VNB abnmos
+X42 a_193_47# a_27_47# VPWR VPB abpmos
+X43 a_193_47# a_27_47# VPWR VPB abpmos
+X44 a_299_47# D VGND VNB abnmos
+X45 a_1316_47# a_711_307# VGND VNB abnmos
+X46 Q a_711_307# VPWR VPB abpmos
+X47 Q a_711_307# VPWR VPB abpmos
+X48 Q a_711_307# VPWR VPB abpmos
+X49 Q_N a_1316_47# VGND VNB abnmos
+X50 Q_N a_1316_47# VGND VNB abnmos
+.ends DLRBPD2B

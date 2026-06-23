@@ -1,0 +1,438 @@
+cell,sky130_source,function,drive,type,description,logic,inputs,outputs,abstract_devices,power_note,verified
+A2111OD1,sky130_fd_sc_hd__a2111o_1,a2111o,1,combinational,2-input AND into first input of 4-input OR.,X = ((A1 & A2) | B1 | C1 | D1),A1 A2 B1 C1 D1,X,30,,equiv-pass
+A2111OD2,sky130_fd_sc_hd__a2111o_2,a2111o,2,combinational,2-input AND into first input of 4-input OR.,X = ((A1 & A2) | B1 | C1 | D1),A1 A2 B1 C1 D1,X,35,,equiv-pass
+A2111OD4,sky130_fd_sc_hd__a2111o_4,a2111o,4,combinational,2-input AND into first input of 4-input OR.,X = ((A1 & A2) | B1 | C1 | D1),A1 A2 B1 C1 D1,X,70,,equiv-pass
+A2111OID0,sky130_fd_sc_hd__a2111oi_0,a2111oi,0,combinational,2-input AND into first input of 4-input NOR.,Y = !((A1 & A2) | B1 | C1 | D1),A1 A2 B1 C1 D1,Y,15,,equiv-pass
+A2111OID1,sky130_fd_sc_hd__a2111oi_1,a2111oi,1,combinational,2-input AND into first input of 4-input NOR.,Y = !((A1 & A2) | B1 | C1 | D1),A1 A2 B1 C1 D1,Y,25,,equiv-pass
+A2111OID2,sky130_fd_sc_hd__a2111oi_2,a2111oi,2,combinational,2-input AND into first input of 4-input NOR.,Y = !((A1 & A2) | B1 | C1 | D1),A1 A2 B1 C1 D1,Y,50,,equiv-pass
+A2111OID4,sky130_fd_sc_hd__a2111oi_4,a2111oi,4,combinational,2-input AND into first input of 4-input NOR.,Y = !((A1 & A2) | B1 | C1 | D1),A1 A2 B1 C1 D1,Y,100,,equiv-pass
+A211OD1,sky130_fd_sc_hd__a211o_1,a211o,1,combinational,2-input AND into first input of 3-input OR.,X = ((A1 & A2) | B1 | C1),A1 A2 B1 C1,X,25,,equiv-pass
+A211OD2,sky130_fd_sc_hd__a211o_2,a211o,2,combinational,2-input AND into first input of 3-input OR.,X = ((A1 & A2) | B1 | C1),A1 A2 B1 C1,X,30,,equiv-pass
+A211OD4,sky130_fd_sc_hd__a211o_4,a211o,4,combinational,2-input AND into first input of 3-input OR.,X = ((A1 & A2) | B1 | C1),A1 A2 B1 C1,X,60,,equiv-pass
+A211OID1,sky130_fd_sc_hd__a211oi_1,a211oi,1,combinational,2-input AND into first input of 3-input NOR.,Y = !((A1 & A2) | B1 | C1),A1 A2 B1 C1,Y,20,,equiv-pass
+A211OID2,sky130_fd_sc_hd__a211oi_2,a211oi,2,combinational,2-input AND into first input of 3-input NOR.,Y = !((A1 & A2) | B1 | C1),A1 A2 B1 C1,Y,40,,equiv-pass
+A211OID4,sky130_fd_sc_hd__a211oi_4,a211oi,4,combinational,2-input AND into first input of 3-input NOR.,Y = !((A1 & A2) | B1 | C1),A1 A2 B1 C1,Y,80,,equiv-pass
+A21BOD1,sky130_fd_sc_hd__a21bo_1,a21bo,1,combinational,"2-input AND into first input of 2-input OR,",X = ((A1 & A2) | (!B1_N)),A1 A2 B1_N,X,22,,equiv-pass
+A21BOD2,sky130_fd_sc_hd__a21bo_2,a21bo,2,combinational,"2-input AND into first input of 2-input OR,",X = ((A1 & A2) | (!B1_N)),A1 A2 B1_N,X,27,,equiv-pass
+A21BOD4,sky130_fd_sc_hd__a21bo_4,a21bo,4,combinational,"2-input AND into first input of 2-input OR,",X = ((A1 & A2) | (!B1_N)),A1 A2 B1_N,X,55,,equiv-pass
+A21BOID0,sky130_fd_sc_hd__a21boi_0,a21boi,0,combinational,"2-input AND into first input of 2-input NOR,",Y = !((A1 & A2) | (!B1_N)),A1 A2 B1_N,Y,11,,equiv-pass
+A21BOID1,sky130_fd_sc_hd__a21boi_1,a21boi,1,combinational,"2-input AND into first input of 2-input NOR,",Y = !((A1 & A2) | (!B1_N)),A1 A2 B1_N,Y,17,,equiv-pass
+A21BOID2,sky130_fd_sc_hd__a21boi_2,a21boi,2,combinational,"2-input AND into first input of 2-input NOR,",Y = !((A1 & A2) | (!B1_N)),A1 A2 B1_N,Y,32,,equiv-pass
+A21BOID4,sky130_fd_sc_hd__a21boi_4,a21boi,4,combinational,"2-input AND into first input of 2-input NOR,",Y = !((A1 & A2) | (!B1_N)),A1 A2 B1_N,Y,65,,equiv-pass
+A21OD1,sky130_fd_sc_hd__a21o_1,a21o,1,combinational,2-input AND into first input of 2-input OR.,X = ((A1 & A2) | B1),A1 A2 B1,X,20,,equiv-pass
+A21OD2,sky130_fd_sc_hd__a21o_2,a21o,2,combinational,2-input AND into first input of 2-input OR.,X = ((A1 & A2) | B1),A1 A2 B1,X,25,,equiv-pass
+A21OD4,sky130_fd_sc_hd__a21o_4,a21o,4,combinational,2-input AND into first input of 2-input OR.,X = ((A1 & A2) | B1),A1 A2 B1,X,50,,equiv-pass
+A21OID1,sky130_fd_sc_hd__a21oi_1,a21oi,1,combinational,2-input AND into first input of 2-input NOR.,Y = !((A1 & A2) | B1),A1 A2 B1,Y,15,,equiv-pass
+A21OID2,sky130_fd_sc_hd__a21oi_2,a21oi,2,combinational,2-input AND into first input of 2-input NOR.,Y = !((A1 & A2) | B1),A1 A2 B1,Y,30,,equiv-pass
+A21OID4,sky130_fd_sc_hd__a21oi_4,a21oi,4,combinational,2-input AND into first input of 2-input NOR.,Y = !((A1 & A2) | B1),A1 A2 B1,Y,60,,equiv-pass
+A221OD1,sky130_fd_sc_hd__a221o_1,a221o,1,combinational,2-input AND into first two inputs of 3-input OR.,X = ((A1 & A2) | (B1 & B2) | C1),A1 A2 B1 B2 C1,X,30,,equiv-pass
+A221OD2,sky130_fd_sc_hd__a221o_2,a221o,2,combinational,2-input AND into first two inputs of 3-input OR.,X = ((A1 & A2) | (B1 & B2) | C1),A1 A2 B1 B2 C1,X,35,,equiv-pass
+A221OD4,sky130_fd_sc_hd__a221o_4,a221o,4,combinational,2-input AND into first two inputs of 3-input OR.,X = ((A1 & A2) | (B1 & B2) | C1),A1 A2 B1 B2 C1,X,70,,equiv-pass
+A221OID1,sky130_fd_sc_hd__a221oi_1,a221oi,1,combinational,2-input AND into first two inputs of 3-input NOR.,Y = !((A1 & A2) | (B1 & B2) | C1),A1 A2 B1 B2 C1,Y,25,,equiv-pass
+A221OID2,sky130_fd_sc_hd__a221oi_2,a221oi,2,combinational,2-input AND into first two inputs of 3-input NOR.,Y = !((A1 & A2) | (B1 & B2) | C1),A1 A2 B1 B2 C1,Y,50,,equiv-pass
+A221OID4,sky130_fd_sc_hd__a221oi_4,a221oi,4,combinational,2-input AND into first two inputs of 3-input NOR.,Y = !((A1 & A2) | (B1 & B2) | C1),A1 A2 B1 B2 C1,Y,100,,equiv-pass
+A222OID1,sky130_fd_sc_hd__a222oi_1,a222oi,1,combinational,2-input AND into all inputs of 3-input NOR.,Y = !((A1 & A2) | (B1 & B2) | (C1 & C2)),A1 A2 B1 B2 C1 C2,Y,30,,equiv-pass
+A22OD1,sky130_fd_sc_hd__a22o_1,a22o,1,combinational,2-input AND into both inputs of 2-input OR.,X = ((A1 & A2) | (B1 & B2)),A1 A2 B1 B2,X,25,,equiv-pass
+A22OD2,sky130_fd_sc_hd__a22o_2,a22o,2,combinational,2-input AND into both inputs of 2-input OR.,X = ((A1 & A2) | (B1 & B2)),A1 A2 B1 B2,X,30,,equiv-pass
+A22OD4,sky130_fd_sc_hd__a22o_4,a22o,4,combinational,2-input AND into both inputs of 2-input OR.,X = ((A1 & A2) | (B1 & B2)),A1 A2 B1 B2,X,60,,equiv-pass
+A22OID1,sky130_fd_sc_hd__a22oi_1,a22oi,1,combinational,2-input AND into both inputs of 2-input NOR.,Y = !((A1 & A2) | (B1 & B2)),A1 A2 B1 B2,Y,20,,equiv-pass
+A22OID2,sky130_fd_sc_hd__a22oi_2,a22oi,2,combinational,2-input AND into both inputs of 2-input NOR.,Y = !((A1 & A2) | (B1 & B2)),A1 A2 B1 B2,Y,40,,equiv-pass
+A22OID4,sky130_fd_sc_hd__a22oi_4,a22oi,4,combinational,2-input AND into both inputs of 2-input NOR.,Y = !((A1 & A2) | (B1 & B2)),A1 A2 B1 B2,Y,80,,equiv-pass
+A2BB2OD1,sky130_fd_sc_hd__a2bb2o_1,a2bb2o,1,combinational,"2-input AND, both inputs inverted, into first input, and",X = ((!A1 & !A2) | (B1 & B2)),A1_N A2_N B1 B2,X,15,,equiv-pass
+A2BB2OD2,sky130_fd_sc_hd__a2bb2o_2,a2bb2o,2,combinational,"2-input AND, both inputs inverted, into first input, and",X = ((!A1 & !A2) | (B1 & B2)),A1_N A2_N B1 B2,X,25,,equiv-pass
+A2BB2OD4,sky130_fd_sc_hd__a2bb2o_4,a2bb2o,4,combinational,"2-input AND, both inputs inverted, into first input, and",X = ((!A1 & !A2) | (B1 & B2)),A1_N A2_N B1 B2,X,70,,equiv-pass
+A2BB2OID1,sky130_fd_sc_hd__a2bb2oi_1,a2bb2oi,1,combinational,"2-input AND, both inputs inverted, into first input, and",Y = !((!A1 & !A2) | (B1 & B2)),A1_N A2_N B1 B2,Y,25,,equiv-pass
+A2BB2OID2,sky130_fd_sc_hd__a2bb2oi_2,a2bb2oi,2,combinational,"2-input AND, both inputs inverted, into first input, and",Y = !((!A1 & !A2) | (B1 & B2)),A1_N A2_N B1 B2,Y,50,,equiv-pass
+A2BB2OID4,sky130_fd_sc_hd__a2bb2oi_4,a2bb2oi,4,combinational,"2-input AND, both inputs inverted, into first input, and",Y = !((!A1 & !A2) | (B1 & B2)),A1_N A2_N B1 B2,Y,100,,equiv-pass
+A311OD1,sky130_fd_sc_hd__a311o_1,a311o,1,combinational,3-input AND into first input of 3-input OR.,X = ((A1 & A2 & A3) | B1 | C1),A1 A2 A3 B1 C1,X,30,,equiv-pass
+A311OD2,sky130_fd_sc_hd__a311o_2,a311o,2,combinational,3-input AND into first input of 3-input OR.,X = ((A1 & A2 & A3) | B1 | C1),A1 A2 A3 B1 C1,X,35,,equiv-pass
+A311OD4,sky130_fd_sc_hd__a311o_4,a311o,4,combinational,3-input AND into first input of 3-input OR.,X = ((A1 & A2 & A3) | B1 | C1),A1 A2 A3 B1 C1,X,70,,equiv-pass
+A311OID1,sky130_fd_sc_hd__a311oi_1,a311oi,1,combinational,3-input AND into first input of 3-input NOR.,Y = !((A1 & A2 & A3) | B1 | C1),A1 A2 A3 B1 C1,Y,25,,equiv-pass
+A311OID2,sky130_fd_sc_hd__a311oi_2,a311oi,2,combinational,3-input AND into first input of 3-input NOR.,Y = !((A1 & A2 & A3) | B1 | C1),A1 A2 A3 B1 C1,Y,50,,equiv-pass
+A311OID4,sky130_fd_sc_hd__a311oi_4,a311oi,4,combinational,3-input AND into first input of 3-input NOR.,Y = !((A1 & A2 & A3) | B1 | C1),A1 A2 A3 B1 C1,Y,100,,equiv-pass
+A31OD1,sky130_fd_sc_hd__a31o_1,a31o,1,combinational,3-input AND into first input of 2-input OR.,X = ((A1 & A2 & A3) | B1),A1 A2 A3 B1,X,25,,equiv-pass
+A31OD2,sky130_fd_sc_hd__a31o_2,a31o,2,combinational,3-input AND into first input of 2-input OR.,X = ((A1 & A2 & A3) | B1),A1 A2 A3 B1,X,30,,equiv-pass
+A31OD4,sky130_fd_sc_hd__a31o_4,a31o,4,combinational,3-input AND into first input of 2-input OR.,X = ((A1 & A2 & A3) | B1),A1 A2 A3 B1,X,60,,equiv-pass
+A31OID1,sky130_fd_sc_hd__a31oi_1,a31oi,1,combinational,3-input AND into first input of 2-input NOR.,Y = !((A1 & A2 & A3) | B1),A1 A2 A3 B1,Y,20,,equiv-pass
+A31OID2,sky130_fd_sc_hd__a31oi_2,a31oi,2,combinational,3-input AND into first input of 2-input NOR.,Y = !((A1 & A2 & A3) | B1),A1 A2 A3 B1,Y,40,,equiv-pass
+A31OID4,sky130_fd_sc_hd__a31oi_4,a31oi,4,combinational,3-input AND into first input of 2-input NOR.,Y = !((A1 & A2 & A3) | B1),A1 A2 A3 B1,Y,80,,equiv-pass
+A32OD1,sky130_fd_sc_hd__a32o_1,a32o,1,combinational,"3-input AND into first input, and 2-input AND into",X = ((A1 & A2 & A3) | (B1 & B2)),A1 A2 A3 B1 B2,X,30,,equiv-pass
+A32OD2,sky130_fd_sc_hd__a32o_2,a32o,2,combinational,"3-input AND into first input, and 2-input AND into",X = ((A1 & A2 & A3) | (B1 & B2)),A1 A2 A3 B1 B2,X,35,,equiv-pass
+A32OD4,sky130_fd_sc_hd__a32o_4,a32o,4,combinational,"3-input AND into first input, and 2-input AND into",X = ((A1 & A2 & A3) | (B1 & B2)),A1 A2 A3 B1 B2,X,70,,equiv-pass
+A32OID1,sky130_fd_sc_hd__a32oi_1,a32oi,1,combinational,"3-input AND into first input, and 2-input AND into",Y = !((A1 & A2 & A3) | (B1 & B2)),A1 A2 A3 B1 B2,Y,25,,equiv-pass
+A32OID2,sky130_fd_sc_hd__a32oi_2,a32oi,2,combinational,"3-input AND into first input, and 2-input AND into",Y = !((A1 & A2 & A3) | (B1 & B2)),A1 A2 A3 B1 B2,Y,50,,equiv-pass
+A32OID4,sky130_fd_sc_hd__a32oi_4,a32oi,4,combinational,"3-input AND into first input, and 2-input AND into",Y = !((A1 & A2 & A3) | (B1 & B2)),A1 A2 A3 B1 B2,Y,100,,equiv-pass
+A41OD1,sky130_fd_sc_hd__a41o_1,a41o,1,combinational,4-input AND into first input of 2-input OR.,X = ((A1 & A2 & A3 & A4) | B1),A1 A2 A3 A4 B1,X,30,,equiv-pass
+A41OD2,sky130_fd_sc_hd__a41o_2,a41o,2,combinational,4-input AND into first input of 2-input OR.,X = ((A1 & A2 & A3 & A4) | B1),A1 A2 A3 A4 B1,X,35,,equiv-pass
+A41OD4,sky130_fd_sc_hd__a41o_4,a41o,4,combinational,4-input AND into first input of 2-input OR.,X = ((A1 & A2 & A3 & A4) | B1),A1 A2 A3 A4 B1,X,70,,equiv-pass
+A41OID1,sky130_fd_sc_hd__a41oi_1,a41oi,1,combinational,4-input AND into first input of 2-input NOR.,Y = !((A1 & A2 & A3 & A4) | B1),A1 A2 A3 A4 B1,Y,25,,equiv-pass
+A41OID2,sky130_fd_sc_hd__a41oi_2,a41oi,2,combinational,4-input AND into first input of 2-input NOR.,Y = !((A1 & A2 & A3 & A4) | B1),A1 A2 A3 A4 B1,Y,50,,equiv-pass
+A41OID4,sky130_fd_sc_hd__a41oi_4,a41oi,4,combinational,4-input AND into first input of 2-input NOR.,Y = !((A1 & A2 & A3 & A4) | B1),A1 A2 A3 A4 B1,Y,100,,equiv-pass
+AND2D0,sky130_fd_sc_hd__and2_0,and2,0,combinational,2-input AND.,,A B,X,7,,equiv-pass
+AND2D1,sky130_fd_sc_hd__and2_1,and2,1,combinational,2-input AND.,,A B,X,9,,equiv-pass
+AND2D2,sky130_fd_sc_hd__and2_2,and2,2,combinational,2-input AND.,,A B,X,14,,equiv-pass
+AND2D4,sky130_fd_sc_hd__and2_4,and2,4,combinational,2-input AND.,,A B,X,30,,equiv-pass
+AND2BD1,sky130_fd_sc_hd__and2b_1,and2b,1,combinational,"2-input AND, first input inverted.",,A_N B,X,11,,equiv-pass
+AND2BD2,sky130_fd_sc_hd__and2b_2,and2b,2,combinational,"2-input AND, first input inverted.",,A_N B,X,16,,equiv-pass
+AND2BD4,sky130_fd_sc_hd__and2b_4,and2b,4,combinational,"2-input AND, first input inverted.",,A_N B,X,32,,equiv-pass
+AND3D1,sky130_fd_sc_hd__and3_1,and3,1,combinational,3-input AND.,,A B C,X,11,,equiv-pass
+AND3D2,sky130_fd_sc_hd__and3_2,and3,2,combinational,3-input AND.,,A B C,X,16,,equiv-pass
+AND3D4,sky130_fd_sc_hd__and3_4,and3,4,combinational,3-input AND.,,A B C,X,35,,equiv-pass
+AND3BD1,sky130_fd_sc_hd__and3b_1,and3b,1,combinational,"3-input AND, first input inverted.",,A_N B C,X,13,,equiv-pass
+AND3BD2,sky130_fd_sc_hd__and3b_2,and3b,2,combinational,"3-input AND, first input inverted.",,A_N B C,X,18,,equiv-pass
+AND3BD4,sky130_fd_sc_hd__and3b_4,and3b,4,combinational,"3-input AND, first input inverted.",,A_N B C,X,37,,equiv-pass
+AND4D1,sky130_fd_sc_hd__and4_1,and4,1,combinational,4-input AND.,,A B C D,X,13,,equiv-pass
+AND4D2,sky130_fd_sc_hd__and4_2,and4,2,combinational,4-input AND.,,A B C D,X,18,,equiv-pass
+AND4D4,sky130_fd_sc_hd__and4_4,and4,4,combinational,4-input AND.,,A B C D,X,40,,equiv-pass
+AND4BD1,sky130_fd_sc_hd__and4b_1,and4b,1,combinational,"4-input AND, first input inverted.",,A_N B C D,X,15,,equiv-pass
+AND4BD2,sky130_fd_sc_hd__and4b_2,and4b,2,combinational,"4-input AND, first input inverted.",,A_N B C D,X,20,,equiv-pass
+AND4BD4,sky130_fd_sc_hd__and4b_4,and4b,4,combinational,"4-input AND, first input inverted.",,A_N B C D,X,42,,equiv-pass
+AND4BBD1,sky130_fd_sc_hd__and4bb_1,and4bb,1,combinational,"4-input AND, first two inputs inverted.",,A_N B_N C D,X,17,,equiv-pass
+AND4BBD2,sky130_fd_sc_hd__and4bb_2,and4bb,2,combinational,"4-input AND, first two inputs inverted.",,A_N B_N C D,X,22,,equiv-pass
+AND4BBD4,sky130_fd_sc_hd__and4bb_4,and4bb,4,combinational,"4-input AND, first two inputs inverted.",,A_N B_N C D,X,44,,equiv-pass
+BUFD1,sky130_fd_sc_hd__buf_1,buf,1,combinational,Buffer.,,A,X,6,,equiv-pass
+BUFD12,sky130_fd_sc_hd__buf_12,buf,12,combinational,Buffer.,,A,X,80,,equiv-pass
+BUFD16,sky130_fd_sc_hd__buf_16,buf,16,combinational,Buffer.,,A,X,110,,equiv-pass
+BUFD2,sky130_fd_sc_hd__buf_2,buf,2,combinational,Buffer.,,A,X,13,,equiv-pass
+BUFD4,sky130_fd_sc_hd__buf_4,buf,4,combinational,Buffer.,,A,X,25,,equiv-pass
+BUFD6,sky130_fd_sc_hd__buf_6,buf,6,combinational,Buffer.,,A,X,40,,equiv-pass
+BUFD8,sky130_fd_sc_hd__buf_8,buf,8,combinational,Buffer.,,A,X,55,,equiv-pass
+BUFBUFD16,sky130_fd_sc_hd__bufbuf_16,bufbuf,16,combinational,Double buffer.,,A,X,130,,equiv-pass
+BUFBUFD8,sky130_fd_sc_hd__bufbuf_8,bufbuf,8,combinational,Double buffer.,,A,X,63,,equiv-pass
+BUFINVD16,sky130_fd_sc_hd__bufinv_16,bufinv,16,combinational,Buffer followed by inverter.,,A,Y,125,,equiv-pass
+BUFINVD8,sky130_fd_sc_hd__bufinv_8,bufinv,8,combinational,Buffer followed by inverter.,,A,Y,60,,equiv-pass
+CLKBUFD1,sky130_fd_sc_hd__clkbuf_1,clkbuf,1,combinational,Clock tree buffer.,,A,X,6,,equiv-pass
+CLKBUFD16,sky130_fd_sc_hd__clkbuf_16,clkbuf,16,combinational,Clock tree buffer.,,A,X,80,,equiv-pass
+CLKBUFD2,sky130_fd_sc_hd__clkbuf_2,clkbuf,2,combinational,Clock tree buffer.,,A,X,12,,equiv-pass
+CLKBUFD4,sky130_fd_sc_hd__clkbuf_4,clkbuf,4,combinational,Clock tree buffer.,,A,X,20,,equiv-pass
+CLKBUFD8,sky130_fd_sc_hd__clkbuf_8,clkbuf,8,combinational,Clock tree buffer.,,A,X,40,,equiv-pass
+CLKDLYBUF4S15D1,sky130_fd_sc_hd__clkdlybuf4s15_1,clkdlybuf4s15,1,combinational,Clock Delay Buffer 4-stage 0.15um length inner stage,,A,X,16,,equiv-pass
+CLKDLYBUF4S15D2,sky130_fd_sc_hd__clkdlybuf4s15_2,clkdlybuf4s15,2,combinational,Clock Delay Buffer 4-stage 0.15um length inner stage,,A,X,20,,equiv-pass
+CLKDLYBUF4S18D1,sky130_fd_sc_hd__clkdlybuf4s18_1,clkdlybuf4s18,1,combinational,Clock Delay Buffer 4-stage 0.18um length inner stage,,A,X,16,,equiv-pass
+CLKDLYBUF4S18D2,sky130_fd_sc_hd__clkdlybuf4s18_2,clkdlybuf4s18,2,combinational,Clock Delay Buffer 4-stage 0.18um length inner stage,,A,X,20,,equiv-pass
+CLKDLYBUF4S25D1,sky130_fd_sc_hd__clkdlybuf4s25_1,clkdlybuf4s25,1,combinational,Clock Delay Buffer 4-stage 0.25um length inner stage,,A,X,16,,equiv-pass
+CLKDLYBUF4S25D2,sky130_fd_sc_hd__clkdlybuf4s25_2,clkdlybuf4s25,2,combinational,Clock Delay Buffer 4-stage 0.25um length inner stage,,A,X,20,,equiv-pass
+CLKDLYBUF4S50D1,sky130_fd_sc_hd__clkdlybuf4s50_1,clkdlybuf4s50,1,combinational,Clock Delay Buffer 4-stage 0.59um length inner stage,,A,X,16,,equiv-pass
+CLKDLYBUF4S50D2,sky130_fd_sc_hd__clkdlybuf4s50_2,clkdlybuf4s50,2,combinational,Clock Delay Buffer 4-stage 0.59um length inner stage,,A,X,20,,equiv-pass
+CLKINVD1,sky130_fd_sc_hd__clkinv_1,clkinv,1,combinational,Clock tree inverter.,,A,Y,5,,equiv-pass
+CLKINVD16,sky130_fd_sc_hd__clkinv_16,clkinv,16,combinational,Clock tree inverter.,,A,Y,88,,equiv-pass
+CLKINVD2,sky130_fd_sc_hd__clkinv_2,clkinv,2,combinational,Clock tree inverter.,,A,Y,11,,equiv-pass
+CLKINVD4,sky130_fd_sc_hd__clkinv_4,clkinv,4,combinational,Clock tree inverter.,,A,Y,22,,equiv-pass
+CLKINVD8,sky130_fd_sc_hd__clkinv_8,clkinv,8,combinational,Clock tree inverter.,,A,Y,44,,equiv-pass
+CLKINVLPD2,sky130_fd_sc_hd__clkinvlp_2,clkinvlp,2,combinational,Lower power Clock tree inverter.,,A,Y,10,,equiv-pass
+CLKINVLPD4,sky130_fd_sc_hd__clkinvlp_4,clkinvlp,4,combinational,Lower power Clock tree inverter.,,A,Y,20,,equiv-pass
+CONBD1,sky130_fd_sc_hd__conb_1,conb,1,skipped,"Constant value, low, high outputs.",,,HI LO,,tie cell (uses 'short' primitive),no
+DECAPD12,sky130_fd_sc_hd__decap_12,decap,12,physical,Decoupling capacitance filler.,,,,4,,n/a (no testable I/O)
+DECAPD3,sky130_fd_sc_hd__decap_3,decap,3,physical,Decoupling capacitance filler.,,,,4,,n/a (no testable I/O)
+DECAPD4,sky130_fd_sc_hd__decap_4,decap,4,physical,Decoupling capacitance filler.,,,,4,,n/a (no testable I/O)
+DECAPD6,sky130_fd_sc_hd__decap_6,decap,6,physical,Decoupling capacitance filler.,,,,4,,n/a (no testable I/O)
+DECAPD8,sky130_fd_sc_hd__decap_8,decap,8,physical,Decoupling capacitance filler.,,,,4,,n/a (no testable I/O)
+DFBBND1,sky130_fd_sc_hd__dfbbn_1,dfbbn,1,sequential,"Delay flop, inverted set, inverted reset, inverted clock,",,D CLK_N SET_B RESET_B,Q Q_N,60,,equiv-pass
+DFBBND2,sky130_fd_sc_hd__dfbbn_2,dfbbn,2,sequential,"Delay flop, inverted set, inverted reset, inverted clock,",,D CLK_N SET_B RESET_B,Q Q_N,70,,equiv-pass
+DFBBPD1,sky130_fd_sc_hd__dfbbp_1,dfbbp,1,sequential,"Delay flop, inverted set, inverted reset,",,D CLK SET_B RESET_B,Q Q_N,60,,equiv-pass
+DFRBPD1,sky130_fd_sc_hd__dfrbp_1,dfrbp,1,sequential,"Delay flop, inverted reset, complementary outputs.",,CLK D RESET_B,Q Q_N,43,,equiv-pass
+DFRBPD2,sky130_fd_sc_hd__dfrbp_2,dfrbp,2,sequential,"Delay flop, inverted reset, complementary outputs.",,CLK D RESET_B,Q Q_N,53,,equiv-pass
+DFRTND1,sky130_fd_sc_hd__dfrtn_1,dfrtn,1,sequential,"Delay flop, inverted reset, inverted clock,",,CLK_N D RESET_B,Q,35,,equiv-pass
+DFRTPD1,sky130_fd_sc_hd__dfrtp_1,dfrtp,1,sequential,"Delay flop, inverted reset, single output.",,CLK D RESET_B,Q,35,,equiv-pass
+DFRTPD2,sky130_fd_sc_hd__dfrtp_2,dfrtp,2,sequential,"Delay flop, inverted reset, single output.",,CLK D RESET_B,Q,40,,equiv-pass
+DFRTPD4,sky130_fd_sc_hd__dfrtp_4,dfrtp,4,sequential,"Delay flop, inverted reset, single output.",,CLK D RESET_B,Q,50,,equiv-pass
+DFSBPD1,sky130_fd_sc_hd__dfsbp_1,dfsbp,1,sequential,"Delay flop, inverted set, complementary outputs.",,CLK D SET_B,Q Q_N,47,,equiv-pass
+DFSBPD2,sky130_fd_sc_hd__dfsbp_2,dfsbp,2,sequential,"Delay flop, inverted set, complementary outputs.",,CLK D SET_B,Q Q_N,59,,equiv-pass
+DFSTPD1,sky130_fd_sc_hd__dfstp_1,dfstp,1,sequential,"Delay flop, inverted set, single output.",,CLK D SET_B,Q,42,,equiv-pass
+DFSTPD2,sky130_fd_sc_hd__dfstp_2,dfstp,2,sequential,"Delay flop, inverted set, single output.",,CLK D SET_B,Q,49,,equiv-pass
+DFSTPD4,sky130_fd_sc_hd__dfstp_4,dfstp,4,sequential,"Delay flop, inverted set, single output.",,CLK D SET_B,Q,62,,equiv-pass
+DFXBPD1,sky130_fd_sc_hd__dfxbp_1,dfxbp,1,sequential,"Delay flop, complementary outputs.",,CLK D,Q Q_N,42,,equiv-pass
+DFXBPD2,sky130_fd_sc_hd__dfxbp_2,dfxbp,2,sequential,"Delay flop, complementary outputs.",,CLK D,Q Q_N,52,,equiv-pass
+DFXTPD1,sky130_fd_sc_hd__dfxtp_1,dfxtp,1,sequential,"Delay flop, single output.",,CLK D,Q,34,,equiv-pass
+DFXTPD2,sky130_fd_sc_hd__dfxtp_2,dfxtp,2,sequential,"Delay flop, single output.",,CLK D,Q,39,,equiv-pass
+DFXTPD4,sky130_fd_sc_hd__dfxtp_4,dfxtp,4,sequential,"Delay flop, single output.",,CLK D,Q,49,,equiv-pass
+DIODED2,sky130_fd_sc_hd__diode_2,diode,2,skipped,Antenna tie-down diode.,,DIODE,,,antenna diode (non-FET),no
+DLCLKPD1,sky130_fd_sc_hd__dlclkp_1,dlclkp,1,sequential,Clock gate.,,GATE CLK,GCLK,31,,equiv-pass
+DLCLKPD2,sky130_fd_sc_hd__dlclkp_2,dlclkp,2,sequential,Clock gate.,,GATE CLK,GCLK,36,,equiv-pass
+DLCLKPD4,sky130_fd_sc_hd__dlclkp_4,dlclkp,4,sequential,Clock gate.,,GATE CLK,GCLK,50,,equiv-pass
+DLRBND1,sky130_fd_sc_hd__dlrbn_1,dlrbn,1,sequential,"Delay latch, inverted reset, inverted enable,",,RESET_B D GATE_N,Q Q_N,41,,equiv-pass
+DLRBND2,sky130_fd_sc_hd__dlrbn_2,dlrbn,2,sequential,"Delay latch, inverted reset, inverted enable,",,RESET_B D GATE_N,Q Q_N,51,,equiv-pass
+DLRBPD1,sky130_fd_sc_hd__dlrbp_1,dlrbp,1,sequential,"Delay latch, inverted reset, non-inverted enable,",,RESET_B D GATE,Q Q_N,41,,equiv-pass
+DLRBPD2,sky130_fd_sc_hd__dlrbp_2,dlrbp,2,sequential,"Delay latch, inverted reset, non-inverted enable,",,RESET_B D GATE,Q Q_N,51,,equiv-pass
+DLRTND1,sky130_fd_sc_hd__dlrtn_1,dlrtn,1,sequential,"Delay latch, inverted reset, inverted enable, single output.",,RESET_B D GATE_N,Q,33,,equiv-pass
+DLRTND2,sky130_fd_sc_hd__dlrtn_2,dlrtn,2,sequential,"Delay latch, inverted reset, inverted enable, single output.",,RESET_B D GATE_N,Q,38,,equiv-pass
+DLRTND4,sky130_fd_sc_hd__dlrtn_4,dlrtn,4,sequential,"Delay latch, inverted reset, inverted enable, single output.",,RESET_B D GATE_N,Q,48,,equiv-pass
+DLRTPD1,sky130_fd_sc_hd__dlrtp_1,dlrtp,1,sequential,"Delay latch, inverted reset, non-inverted enable,",,RESET_B D GATE,Q,33,,equiv-pass
+DLRTPD2,sky130_fd_sc_hd__dlrtp_2,dlrtp,2,sequential,"Delay latch, inverted reset, non-inverted enable,",,RESET_B D GATE,Q,38,,equiv-pass
+DLRTPD4,sky130_fd_sc_hd__dlrtp_4,dlrtp,4,sequential,"Delay latch, inverted reset, non-inverted enable,",,RESET_B D GATE,Q,48,,equiv-pass
+DLXBND1,sky130_fd_sc_hd__dlxbn_1,dlxbn,1,sequential,"Delay latch, inverted enable, complementary outputs.",,D GATE_N,Q Q_N,36,,equiv-pass
+DLXBND2,sky130_fd_sc_hd__dlxbn_2,dlxbn,2,sequential,"Delay latch, inverted enable, complementary outputs.",,D GATE_N,Q Q_N,46,,equiv-pass
+DLXBPD1,sky130_fd_sc_hd__dlxbp_1,dlxbp,1,sequential,"Delay latch, non-inverted enable, complementary outputs.",,D GATE,Q Q_N,36,,equiv-pass
+DLXTND1,sky130_fd_sc_hd__dlxtn_1,dlxtn,1,sequential,"Delay latch, inverted enable, single output.",,D GATE_N,Q,28,,equiv-pass
+DLXTND2,sky130_fd_sc_hd__dlxtn_2,dlxtn,2,sequential,"Delay latch, inverted enable, single output.",,D GATE_N,Q,33,,equiv-pass
+DLXTND4,sky130_fd_sc_hd__dlxtn_4,dlxtn,4,sequential,"Delay latch, inverted enable, single output.",,D GATE_N,Q,43,,equiv-pass
+DLXTPD1,sky130_fd_sc_hd__dlxtp_1,dlxtp,1,sequential,"Delay latch, non-inverted enable, single output.",,D GATE,Q,28,,equiv-pass
+DLYGATE4SD1D1,sky130_fd_sc_hd__dlygate4sd1_1,dlygate4sd1,1,combinational,Delay Buffer 4-stage 0.15um length inner stage gates.,,A,X,11,,equiv-pass
+DLYGATE4SD2D1,sky130_fd_sc_hd__dlygate4sd2_1,dlygate4sd2,1,combinational,Delay Buffer 4-stage 0.18um length inner stage gates.,,A,X,11,,equiv-pass
+DLYGATE4SD3D1,sky130_fd_sc_hd__dlygate4sd3_1,dlygate4sd3,1,combinational,Delay Buffer 4-stage 0.50um length inner stage gates.,,A,X,11,,equiv-pass
+DLYMETAL6S2SD1,sky130_fd_sc_hd__dlymetal6s2s_1,dlymetal6s2s,1,combinational,6-inverter delay with output from 2nd stage on,,A,X,21,,equiv-pass
+DLYMETAL6S4SD1,sky130_fd_sc_hd__dlymetal6s4s_1,dlymetal6s4s,1,combinational,6-inverter delay with output from 4th inverter on,,A,X,21,,equiv-pass
+DLYMETAL6S6SD1,sky130_fd_sc_hd__dlymetal6s6s_1,dlymetal6s6s,1,combinational,6-inverter delay with output from 6th inverter on,,A,X,21,,equiv-pass
+EBUFND1,sky130_fd_sc_hd__ebufn_1,ebufn,1,combinational,"Tri-state buffer, negative enable.",,A TE_B,Z,16,,equiv-pass
+EBUFND2,sky130_fd_sc_hd__ebufn_2,ebufn,2,combinational,"Tri-state buffer, negative enable.",,A TE_B,Z,26,,equiv-pass
+EBUFND4,sky130_fd_sc_hd__ebufn_4,ebufn,4,combinational,"Tri-state buffer, negative enable.",,A TE_B,Z,50,,equiv-pass
+EBUFND8,sky130_fd_sc_hd__ebufn_8,ebufn,8,combinational,"Tri-state buffer, negative enable.",,A TE_B,Z,95,,equiv-pass
+EDFXBPD1,sky130_fd_sc_hd__edfxbp_1,edfxbp,1,sequential,"Delay flop with loopback enable, non-inverted clock,",,CLK D DE,Q Q_N,52,,equiv-pass
+EDFXTPD1,sky130_fd_sc_hd__edfxtp_1,edfxtp,1,sequential,"Delay flop with loopback enable, non-inverted clock,",,CLK D DE,Q,47,,equiv-pass
+EINVND0,sky130_fd_sc_hd__einvn_0,einvn,0,combinational,"Tri-state inverter, negative enable.",,A TE_B,Z,8,,equiv-pass
+EINVND1,sky130_fd_sc_hd__einvn_1,einvn,1,combinational,"Tri-state inverter, negative enable.",,A TE_B,Z,13,,equiv-pass
+EINVND2,sky130_fd_sc_hd__einvn_2,einvn,2,combinational,"Tri-state inverter, negative enable.",,A TE_B,Z,23,,equiv-pass
+EINVND4,sky130_fd_sc_hd__einvn_4,einvn,4,combinational,"Tri-state inverter, negative enable.",,A TE_B,Z,45,,equiv-pass
+EINVND8,sky130_fd_sc_hd__einvn_8,einvn,8,combinational,"Tri-state inverter, negative enable.",,A TE_B,Z,85,,equiv-pass
+EINVPD1,sky130_fd_sc_hd__einvp_1,einvp,1,combinational,"Tri-state inverter, positive enable.",,A TE,Z,12,,equiv-pass
+EINVPD2,sky130_fd_sc_hd__einvp_2,einvp,2,combinational,"Tri-state inverter, positive enable.",,A TE,Z,23,,equiv-pass
+EINVPD4,sky130_fd_sc_hd__einvp_4,einvp,4,combinational,"Tri-state inverter, positive enable.",,A TE,Z,45,,equiv-pass
+EINVPD8,sky130_fd_sc_hd__einvp_8,einvp,8,combinational,"Tri-state inverter, positive enable.",,A TE,Z,85,,equiv-pass
+FAD1,sky130_fd_sc_hd__fa_1,fa,1,combinational,Full adder.,,A B CIN,COUT SUM,34,,equiv-pass
+FAD2,sky130_fd_sc_hd__fa_2,fa,2,combinational,Full adder.,,A B CIN,COUT SUM,56,,equiv-pass
+FAD4,sky130_fd_sc_hd__fa_4,fa,4,combinational,Full adder.,,A B CIN,COUT SUM,76,,equiv-pass
+FAHD1,sky130_fd_sc_hd__fah_1,fah,1,combinational,Full adder.,,A B CI,COUT SUM,72,,equiv-pass
+FAHCIND1,sky130_fd_sc_hd__fahcin_1,fahcin,1,combinational,"Full adder, inverted carry in.",,A B CIN,COUT SUM,72,,equiv-pass
+FAHCOND1,sky130_fd_sc_hd__fahcon_1,fahcon,1,combinational,"Full adder, inverted carry in, inverted carry out.",,A B CI,COUT_N SUM,72,,equiv-pass
+FILLD1,sky130_fd_sc_hd__fill_1,fill,1,physical,Fill cell.,,,,0,,n/a (no testable I/O)
+FILLD2,sky130_fd_sc_hd__fill_2,fill,2,physical,Fill cell.,,,,0,,n/a (no testable I/O)
+FILLD4,sky130_fd_sc_hd__fill_4,fill,4,physical,Fill cell.,,,,0,,n/a (no testable I/O)
+FILLD8,sky130_fd_sc_hd__fill_8,fill,8,physical,Fill cell.,,,,0,,n/a (no testable I/O)
+HAD1,sky130_fd_sc_hd__ha_1,ha,1,combinational,Half adder.,,A B,COUT SUM,20,,equiv-pass
+HAD2,sky130_fd_sc_hd__ha_2,ha,2,combinational,Half adder.,,A B,COUT SUM,35,,equiv-pass
+HAD4,sky130_fd_sc_hd__ha_4,ha,4,combinational,Half adder.,,A B,COUT SUM,90,,equiv-pass
+INVD1,sky130_fd_sc_hd__inv_1,inv,1,combinational,Inverter.,,A,Y,5,,equiv-pass
+INVD12,sky130_fd_sc_hd__inv_12,inv,12,combinational,Inverter.,,A,Y,60,,equiv-pass
+INVD16,sky130_fd_sc_hd__inv_16,inv,16,combinational,Inverter.,,A,Y,80,,equiv-pass
+INVD2,sky130_fd_sc_hd__inv_2,inv,2,combinational,Inverter.,,A,Y,10,,equiv-pass
+INVD4,sky130_fd_sc_hd__inv_4,inv,4,combinational,Inverter.,,A,Y,20,,equiv-pass
+INVD6,sky130_fd_sc_hd__inv_6,inv,6,combinational,Inverter.,,A,Y,30,,equiv-pass
+INVD8,sky130_fd_sc_hd__inv_8,inv,8,combinational,Inverter.,,A,Y,40,,equiv-pass
+LPFLOW_BLEEDERD1,sky130_fd_sc_hd__lpflow_bleeder_1,lpflow_bleeder,1,physical,Current bleeder (weak pulldown to ground).,,SHORT,,5,,n/a (no testable I/O)
+LPFLOW_CLKBUFKAPWRD1,sky130_fd_sc_hd__lpflow_clkbufkapwr_1,lpflow_clkbufkapwr,1,combinational,Clock tree buffer on keep-alive power rail.,,A,X,6,,equiv-pass
+LPFLOW_CLKBUFKAPWRD16,sky130_fd_sc_hd__lpflow_clkbufkapwr_16,lpflow_clkbufkapwr,16,combinational,Clock tree buffer on keep-alive power rail.,,A,X,80,,equiv-pass
+LPFLOW_CLKBUFKAPWRD2,sky130_fd_sc_hd__lpflow_clkbufkapwr_2,lpflow_clkbufkapwr,2,combinational,Clock tree buffer on keep-alive power rail.,,A,X,12,,equiv-pass
+LPFLOW_CLKBUFKAPWRD4,sky130_fd_sc_hd__lpflow_clkbufkapwr_4,lpflow_clkbufkapwr,4,combinational,Clock tree buffer on keep-alive power rail.,,A,X,20,,equiv-pass
+LPFLOW_CLKBUFKAPWRD8,sky130_fd_sc_hd__lpflow_clkbufkapwr_8,lpflow_clkbufkapwr,8,combinational,Clock tree buffer on keep-alive power rail.,,A,X,40,,equiv-pass
+LPFLOW_CLKINVKAPWRD1,sky130_fd_sc_hd__lpflow_clkinvkapwr_1,lpflow_clkinvkapwr,1,combinational,Clock tree inverter on keep-alive rail.,,A,Y,5,,equiv-pass
+LPFLOW_CLKINVKAPWRD16,sky130_fd_sc_hd__lpflow_clkinvkapwr_16,lpflow_clkinvkapwr,16,combinational,Clock tree inverter on keep-alive rail.,,A,Y,88,,equiv-pass
+LPFLOW_CLKINVKAPWRD2,sky130_fd_sc_hd__lpflow_clkinvkapwr_2,lpflow_clkinvkapwr,2,combinational,Clock tree inverter on keep-alive rail.,,A,Y,11,,equiv-pass
+LPFLOW_CLKINVKAPWRD4,sky130_fd_sc_hd__lpflow_clkinvkapwr_4,lpflow_clkinvkapwr,4,combinational,Clock tree inverter on keep-alive rail.,,A,Y,22,,equiv-pass
+LPFLOW_CLKINVKAPWRD8,sky130_fd_sc_hd__lpflow_clkinvkapwr_8,lpflow_clkinvkapwr,8,combinational,Clock tree inverter on keep-alive rail.,,A,Y,44,,equiv-pass
+LPFLOW_DECAPKAPWRD12,sky130_fd_sc_hd__lpflow_decapkapwr_12,lpflow_decapkapwr,12,physical,Decoupling capacitance filler on keep-alive,,,,4,,n/a (no testable I/O)
+LPFLOW_DECAPKAPWRD3,sky130_fd_sc_hd__lpflow_decapkapwr_3,lpflow_decapkapwr,3,physical,Decoupling capacitance filler on keep-alive,,,,4,,n/a (no testable I/O)
+LPFLOW_DECAPKAPWRD4,sky130_fd_sc_hd__lpflow_decapkapwr_4,lpflow_decapkapwr,4,physical,Decoupling capacitance filler on keep-alive,,,,4,,n/a (no testable I/O)
+LPFLOW_DECAPKAPWRD6,sky130_fd_sc_hd__lpflow_decapkapwr_6,lpflow_decapkapwr,6,physical,Decoupling capacitance filler on keep-alive,,,,4,,n/a (no testable I/O)
+LPFLOW_DECAPKAPWRD8,sky130_fd_sc_hd__lpflow_decapkapwr_8,lpflow_decapkapwr,8,physical,Decoupling capacitance filler on keep-alive,,,,4,,n/a (no testable I/O)
+LPFLOW_INPUTISO0ND1,sky130_fd_sc_hd__lpflow_inputiso0n_1,lpflow_inputiso0n,1,combinational,Input isolator with inverted enable.,X = (A & SLEEP_B),A SLEEP_B,X,9,,equiv-pass
+LPFLOW_INPUTISO0PD1,sky130_fd_sc_hd__lpflow_inputiso0p_1,lpflow_inputiso0p,1,combinational,Input isolator with non-inverted enable.,X = (A & !SLEEP_B),A SLEEP,X,11,,equiv-pass
+LPFLOW_INPUTISO1ND1,sky130_fd_sc_hd__lpflow_inputiso1n_1,lpflow_inputiso1n,1,combinational,"Input isolation, inverted sleep.",X = (A & SLEEP_B),A SLEEP_B,X,11,,equiv-pass
+LPFLOW_INPUTISO1PD1,sky130_fd_sc_hd__lpflow_inputiso1p_1,lpflow_inputiso1p,1,combinational,"Input isolation, noninverted sleep.",X = (A & !SLEEP),A SLEEP,X,9,,equiv-pass
+LPFLOW_INPUTISOLATCHD1,sky130_fd_sc_hd__lpflow_inputisolatch_1,lpflow_inputisolatch,1,combinational,Latching input isolator with inverted enable.,,D SLEEP_B,Q,25,,equiv-pass
+LPFLOW_ISOBUFSRCD1,sky130_fd_sc_hd__lpflow_isobufsrc_1,lpflow_isobufsrc,1,combinational,"Input isolation, noninverted sleep.",X = (!A | SLEEP),SLEEP A,X,12,,equiv-pass
+LPFLOW_ISOBUFSRCD16,sky130_fd_sc_hd__lpflow_isobufsrc_16,lpflow_isobufsrc,16,combinational,"Input isolation, noninverted sleep.",X = (!A | SLEEP),SLEEP A,X,180,,equiv-pass
+LPFLOW_ISOBUFSRCD2,sky130_fd_sc_hd__lpflow_isobufsrc_2,lpflow_isobufsrc,2,combinational,"Input isolation, noninverted sleep.",X = (!A | SLEEP),SLEEP A,X,22,,equiv-pass
+LPFLOW_ISOBUFSRCD4,sky130_fd_sc_hd__lpflow_isobufsrc_4,lpflow_isobufsrc,4,combinational,"Input isolation, noninverted sleep.",X = (!A | SLEEP),SLEEP A,X,45,,equiv-pass
+LPFLOW_ISOBUFSRCD8,sky130_fd_sc_hd__lpflow_isobufsrc_8,lpflow_isobufsrc,8,combinational,"Input isolation, noninverted sleep.",X = (!A | SLEEP),SLEEP A,X,90,,equiv-pass
+LPFLOW_ISOBUFSRCKAPWRD16,sky130_fd_sc_hd__lpflow_isobufsrckapwr_16,lpflow_isobufsrckapwr,16,combinational,"Input isolation, noninverted sleep on",X = (!A | SLEEP),SLEEP A,X,125,,equiv-pass
+LPFLOW_LSBUF_LH_HL_ISOWELL_TAPD1,sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1,lpflow_lsbuf_lh_hl_isowell_tap,1,combinational,"Level-shift buffer, low-to-high,",,A,X,32,,equiv-pass
+LPFLOW_LSBUF_LH_HL_ISOWELL_TAPD2,sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2,lpflow_lsbuf_lh_hl_isowell_tap,2,combinational,"Level-shift buffer, low-to-high,",,A,X,38,,equiv-pass
+LPFLOW_LSBUF_LH_HL_ISOWELL_TAPD4,sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4,lpflow_lsbuf_lh_hl_isowell_tap,4,combinational,"Level-shift buffer, low-to-high,",,A,X,48,,equiv-pass
+LPFLOW_LSBUF_LH_ISOWELLD4,sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4,lpflow_lsbuf_lh_isowell,4,combinational,"Level-shift buffer, low-to-high, isolated",,A,X,48,,equiv-pass
+LPFLOW_LSBUF_LH_ISOWELL_TAPD1,sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1,lpflow_lsbuf_lh_isowell_tap,1,combinational,"Level-shift buffer, low-to-high,",,A,X,32,,equiv-pass
+LPFLOW_LSBUF_LH_ISOWELL_TAPD2,sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2,lpflow_lsbuf_lh_isowell_tap,2,combinational,"Level-shift buffer, low-to-high,",,A,X,38,,equiv-pass
+LPFLOW_LSBUF_LH_ISOWELL_TAPD4,sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4,lpflow_lsbuf_lh_isowell_tap,4,combinational,"Level-shift buffer, low-to-high,",,A,X,48,,equiv-pass
+MACRODsparecell,sky130_fd_sc_hd__macro_sparecell,macro,sparecell,skipped,"Macro cell for metal-mask-only revisioning,",,,LO,,not converted,no
+MAJ3D1,sky130_fd_sc_hd__maj3_1,maj3,1,combinational,3-input majority vote.,,A B C,X,17,,equiv-pass
+MAJ3D2,sky130_fd_sc_hd__maj3_2,maj3,2,combinational,3-input majority vote.,,A B C,X,28,,equiv-pass
+MAJ3D4,sky130_fd_sc_hd__maj3_4,maj3,4,combinational,3-input majority vote.,,A B C,X,50,,equiv-pass
+MUX2D1,sky130_fd_sc_hd__mux2_1,mux2,1,combinational,2-input multiplexer.,,A0 A1 S,X,15,,equiv-pass
+MUX2D2,sky130_fd_sc_hd__mux2_2,mux2,2,combinational,2-input multiplexer.,,A0 A1 S,X,25,,equiv-pass
+MUX2D4,sky130_fd_sc_hd__mux2_4,mux2,4,combinational,2-input multiplexer.,,A0 A1 S,X,45,,equiv-pass
+MUX2D8,sky130_fd_sc_hd__mux2_8,mux2,8,combinational,2-input multiplexer.,,A0 A1 S,X,85,,equiv-pass
+MUX2ID1,sky130_fd_sc_hd__mux2i_1,mux2i,1,combinational,"2-input multiplexer, output inverted.",,A0 A1 S,Y,25,,equiv-pass
+MUX2ID2,sky130_fd_sc_hd__mux2i_2,mux2i,2,combinational,"2-input multiplexer, output inverted.",,A0 A1 S,Y,45,,equiv-pass
+MUX2ID4,sky130_fd_sc_hd__mux2i_4,mux2i,4,combinational,"2-input multiplexer, output inverted.",,A0 A1 S,Y,85,,equiv-pass
+MUX4D1,sky130_fd_sc_hd__mux4_1,mux4,1,combinational,4-input multiplexer.,,A0 A1 A2 A3 S0 S1,X,29,,equiv-pass
+MUX4D2,sky130_fd_sc_hd__mux4_2,mux4,2,combinational,4-input multiplexer.,,A0 A1 A2 A3 S0 S1,X,42,,equiv-pass
+MUX4D4,sky130_fd_sc_hd__mux4_4,mux4,4,combinational,4-input multiplexer.,,A0 A1 A2 A3 S0 S1,X,52,,equiv-pass
+NAND2D1,sky130_fd_sc_hd__nand2_1,nand2,1,combinational,2-input NAND.,,A B,Y,10,,equiv-pass
+NAND2D2,sky130_fd_sc_hd__nand2_2,nand2,2,combinational,2-input NAND.,,A B,Y,20,,equiv-pass
+NAND2D4,sky130_fd_sc_hd__nand2_4,nand2,4,combinational,2-input NAND.,,A B,Y,40,,equiv-pass
+NAND2D8,sky130_fd_sc_hd__nand2_8,nand2,8,combinational,2-input NAND.,,A B,Y,80,,equiv-pass
+NAND2BD1,sky130_fd_sc_hd__nand2b_1,nand2b,1,combinational,"2-input NAND, first input inverted.",,A_N B,Y,12,,equiv-pass
+NAND2BD2,sky130_fd_sc_hd__nand2b_2,nand2b,2,combinational,"2-input NAND, first input inverted.",,A_N B,Y,22,,equiv-pass
+NAND2BD4,sky130_fd_sc_hd__nand2b_4,nand2b,4,combinational,"2-input NAND, first input inverted.",,A_N B,Y,45,,equiv-pass
+NAND3D1,sky130_fd_sc_hd__nand3_1,nand3,1,combinational,3-input NAND.,,A B C,Y,15,,equiv-pass
+NAND3D2,sky130_fd_sc_hd__nand3_2,nand3,2,combinational,3-input NAND.,,A B C,Y,30,,equiv-pass
+NAND3D4,sky130_fd_sc_hd__nand3_4,nand3,4,combinational,3-input NAND.,,A B C,Y,60,,equiv-pass
+NAND3BD1,sky130_fd_sc_hd__nand3b_1,nand3b,1,combinational,"3-input NAND, first input inverted.",,A_N B C,Y,17,,equiv-pass
+NAND3BD2,sky130_fd_sc_hd__nand3b_2,nand3b,2,combinational,"3-input NAND, first input inverted.",,A_N B C,Y,32,,equiv-pass
+NAND3BD4,sky130_fd_sc_hd__nand3b_4,nand3b,4,combinational,"3-input NAND, first input inverted.",,A_N B C,Y,65,,equiv-pass
+NAND4D1,sky130_fd_sc_hd__nand4_1,nand4,1,combinational,4-input NAND.,,A B C D,Y,20,,equiv-pass
+NAND4D2,sky130_fd_sc_hd__nand4_2,nand4,2,combinational,4-input NAND.,,A B C D,Y,40,,equiv-pass
+NAND4D4,sky130_fd_sc_hd__nand4_4,nand4,4,combinational,4-input NAND.,,A B C D,Y,80,,equiv-pass
+NAND4BD1,sky130_fd_sc_hd__nand4b_1,nand4b,1,combinational,"4-input NAND, first input inverted.",,A_N B C D,Y,22,,equiv-pass
+NAND4BD2,sky130_fd_sc_hd__nand4b_2,nand4b,2,combinational,"4-input NAND, first input inverted.",,A_N B C D,Y,42,,equiv-pass
+NAND4BD4,sky130_fd_sc_hd__nand4b_4,nand4b,4,combinational,"4-input NAND, first input inverted.",,A_N B C D,Y,85,,equiv-pass
+NAND4BBD1,sky130_fd_sc_hd__nand4bb_1,nand4bb,1,combinational,"4-input NAND, first two inputs inverted.",,A_N B_N C D,Y,24,,equiv-pass
+NAND4BBD2,sky130_fd_sc_hd__nand4bb_2,nand4bb,2,combinational,"4-input NAND, first two inputs inverted.",,A_N B_N C D,Y,44,,equiv-pass
+NAND4BBD4,sky130_fd_sc_hd__nand4bb_4,nand4bb,4,combinational,"4-input NAND, first two inputs inverted.",,A_N B_N C D,Y,90,,equiv-pass
+NOR2D1,sky130_fd_sc_hd__nor2_1,nor2,1,combinational,2-input NOR.,,A B,Y,10,,equiv-pass
+NOR2D2,sky130_fd_sc_hd__nor2_2,nor2,2,combinational,2-input NOR.,,A B,Y,20,,equiv-pass
+NOR2D4,sky130_fd_sc_hd__nor2_4,nor2,4,combinational,2-input NOR.,,A B,Y,40,,equiv-pass
+NOR2D8,sky130_fd_sc_hd__nor2_8,nor2,8,combinational,2-input NOR.,,A B,Y,80,,equiv-pass
+NOR2BD1,sky130_fd_sc_hd__nor2b_1,nor2b,1,combinational,"2-input NOR, first input inverted.",Y = !(A | B | C | !D),A B_N,Y,12,,equiv-pass
+NOR2BD2,sky130_fd_sc_hd__nor2b_2,nor2b,2,combinational,"2-input NOR, first input inverted.",Y = !(A | B | C | !D),A B_N,Y,22,,equiv-pass
+NOR2BD4,sky130_fd_sc_hd__nor2b_4,nor2b,4,combinational,"2-input NOR, first input inverted.",Y = !(A | B | C | !D),A B_N,Y,45,,equiv-pass
+NOR3D1,sky130_fd_sc_hd__nor3_1,nor3,1,combinational,3-input NOR.,Y = !(A | B | C | !D),A B C,Y,15,,equiv-pass
+NOR3D2,sky130_fd_sc_hd__nor3_2,nor3,2,combinational,3-input NOR.,Y = !(A | B | C | !D),A B C,Y,30,,equiv-pass
+NOR3D4,sky130_fd_sc_hd__nor3_4,nor3,4,combinational,3-input NOR.,Y = !(A | B | C | !D),A B C,Y,60,,equiv-pass
+NOR3BD1,sky130_fd_sc_hd__nor3b_1,nor3b,1,combinational,"3-input NOR, first input inverted.",Y = (!(A | B)) & !C),A B C_N,Y,17,,equiv-pass
+NOR3BD2,sky130_fd_sc_hd__nor3b_2,nor3b,2,combinational,"3-input NOR, first input inverted.",Y = (!(A | B)) & !C),A B C_N,Y,32,,equiv-pass
+NOR3BD4,sky130_fd_sc_hd__nor3b_4,nor3b,4,combinational,"3-input NOR, first input inverted.",Y = (!(A | B)) & !C),A B C_N,Y,65,,equiv-pass
+NOR4D1,sky130_fd_sc_hd__nor4_1,nor4,1,combinational,4-input NOR.,Y = !(A | B | C | D),A B C D,Y,20,,equiv-pass
+NOR4D2,sky130_fd_sc_hd__nor4_2,nor4,2,combinational,4-input NOR.,Y = !(A | B | C | D),A B C D,Y,40,,equiv-pass
+NOR4D4,sky130_fd_sc_hd__nor4_4,nor4,4,combinational,4-input NOR.,Y = !(A | B | C | D),A B C D,Y,80,,equiv-pass
+NOR4BD1,sky130_fd_sc_hd__nor4b_1,nor4b,1,combinational,"4-input NOR, first input inverted.",,A B C D_N,Y,22,,equiv-pass
+NOR4BD2,sky130_fd_sc_hd__nor4b_2,nor4b,2,combinational,"4-input NOR, first input inverted.",,A B C D_N,Y,42,,equiv-pass
+NOR4BD4,sky130_fd_sc_hd__nor4b_4,nor4b,4,combinational,"4-input NOR, first input inverted.",,A B C D_N,Y,85,,equiv-pass
+NOR4BBD1,sky130_fd_sc_hd__nor4bb_1,nor4bb,1,combinational,"4-input NOR, first two inputs inverted.",,A B C_N D_N,Y,24,,equiv-pass
+NOR4BBD2,sky130_fd_sc_hd__nor4bb_2,nor4bb,2,combinational,"4-input NOR, first two inputs inverted.",,A B C_N D_N,Y,44,,equiv-pass
+NOR4BBD4,sky130_fd_sc_hd__nor4bb_4,nor4bb,4,combinational,"4-input NOR, first two inputs inverted.",,A B C_N D_N,Y,90,,equiv-pass
+O2111AD1,sky130_fd_sc_hd__o2111a_1,o2111a,1,combinational,2-input OR into first input of 4-input AND.,X = ((A1 | A2) & B1 & C1 & D1),A1 A2 B1 C1 D1,X,30,,equiv-pass
+O2111AD2,sky130_fd_sc_hd__o2111a_2,o2111a,2,combinational,2-input OR into first input of 4-input AND.,X = ((A1 | A2) & B1 & C1 & D1),A1 A2 B1 C1 D1,X,35,,equiv-pass
+O2111AD4,sky130_fd_sc_hd__o2111a_4,o2111a,4,combinational,2-input OR into first input of 4-input AND.,X = ((A1 | A2) & B1 & C1 & D1),A1 A2 B1 C1 D1,X,70,,equiv-pass
+O2111AID1,sky130_fd_sc_hd__o2111ai_1,o2111ai,1,combinational,2-input OR into first input of 4-input NAND.,Y = !((A1 | A2) & B1 & C1 & D1),A1 A2 B1 C1 D1,Y,25,,equiv-pass
+O2111AID2,sky130_fd_sc_hd__o2111ai_2,o2111ai,2,combinational,2-input OR into first input of 4-input NAND.,Y = !((A1 | A2) & B1 & C1 & D1),A1 A2 B1 C1 D1,Y,50,,equiv-pass
+O2111AID4,sky130_fd_sc_hd__o2111ai_4,o2111ai,4,combinational,2-input OR into first input of 4-input NAND.,Y = !((A1 | A2) & B1 & C1 & D1),A1 A2 B1 C1 D1,Y,100,,equiv-pass
+O211AD1,sky130_fd_sc_hd__o211a_1,o211a,1,combinational,2-input OR into first input of 3-input AND.,X = ((A1 | A2) & B1 & C1),A1 A2 B1 C1,X,25,,equiv-pass
+O211AD2,sky130_fd_sc_hd__o211a_2,o211a,2,combinational,2-input OR into first input of 3-input AND.,X = ((A1 | A2) & B1 & C1),A1 A2 B1 C1,X,30,,equiv-pass
+O211AD4,sky130_fd_sc_hd__o211a_4,o211a,4,combinational,2-input OR into first input of 3-input AND.,X = ((A1 | A2) & B1 & C1),A1 A2 B1 C1,X,60,,equiv-pass
+O211AID1,sky130_fd_sc_hd__o211ai_1,o211ai,1,combinational,2-input OR into first input of 3-input NAND.,Y = !((A1 | A2) & B1 & C1),A1 A2 B1 C1,Y,20,,equiv-pass
+O211AID2,sky130_fd_sc_hd__o211ai_2,o211ai,2,combinational,2-input OR into first input of 3-input NAND.,Y = !((A1 | A2) & B1 & C1),A1 A2 B1 C1,Y,40,,equiv-pass
+O211AID4,sky130_fd_sc_hd__o211ai_4,o211ai,4,combinational,2-input OR into first input of 3-input NAND.,Y = !((A1 | A2) & B1 & C1),A1 A2 B1 C1,Y,80,,equiv-pass
+O21AD1,sky130_fd_sc_hd__o21a_1,o21a,1,combinational,2-input OR into first input of 2-input AND.,X = ((A1 | A2) & B1),A1 A2 B1,X,20,,equiv-pass
+O21AD2,sky130_fd_sc_hd__o21a_2,o21a,2,combinational,2-input OR into first input of 2-input AND.,X = ((A1 | A2) & B1),A1 A2 B1,X,25,,equiv-pass
+O21AD4,sky130_fd_sc_hd__o21a_4,o21a,4,combinational,2-input OR into first input of 2-input AND.,X = ((A1 | A2) & B1),A1 A2 B1,X,50,,equiv-pass
+O21AID0,sky130_fd_sc_hd__o21ai_0,o21ai,0,combinational,2-input OR into first input of 2-input NAND.,Y = !((A1 | A2) & B1),A1 A2 B1,Y,9,,equiv-pass
+O21AID1,sky130_fd_sc_hd__o21ai_1,o21ai,1,combinational,2-input OR into first input of 2-input NAND.,Y = !((A1 | A2) & B1),A1 A2 B1,Y,14,,equiv-pass
+O21AID2,sky130_fd_sc_hd__o21ai_2,o21ai,2,combinational,2-input OR into first input of 2-input NAND.,Y = !((A1 | A2) & B1),A1 A2 B1,Y,30,,equiv-pass
+O21AID4,sky130_fd_sc_hd__o21ai_4,o21ai,4,combinational,2-input OR into first input of 2-input NAND.,Y = !((A1 | A2) & B1),A1 A2 B1,Y,60,,equiv-pass
+O21BAD1,sky130_fd_sc_hd__o21ba_1,o21ba,1,combinational,"2-input OR into first input of 2-input AND,",X = ((A1 | A2) & !B1_N),A1 A2 B1_N,X,22,,equiv-pass
+O21BAD2,sky130_fd_sc_hd__o21ba_2,o21ba,2,combinational,"2-input OR into first input of 2-input AND,",X = ((A1 | A2) & !B1_N),A1 A2 B1_N,X,27,,equiv-pass
+O21BAD4,sky130_fd_sc_hd__o21ba_4,o21ba,4,combinational,"2-input OR into first input of 2-input AND,",X = ((A1 | A2) & !B1_N),A1 A2 B1_N,X,55,,equiv-pass
+O21BAID1,sky130_fd_sc_hd__o21bai_1,o21bai,1,combinational,"2-input OR into first input of 2-input NAND, 2nd iput",Y = !((A1 | A2) & !B1_N),A1 A2 B1_N,Y,17,,equiv-pass
+O21BAID2,sky130_fd_sc_hd__o21bai_2,o21bai,2,combinational,"2-input OR into first input of 2-input NAND, 2nd iput",Y = !((A1 | A2) & !B1_N),A1 A2 B1_N,Y,32,,equiv-pass
+O21BAID4,sky130_fd_sc_hd__o21bai_4,o21bai,4,combinational,"2-input OR into first input of 2-input NAND, 2nd iput",Y = !((A1 | A2) & !B1_N),A1 A2 B1_N,Y,65,,equiv-pass
+O221AD1,sky130_fd_sc_hd__o221a_1,o221a,1,combinational,2-input OR into first two inputs of 3-input AND.,X = ((A1 | A2) & (B1 | B2) & C1),A1 A2 B1 B2 C1,X,30,,equiv-pass
+O221AD2,sky130_fd_sc_hd__o221a_2,o221a,2,combinational,2-input OR into first two inputs of 3-input AND.,X = ((A1 | A2) & (B1 | B2) & C1),A1 A2 B1 B2 C1,X,35,,equiv-pass
+O221AD4,sky130_fd_sc_hd__o221a_4,o221a,4,combinational,2-input OR into first two inputs of 3-input AND.,X = ((A1 | A2) & (B1 | B2) & C1),A1 A2 B1 B2 C1,X,70,,equiv-pass
+O221AID1,sky130_fd_sc_hd__o221ai_1,o221ai,1,combinational,2-input OR into first two inputs of 3-input NAND.,Y = !((A1 | A2) & (B1 | B2) & C1),A1 A2 B1 B2 C1,Y,25,,equiv-pass
+O221AID2,sky130_fd_sc_hd__o221ai_2,o221ai,2,combinational,2-input OR into first two inputs of 3-input NAND.,Y = !((A1 | A2) & (B1 | B2) & C1),A1 A2 B1 B2 C1,Y,50,,equiv-pass
+O221AID4,sky130_fd_sc_hd__o221ai_4,o221ai,4,combinational,2-input OR into first two inputs of 3-input NAND.,Y = !((A1 | A2) & (B1 | B2) & C1),A1 A2 B1 B2 C1,Y,100,,equiv-pass
+O22AD1,sky130_fd_sc_hd__o22a_1,o22a,1,combinational,2-input OR into both inputs of 2-input AND.,X = ((A1 | A2) & (B1 | B2)),A1 A2 B1 B2,X,25,,equiv-pass
+O22AD2,sky130_fd_sc_hd__o22a_2,o22a,2,combinational,2-input OR into both inputs of 2-input AND.,X = ((A1 | A2) & (B1 | B2)),A1 A2 B1 B2,X,30,,equiv-pass
+O22AD4,sky130_fd_sc_hd__o22a_4,o22a,4,combinational,2-input OR into both inputs of 2-input AND.,X = ((A1 | A2) & (B1 | B2)),A1 A2 B1 B2,X,60,,equiv-pass
+O22AID1,sky130_fd_sc_hd__o22ai_1,o22ai,1,combinational,2-input OR into both inputs of 2-input NAND.,Y = !((A1 | A2) & (B1 | B2)),A1 A2 B1 B2,Y,20,,equiv-pass
+O22AID2,sky130_fd_sc_hd__o22ai_2,o22ai,2,combinational,2-input OR into both inputs of 2-input NAND.,Y = !((A1 | A2) & (B1 | B2)),A1 A2 B1 B2,Y,40,,equiv-pass
+O22AID4,sky130_fd_sc_hd__o22ai_4,o22ai,4,combinational,2-input OR into both inputs of 2-input NAND.,Y = !((A1 | A2) & (B1 | B2)),A1 A2 B1 B2,Y,80,,equiv-pass
+O2BB2AD1,sky130_fd_sc_hd__o2bb2a_1,o2bb2a,1,combinational,2-input NAND and 2-input OR into 2-input AND.,X = (!(A1 & A2) & (B1 | B2)),A1_N A2_N B1 B2,X,15,,equiv-pass
+O2BB2AD2,sky130_fd_sc_hd__o2bb2a_2,o2bb2a,2,combinational,2-input NAND and 2-input OR into 2-input AND.,X = (!(A1 & A2) & (B1 | B2)),A1_N A2_N B1 B2,X,25,,equiv-pass
+O2BB2AD4,sky130_fd_sc_hd__o2bb2a_4,o2bb2a,4,combinational,2-input NAND and 2-input OR into 2-input AND.,X = (!(A1 & A2) & (B1 | B2)),A1_N A2_N B1 B2,X,70,,equiv-pass
+O2BB2AID1,sky130_fd_sc_hd__o2bb2ai_1,o2bb2ai,1,combinational,2-input NAND and 2-input OR into 2-input NAND.,Y = !(!(A1 & A2) & (B1 | B2)),A1_N A2_N B1 B2,Y,25,,equiv-pass
+O2BB2AID2,sky130_fd_sc_hd__o2bb2ai_2,o2bb2ai,2,combinational,2-input NAND and 2-input OR into 2-input NAND.,Y = !(!(A1 & A2) & (B1 | B2)),A1_N A2_N B1 B2,Y,50,,equiv-pass
+O2BB2AID4,sky130_fd_sc_hd__o2bb2ai_4,o2bb2ai,4,combinational,2-input NAND and 2-input OR into 2-input NAND.,Y = !(!(A1 & A2) & (B1 | B2)),A1_N A2_N B1 B2,Y,100,,equiv-pass
+O311AD1,sky130_fd_sc_hd__o311a_1,o311a,1,combinational,3-input OR into 3-input AND.,X = ((A1 | A2 | A3) & B1 & C1),A1 A2 A3 B1 C1,X,30,,equiv-pass
+O311AD2,sky130_fd_sc_hd__o311a_2,o311a,2,combinational,3-input OR into 3-input AND.,X = ((A1 | A2 | A3) & B1 & C1),A1 A2 A3 B1 C1,X,35,,equiv-pass
+O311AD4,sky130_fd_sc_hd__o311a_4,o311a,4,combinational,3-input OR into 3-input AND.,X = ((A1 | A2 | A3) & B1 & C1),A1 A2 A3 B1 C1,X,70,,equiv-pass
+O311AID0,sky130_fd_sc_hd__o311ai_0,o311ai,0,combinational,3-input OR into 3-input NAND.,Y = !((A1 | A2 | A3) & B1 & C1),A1 A2 A3 B1 C1,Y,15,,equiv-pass
+O311AID1,sky130_fd_sc_hd__o311ai_1,o311ai,1,combinational,3-input OR into 3-input NAND.,Y = !((A1 | A2 | A3) & B1 & C1),A1 A2 A3 B1 C1,Y,25,,equiv-pass
+O311AID2,sky130_fd_sc_hd__o311ai_2,o311ai,2,combinational,3-input OR into 3-input NAND.,Y = !((A1 | A2 | A3) & B1 & C1),A1 A2 A3 B1 C1,Y,50,,equiv-pass
+O311AID4,sky130_fd_sc_hd__o311ai_4,o311ai,4,combinational,3-input OR into 3-input NAND.,Y = !((A1 | A2 | A3) & B1 & C1),A1 A2 A3 B1 C1,Y,100,,equiv-pass
+O31AD1,sky130_fd_sc_hd__o31a_1,o31a,1,combinational,3-input OR into 2-input AND.,X = ((A1 | A2 | A3) & B1),A1 A2 A3 B1,X,25,,equiv-pass
+O31AD2,sky130_fd_sc_hd__o31a_2,o31a,2,combinational,3-input OR into 2-input AND.,X = ((A1 | A2 | A3) & B1),A1 A2 A3 B1,X,30,,equiv-pass
+O31AD4,sky130_fd_sc_hd__o31a_4,o31a,4,combinational,3-input OR into 2-input AND.,X = ((A1 | A2 | A3) & B1),A1 A2 A3 B1,X,60,,equiv-pass
+O31AID1,sky130_fd_sc_hd__o31ai_1,o31ai,1,combinational,3-input OR into 2-input NAND.,Y = !((A1 | A2 | A3) & B1),A1 A2 A3 B1,Y,20,,equiv-pass
+O31AID2,sky130_fd_sc_hd__o31ai_2,o31ai,2,combinational,3-input OR into 2-input NAND.,Y = !((A1 | A2 | A3) & B1),A1 A2 A3 B1,Y,40,,equiv-pass
+O31AID4,sky130_fd_sc_hd__o31ai_4,o31ai,4,combinational,3-input OR into 2-input NAND.,Y = !((A1 | A2 | A3) & B1),A1 A2 A3 B1,Y,80,,equiv-pass
+O32AD1,sky130_fd_sc_hd__o32a_1,o32a,1,combinational,3-input OR and 2-input OR into 2-input AND.,X = ((A1 | A2 | A3) & (B1 | B2)),A1 A2 A3 B1 B2,X,30,,equiv-pass
+O32AD2,sky130_fd_sc_hd__o32a_2,o32a,2,combinational,3-input OR and 2-input OR into 2-input AND.,X = ((A1 | A2 | A3) & (B1 | B2)),A1 A2 A3 B1 B2,X,35,,equiv-pass
+O32AD4,sky130_fd_sc_hd__o32a_4,o32a,4,combinational,3-input OR and 2-input OR into 2-input AND.,X = ((A1 | A2 | A3) & (B1 | B2)),A1 A2 A3 B1 B2,X,70,,equiv-pass
+O32AID1,sky130_fd_sc_hd__o32ai_1,o32ai,1,combinational,3-input OR and 2-input OR into 2-input NAND.,Y = !((A1 | A2 | A3) & (B1 | B2)),A1 A2 A3 B1 B2,Y,25,,equiv-pass
+O32AID2,sky130_fd_sc_hd__o32ai_2,o32ai,2,combinational,3-input OR and 2-input OR into 2-input NAND.,Y = !((A1 | A2 | A3) & (B1 | B2)),A1 A2 A3 B1 B2,Y,50,,equiv-pass
+O32AID4,sky130_fd_sc_hd__o32ai_4,o32ai,4,combinational,3-input OR and 2-input OR into 2-input NAND.,Y = !((A1 | A2 | A3) & (B1 | B2)),A1 A2 A3 B1 B2,Y,100,,equiv-pass
+O41AD1,sky130_fd_sc_hd__o41a_1,o41a,1,combinational,4-input OR into 2-input AND.,X = ((A1 | A2 | A3 | A4) & B1),A1 A2 A3 A4 B1,X,30,,equiv-pass
+O41AD2,sky130_fd_sc_hd__o41a_2,o41a,2,combinational,4-input OR into 2-input AND.,X = ((A1 | A2 | A3 | A4) & B1),A1 A2 A3 A4 B1,X,35,,equiv-pass
+O41AD4,sky130_fd_sc_hd__o41a_4,o41a,4,combinational,4-input OR into 2-input AND.,X = ((A1 | A2 | A3 | A4) & B1),A1 A2 A3 A4 B1,X,70,,equiv-pass
+O41AID1,sky130_fd_sc_hd__o41ai_1,o41ai,1,combinational,4-input OR into 2-input NAND.,Y = !((A1 | A2 | A3 | A4) & B1),A1 A2 A3 A4 B1,Y,25,,equiv-pass
+O41AID2,sky130_fd_sc_hd__o41ai_2,o41ai,2,combinational,4-input OR into 2-input NAND.,Y = !((A1 | A2 | A3 | A4) & B1),A1 A2 A3 A4 B1,Y,50,,equiv-pass
+O41AID4,sky130_fd_sc_hd__o41ai_4,o41ai,4,combinational,4-input OR into 2-input NAND.,Y = !((A1 | A2 | A3 | A4) & B1),A1 A2 A3 A4 B1,Y,100,,equiv-pass
+OR2D0,sky130_fd_sc_hd__or2_0,or2,0,combinational,2-input OR.,,A B,X,7,,equiv-pass
+OR2D1,sky130_fd_sc_hd__or2_1,or2,1,combinational,2-input OR.,,A B,X,9,,equiv-pass
+OR2D2,sky130_fd_sc_hd__or2_2,or2,2,combinational,2-input OR.,,A B,X,14,,equiv-pass
+OR2D4,sky130_fd_sc_hd__or2_4,or2,4,combinational,2-input OR.,,A B,X,30,,equiv-pass
+OR2BD1,sky130_fd_sc_hd__or2b_1,or2b,1,combinational,"2-input OR, first input inverted.",,A B_N,X,11,,equiv-pass
+OR2BD2,sky130_fd_sc_hd__or2b_2,or2b,2,combinational,"2-input OR, first input inverted.",,A B_N,X,16,,equiv-pass
+OR2BD4,sky130_fd_sc_hd__or2b_4,or2b,4,combinational,"2-input OR, first input inverted.",,A B_N,X,32,,equiv-pass
+OR3D1,sky130_fd_sc_hd__or3_1,or3,1,combinational,3-input OR.,,A B C,X,11,,equiv-pass
+OR3D2,sky130_fd_sc_hd__or3_2,or3,2,combinational,3-input OR.,,A B C,X,16,,equiv-pass
+OR3D4,sky130_fd_sc_hd__or3_4,or3,4,combinational,3-input OR.,,A B C,X,35,,equiv-pass
+OR3BD1,sky130_fd_sc_hd__or3b_1,or3b,1,combinational,"3-input OR, first input inverted.",,A B C_N,X,13,,equiv-pass
+OR3BD2,sky130_fd_sc_hd__or3b_2,or3b,2,combinational,"3-input OR, first input inverted.",,A B C_N,X,18,,equiv-pass
+OR3BD4,sky130_fd_sc_hd__or3b_4,or3b,4,combinational,"3-input OR, first input inverted.",,A B C_N,X,37,,equiv-pass
+OR4D1,sky130_fd_sc_hd__or4_1,or4,1,combinational,4-input OR.,,A B C D,X,13,,equiv-pass
+OR4D2,sky130_fd_sc_hd__or4_2,or4,2,combinational,4-input OR.,,A B C D,X,18,,equiv-pass
+OR4D4,sky130_fd_sc_hd__or4_4,or4,4,combinational,4-input OR.,,A B C D,X,40,,equiv-pass
+OR4BD1,sky130_fd_sc_hd__or4b_1,or4b,1,combinational,"4-input OR, first input inverted.",,A B C D_N,X,15,,equiv-pass
+OR4BD2,sky130_fd_sc_hd__or4b_2,or4b,2,combinational,"4-input OR, first input inverted.",,A B C D_N,X,20,,equiv-pass
+OR4BD4,sky130_fd_sc_hd__or4b_4,or4b,4,combinational,"4-input OR, first input inverted.",,A B C D_N,X,42,,equiv-pass
+OR4BBD1,sky130_fd_sc_hd__or4bb_1,or4bb,1,combinational,"4-input OR, first two inputs inverted.",,A B C_N D_N,X,17,,equiv-pass
+OR4BBD2,sky130_fd_sc_hd__or4bb_2,or4bb,2,combinational,"4-input OR, first two inputs inverted.",,A B C_N D_N,X,22,,equiv-pass
+OR4BBD4,sky130_fd_sc_hd__or4bb_4,or4bb,4,combinational,"4-input OR, first two inputs inverted.",,A B C_N D_N,X,44,,equiv-pass
+PROBE_PD8,sky130_fd_sc_hd__probe_p_8,probe_p,8,combinational,Virtual voltage probe point.,,A,X,55,,equiv-pass
+PROBEC_PD8,sky130_fd_sc_hd__probec_p_8,probec_p,8,combinational,Virtual current probe point.,,A,X,55,,equiv-pass
+SDFBBND1,sky130_fd_sc_hd__sdfbbn_1,sdfbbn,1,sequential,"Scan delay flop, inverted set, inverted reset, inverted",,D SCD SCE CLK_N SET_B RESET_B,Q Q_N,70,,equiv-pass
+SDFBBND2,sky130_fd_sc_hd__sdfbbn_2,sdfbbn,2,sequential,"Scan delay flop, inverted set, inverted reset, inverted",,D SCD SCE CLK_N SET_B RESET_B,Q Q_N,80,,equiv-pass
+SDFBBPD1,sky130_fd_sc_hd__sdfbbp_1,sdfbbp,1,sequential,"Scan delay flop, inverted set, inverted reset, non-inverted",,D SCD SCE CLK SET_B RESET_B,Q Q_N,70,,equiv-pass
+SDFRBPD1,sky130_fd_sc_hd__sdfrbp_1,sdfrbp,1,sequential,"Scan delay flop, inverted reset, non-inverted clock,",,CLK D SCD SCE RESET_B,Q Q_N,58,,equiv-pass
+SDFRBPD2,sky130_fd_sc_hd__sdfrbp_2,sdfrbp,2,sequential,"Scan delay flop, inverted reset, non-inverted clock,",,CLK D SCD SCE RESET_B,Q Q_N,70,,equiv-pass
+SDFRTND1,sky130_fd_sc_hd__sdfrtn_1,sdfrtn,1,sequential,"Scan delay flop, inverted reset, inverted clock,",,CLK_N D SCD SCE RESET_B,Q,52,,equiv-pass
+SDFRTPD1,sky130_fd_sc_hd__sdfrtp_1,sdfrtp,1,sequential,"Scan delay flop, inverted reset, non-inverted clock,",,CLK D SCD SCE RESET_B,Q,52,,equiv-pass
+SDFRTPD2,sky130_fd_sc_hd__sdfrtp_2,sdfrtp,2,sequential,"Scan delay flop, inverted reset, non-inverted clock,",,CLK D SCD SCE RESET_B,Q,57,,equiv-pass
+SDFRTPD4,sky130_fd_sc_hd__sdfrtp_4,sdfrtp,4,sequential,"Scan delay flop, inverted reset, non-inverted clock,",,CLK D SCD SCE RESET_B,Q,67,,equiv-pass
+SDFSBPD1,sky130_fd_sc_hd__sdfsbp_1,sdfsbp,1,sequential,"Scan delay flop, inverted set, non-inverted clock,",,CLK D SCD SCE SET_B,Q Q_N,60,,equiv-pass
+SDFSBPD2,sky130_fd_sc_hd__sdfsbp_2,sdfsbp,2,sequential,"Scan delay flop, inverted set, non-inverted clock,",,CLK D SCD SCE SET_B,Q Q_N,70,,equiv-pass
+SDFSTPD1,sky130_fd_sc_hd__sdfstp_1,sdfstp,1,sequential,"Scan delay flop, inverted set, non-inverted clock,",,CLK D SCD SCE SET_B,Q,55,,equiv-pass
+SDFSTPD2,sky130_fd_sc_hd__sdfstp_2,sdfstp,2,sequential,"Scan delay flop, inverted set, non-inverted clock,",,CLK D SCD SCE SET_B,Q,60,,equiv-pass
+SDFSTPD4,sky130_fd_sc_hd__sdfstp_4,sdfstp,4,sequential,"Scan delay flop, inverted set, non-inverted clock,",,CLK D SCD SCE SET_B,Q,72,,equiv-pass
+SDFXBPD1,sky130_fd_sc_hd__sdfxbp_1,sdfxbp,1,sequential,"Scan delay flop, non-inverted clock, complementary outputs.",,CLK D SCD SCE,Q Q_N,55,,equiv-pass
+SDFXBPD2,sky130_fd_sc_hd__sdfxbp_2,sdfxbp,2,sequential,"Scan delay flop, non-inverted clock, complementary outputs.",,CLK D SCD SCE,Q Q_N,65,,equiv-pass
+SDFXTPD1,sky130_fd_sc_hd__sdfxtp_1,sdfxtp,1,sequential,"Scan delay flop, non-inverted clock, single output.",,CLK D SCD SCE,Q,47,,equiv-pass
+SDFXTPD2,sky130_fd_sc_hd__sdfxtp_2,sdfxtp,2,sequential,"Scan delay flop, non-inverted clock, single output.",,CLK D SCD SCE,Q,52,,equiv-pass
+SDFXTPD4,sky130_fd_sc_hd__sdfxtp_4,sdfxtp,4,sequential,"Scan delay flop, non-inverted clock, single output.",,CLK D SCD SCE,Q,62,,equiv-pass
+SDLCLKPD1,sky130_fd_sc_hd__sdlclkp_1,sdlclkp,1,sequential,Scan gated clock.,,SCE GATE CLK,GCLK,34,,equiv-pass
+SDLCLKPD2,sky130_fd_sc_hd__sdlclkp_2,sdlclkp,2,sequential,Scan gated clock.,,SCE GATE CLK,GCLK,39,,equiv-pass
+SDLCLKPD4,sky130_fd_sc_hd__sdlclkp_4,sdlclkp,4,sequential,Scan gated clock.,,SCE GATE CLK,GCLK,53,,equiv-pass
+SEDFXBPD1,sky130_fd_sc_hd__sedfxbp_1,sedfxbp,1,sequential,"Scan delay flop, data enable, non-inverted clock,",,CLK D DE SCD SCE,Q Q_N,64,,equiv-pass
+SEDFXBPD2,sky130_fd_sc_hd__sedfxbp_2,sedfxbp,2,sequential,"Scan delay flop, data enable, non-inverted clock,",,CLK D DE SCD SCE,Q Q_N,74,,equiv-pass
+SEDFXTPD1,sky130_fd_sc_hd__sedfxtp_1,sedfxtp,1,sequential,"Scan delay flop, data enable, non-inverted clock,",,CLK D DE SCD SCE,Q,59,,equiv-pass
+SEDFXTPD2,sky130_fd_sc_hd__sedfxtp_2,sedfxtp,2,sequential,"Scan delay flop, data enable, non-inverted clock,",,CLK D DE SCD SCE,Q,64,,equiv-pass
+SEDFXTPD4,sky130_fd_sc_hd__sedfxtp_4,sedfxtp,4,sequential,"Scan delay flop, data enable, non-inverted clock,",,CLK D DE SCD SCE,Q,74,,equiv-pass
+TAPD1,sky130_fd_sc_hd__tap_1,tap,1,physical,Tap cell with no tap connections (no contacts on metal1).,,,,0,,n/a (no testable I/O)
+TAPD2,sky130_fd_sc_hd__tap_2,tap,2,physical,Tap cell with no tap connections (no contacts on metal1).,,,,0,,n/a (no testable I/O)
+TAPVGNDD1,sky130_fd_sc_hd__tapvgnd_1,tapvgnd,1,physical,"Tap cell with tap to ground, isolated power connection",,,,0,,n/a (no testable I/O)
+TAPVGND2D1,sky130_fd_sc_hd__tapvgnd2_1,tapvgnd2,1,physical,"Tap cell with tap to ground, isolated power connection",,,,0,,n/a (no testable I/O)
+TAPVPWRVGNDD1,sky130_fd_sc_hd__tapvpwrvgnd_1,tapvpwrvgnd,1,physical,Substrate and well tap cell.,,,,0,,n/a (no testable I/O)
+XNOR2D1,sky130_fd_sc_hd__xnor2_1,xnor2,1,combinational,2-input exclusive NOR.,Y = !(A ^ B),A B,Y,25,,equiv-pass
+XNOR2D2,sky130_fd_sc_hd__xnor2_2,xnor2,2,combinational,2-input exclusive NOR.,Y = !(A ^ B),A B,Y,50,,equiv-pass
+XNOR2D4,sky130_fd_sc_hd__xnor2_4,xnor2,4,combinational,2-input exclusive NOR.,Y = !(A ^ B),A B,Y,100,,equiv-pass
+XNOR3D1,sky130_fd_sc_hd__xnor3_1,xnor3,1,combinational,3-input exclusive NOR.,,A B C,X,46,,equiv-pass
+XNOR3D2,sky130_fd_sc_hd__xnor3_2,xnor3,2,combinational,3-input exclusive NOR.,,A B C,X,51,,equiv-pass
+XNOR3D4,sky130_fd_sc_hd__xnor3_4,xnor3,4,combinational,3-input exclusive NOR.,,A B C,X,61,,equiv-pass
+XOR2D1,sky130_fd_sc_hd__xor2_1,xor2,1,combinational,2-input exclusive OR.,X = A ^ B,A B,X,25,,equiv-pass
+XOR2D2,sky130_fd_sc_hd__xor2_2,xor2,2,combinational,2-input exclusive OR.,X = A ^ B,A B,X,50,,equiv-pass
+XOR2D4,sky130_fd_sc_hd__xor2_4,xor2,4,combinational,2-input exclusive OR.,X = A ^ B,A B,X,100,,equiv-pass
+XOR3D1,sky130_fd_sc_hd__xor3_1,xor3,1,combinational,3-input exclusive OR.,X = A ^ B ^ C,A B C,X,46,,equiv-pass
+XOR3D2,sky130_fd_sc_hd__xor3_2,xor3,2,combinational,3-input exclusive OR.,X = A ^ B ^ C,A B C,X,51,,equiv-pass
+XOR3D4,sky130_fd_sc_hd__xor3_4,xor3,4,combinational,3-input exclusive OR.,X = A ^ B ^ C,A B C,X,61,,equiv-pass

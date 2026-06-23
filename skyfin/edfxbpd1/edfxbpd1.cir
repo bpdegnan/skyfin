@@ -1,0 +1,60 @@
+* EDFXBPD1 : abstract conversion of sky130_fd_sc_hd__edfxbp_1
+* 52 abstract devices (width -> parallel min-width fingers)
+.subckt EDFXBPD1 CLK D DE VGND VPWR Q Q_N
+XEDFXBPD1B CLK D DE VGND VGND VPWR VPWR Q Q_N EDFXBPD1B
+.ends EDFXBPD1
+
+.subckt EDFXBPD1B CLK D DE VGND VNB VPB VPWR Q Q_N
+X0 a_986_413# a_27_47# a_1077_413# VPB abpmos
+X1 Q a_1591_413# VGND VNB abnmos
+X2 Q a_1591_413# VGND VNB abnmos
+X3 a_729_47# a_791_264# a_299_47# VNB abnmos
+X4 a_1150_159# a_986_413# VGND VNB abnmos
+X5 a_1150_159# a_986_413# VGND VNB abnmos
+X6 a_299_47# D a_381_369# VPB abpmos
+X7 a_299_47# D a_381_369# VPB abpmos
+X8 a_381_369# a_423_343# VPWR VPB abpmos
+X9 a_381_369# a_423_343# VPWR VPB abpmos
+X10 a_791_264# a_1591_413# VGND VNB abnmos
+X11 a_1591_413# a_193_47# a_1675_413# VPB abpmos
+X12 a_1514_47# a_1150_159# VGND VNB abnmos
+X13 a_729_369# DE VPWR VPB abpmos
+X14 a_729_369# DE VPWR VPB abpmos
+X15 a_1150_159# a_986_413# VPWR VPB abpmos
+X16 a_1150_159# a_986_413# VPWR VPB abpmos
+X17 a_381_47# DE VGND VNB abnmos
+X18 a_1500_413# a_27_47# a_1591_413# VPB abpmos
+X19 a_1675_413# a_791_264# VPWR VPB abpmos
+X20 a_729_369# a_791_264# a_299_47# VPB abpmos
+X21 a_729_369# a_791_264# a_299_47# VPB abpmos
+X22 a_423_343# DE VGND VNB abnmos
+X23 Q a_1591_413# VPWR VPB abpmos
+X24 Q a_1591_413# VPWR VPB abpmos
+X25 Q a_1591_413# VPWR VPB abpmos
+X26 a_1101_47# a_1150_159# VGND VNB abnmos
+X27 a_791_264# a_1591_413# VPWR VPB abpmos
+X28 a_791_264# a_1591_413# VPWR VPB abpmos
+X29 a_1077_413# a_1150_159# VPWR VPB abpmos
+X30 a_193_47# a_27_47# VGND VNB abnmos
+X31 a_299_47# a_27_47# a_986_413# VNB abnmos
+X32 a_27_47# CLK VGND VNB abnmos
+X33 a_729_47# a_423_343# VGND VNB abnmos
+X34 a_986_413# a_193_47# a_1101_47# VNB abnmos
+X35 Q_N a_791_264# VGND VNB abnmos
+X36 Q_N a_791_264# VGND VNB abnmos
+X37 a_27_47# CLK VPWR VPB abpmos
+X38 a_27_47# CLK VPWR VPB abpmos
+X39 Q_N a_791_264# VPWR VPB abpmos
+X40 Q_N a_791_264# VPWR VPB abpmos
+X41 Q_N a_791_264# VPWR VPB abpmos
+X42 a_1591_413# a_27_47# a_1717_47# VNB abnmos
+X43 a_193_47# a_27_47# VPWR VPB abpmos
+X44 a_193_47# a_27_47# VPWR VPB abpmos
+X45 a_299_47# a_193_47# a_986_413# VPB abpmos
+X46 a_299_47# D a_381_47# VNB abnmos
+X47 a_423_343# DE VPWR VPB abpmos
+X48 a_423_343# DE VPWR VPB abpmos
+X49 a_1514_47# a_193_47# a_1591_413# VNB abnmos
+X50 a_1500_413# a_1150_159# VPWR VPB abpmos
+X51 a_1717_47# a_791_264# VGND VNB abnmos
+.ends EDFXBPD1B

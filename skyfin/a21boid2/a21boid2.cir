@@ -1,0 +1,40 @@
+* A21BOID2 : abstract conversion of sky130_fd_sc_hd__a21boi_2
+* 32 abstract devices (width -> parallel min-width fingers)
+.subckt A21BOID2 A1 A2 B1_N VGND VPWR Y
+XA21BOID2B A1 A2 B1_N VGND VGND VPWR VPWR Y A21BOID2B
+.ends A21BOID2
+
+.subckt A21BOID2B A1 A2 B1_N VGND VNB VPB VPWR Y
+X0 Y A1 a_637_47# VNB abnmos
+X1 Y A1 a_637_47# VNB abnmos
+X2 a_61_47# B1_N VGND VNB abnmos
+X3 Y a_61_47# VGND VNB abnmos
+X4 Y a_61_47# VGND VNB abnmos
+X5 a_217_297# A2 VPWR VPB abpmos
+X6 a_217_297# A2 VPWR VPB abpmos
+X7 a_217_297# A2 VPWR VPB abpmos
+X8 a_479_47# A2 VGND VNB abnmos
+X9 a_479_47# A2 VGND VNB abnmos
+X10 a_217_297# a_61_47# Y VPB abpmos
+X11 a_217_297# a_61_47# Y VPB abpmos
+X12 a_217_297# a_61_47# Y VPB abpmos
+X13 a_217_297# A2 VPWR VPB abpmos
+X14 a_217_297# A2 VPWR VPB abpmos
+X15 a_217_297# A2 VPWR VPB abpmos
+X16 a_637_47# A2 VGND VNB abnmos
+X17 a_637_47# A2 VGND VNB abnmos
+X18 Y a_61_47# a_217_297# VPB abpmos
+X19 Y a_61_47# a_217_297# VPB abpmos
+X20 Y a_61_47# a_217_297# VPB abpmos
+X21 a_217_297# A1 VPWR VPB abpmos
+X22 a_217_297# A1 VPWR VPB abpmos
+X23 a_217_297# A1 VPWR VPB abpmos
+X24 a_217_297# A1 VPWR VPB abpmos
+X25 a_217_297# A1 VPWR VPB abpmos
+X26 a_217_297# A1 VPWR VPB abpmos
+X27 Y a_61_47# VGND VNB abnmos
+X28 Y a_61_47# VGND VNB abnmos
+X29 a_479_47# A1 Y VNB abnmos
+X30 a_479_47# A1 Y VNB abnmos
+X31 a_61_47# B1_N VPWR VPB abpmos
+.ends A21BOID2B

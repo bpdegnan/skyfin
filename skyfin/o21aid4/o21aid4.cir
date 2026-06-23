@@ -1,0 +1,68 @@
+* O21AID4 : abstract conversion of sky130_fd_sc_hd__o21ai_4
+* 60 abstract devices (width -> parallel min-width fingers)
+.subckt O21AID4 A1 A2 B1 VGND VPWR Y
+XO21AID4B A1 A2 B1 VGND VGND VPWR VPWR Y O21AID4B
+.ends O21AID4
+
+.subckt O21AID4B A1 A2 B1 VGND VNB VPB VPWR Y
+X0 a_115_297# A2 Y VPB abpmos
+X1 a_115_297# A2 Y VPB abpmos
+X2 a_115_297# A2 Y VPB abpmos
+X3 a_32_47# A1 VGND VNB abnmos
+X4 a_32_47# A1 VGND VNB abnmos
+X5 Y B1 a_32_47# VNB abnmos
+X6 Y B1 a_32_47# VNB abnmos
+X7 Y B1 a_32_47# VNB abnmos
+X8 Y B1 a_32_47# VNB abnmos
+X9 Y A2 a_115_297# VPB abpmos
+X10 Y A2 a_115_297# VPB abpmos
+X11 Y A2 a_115_297# VPB abpmos
+X12 a_32_47# B1 Y VNB abnmos
+X13 a_32_47# B1 Y VNB abnmos
+X14 a_32_47# A1 VGND VNB abnmos
+X15 a_32_47# A1 VGND VNB abnmos
+X16 a_115_297# A1 VPWR VPB abpmos
+X17 a_115_297# A1 VPWR VPB abpmos
+X18 a_115_297# A1 VPWR VPB abpmos
+X19 a_32_47# A2 VGND VNB abnmos
+X20 a_32_47# A2 VGND VNB abnmos
+X21 a_115_297# A1 VPWR VPB abpmos
+X22 a_115_297# A1 VPWR VPB abpmos
+X23 a_115_297# A1 VPWR VPB abpmos
+X24 a_115_297# A1 VPWR VPB abpmos
+X25 a_115_297# A1 VPWR VPB abpmos
+X26 a_115_297# A1 VPWR VPB abpmos
+X27 Y B1 VPWR VPB abpmos
+X28 Y B1 VPWR VPB abpmos
+X29 Y B1 VPWR VPB abpmos
+X30 Y B1 VPWR VPB abpmos
+X31 Y B1 VPWR VPB abpmos
+X32 Y B1 VPWR VPB abpmos
+X33 Y B1 VPWR VPB abpmos
+X34 Y B1 VPWR VPB abpmos
+X35 Y B1 VPWR VPB abpmos
+X36 a_32_47# A2 VGND VNB abnmos
+X37 a_32_47# A2 VGND VNB abnmos
+X38 a_115_297# A1 VPWR VPB abpmos
+X39 a_115_297# A1 VPWR VPB abpmos
+X40 a_115_297# A1 VPWR VPB abpmos
+X41 a_32_47# A1 VGND VNB abnmos
+X42 a_32_47# A1 VGND VNB abnmos
+X43 a_32_47# A2 VGND VNB abnmos
+X44 a_32_47# A2 VGND VNB abnmos
+X45 a_115_297# A2 Y VPB abpmos
+X46 a_115_297# A2 Y VPB abpmos
+X47 a_115_297# A2 Y VPB abpmos
+X48 Y A2 a_115_297# VPB abpmos
+X49 Y A2 a_115_297# VPB abpmos
+X50 Y A2 a_115_297# VPB abpmos
+X51 a_32_47# A2 VGND VNB abnmos
+X52 a_32_47# A2 VGND VNB abnmos
+X53 a_32_47# A1 VGND VNB abnmos
+X54 a_32_47# A1 VGND VNB abnmos
+X55 Y B1 VPWR VPB abpmos
+X56 Y B1 VPWR VPB abpmos
+X57 Y B1 VPWR VPB abpmos
+X58 a_32_47# B1 Y VNB abnmos
+X59 a_32_47# B1 Y VNB abnmos
+.ends O21AID4B

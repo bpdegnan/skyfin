@@ -1,0 +1,73 @@
+* NOR3BD4 : abstract conversion of sky130_fd_sc_hd__nor3b_4
+* 65 abstract devices (width -> parallel min-width fingers)
+.subckt NOR3BD4 A B C_N VGND VPWR Y
+XNOR3BD4B A B C_N VGND VGND VPWR VPWR Y NOR3BD4B
+.ends NOR3BD4
+
+.subckt NOR3BD4B A B C_N VGND VNB VPB VPWR Y
+X0 a_197_297# A VPWR VPB abpmos
+X1 a_197_297# A VPWR VPB abpmos
+X2 a_197_297# A VPWR VPB abpmos
+X3 a_197_297# B a_555_297# VPB abpmos
+X4 a_197_297# B a_555_297# VPB abpmos
+X5 a_197_297# B a_555_297# VPB abpmos
+X6 Y A VGND VNB abnmos
+X7 Y A VGND VNB abnmos
+X8 Y B VGND VNB abnmos
+X9 Y B VGND VNB abnmos
+X10 a_197_297# A VPWR VPB abpmos
+X11 a_197_297# A VPWR VPB abpmos
+X12 a_197_297# A VPWR VPB abpmos
+X13 Y B VGND VNB abnmos
+X14 Y B VGND VNB abnmos
+X15 a_197_297# A VPWR VPB abpmos
+X16 a_197_297# A VPWR VPB abpmos
+X17 a_197_297# A VPWR VPB abpmos
+X18 a_555_297# B a_197_297# VPB abpmos
+X19 a_555_297# B a_197_297# VPB abpmos
+X20 a_555_297# B a_197_297# VPB abpmos
+X21 a_555_297# a_27_47# Y VPB abpmos
+X22 a_555_297# a_27_47# Y VPB abpmos
+X23 a_555_297# a_27_47# Y VPB abpmos
+X24 Y A VGND VNB abnmos
+X25 Y A VGND VNB abnmos
+X26 a_197_297# A VPWR VPB abpmos
+X27 a_197_297# A VPWR VPB abpmos
+X28 a_197_297# A VPWR VPB abpmos
+X29 a_197_297# B a_555_297# VPB abpmos
+X30 a_197_297# B a_555_297# VPB abpmos
+X31 a_197_297# B a_555_297# VPB abpmos
+X32 Y a_27_47# a_555_297# VPB abpmos
+X33 Y a_27_47# a_555_297# VPB abpmos
+X34 Y a_27_47# a_555_297# VPB abpmos
+X35 a_27_47# C_N VPWR VPB abpmos
+X36 a_27_47# C_N VPWR VPB abpmos
+X37 a_27_47# C_N VPWR VPB abpmos
+X38 a_27_47# C_N VGND VNB abnmos
+X39 a_27_47# C_N VGND VNB abnmos
+X40 Y a_27_47# VGND VNB abnmos
+X41 Y a_27_47# VGND VNB abnmos
+X42 Y A VGND VNB abnmos
+X43 Y A VGND VNB abnmos
+X44 Y a_27_47# VGND VNB abnmos
+X45 Y a_27_47# VGND VNB abnmos
+X46 a_555_297# B a_197_297# VPB abpmos
+X47 a_555_297# B a_197_297# VPB abpmos
+X48 a_555_297# B a_197_297# VPB abpmos
+X49 Y a_27_47# a_555_297# VPB abpmos
+X50 Y a_27_47# a_555_297# VPB abpmos
+X51 Y a_27_47# a_555_297# VPB abpmos
+X52 Y B VGND VNB abnmos
+X53 Y B VGND VNB abnmos
+X54 Y a_27_47# VGND VNB abnmos
+X55 Y a_27_47# VGND VNB abnmos
+X56 a_555_297# a_27_47# Y VPB abpmos
+X57 a_555_297# a_27_47# Y VPB abpmos
+X58 a_555_297# a_27_47# Y VPB abpmos
+X59 Y A VGND VNB abnmos
+X60 Y A VGND VNB abnmos
+X61 Y a_27_47# VGND VNB abnmos
+X62 Y a_27_47# VGND VNB abnmos
+X63 Y B VGND VNB abnmos
+X64 Y B VGND VNB abnmos
+.ends NOR3BD4B

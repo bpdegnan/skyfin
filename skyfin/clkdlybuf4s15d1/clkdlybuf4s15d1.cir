@@ -1,0 +1,24 @@
+* CLKDLYBUF4S15D1 : abstract conversion of sky130_fd_sc_hd__clkdlybuf4s15_1
+* 16 abstract devices (width -> parallel min-width fingers)
+.subckt CLKDLYBUF4S15D1 A VGND VPWR X
+XCLKDLYBUF4S15D1B A VGND VGND VPWR VPWR X CLKDLYBUF4S15D1B
+.ends CLKDLYBUF4S15D1
+
+.subckt CLKDLYBUF4S15D1B A VGND VNB VPB VPWR X
+X0 a_394_47# a_282_47# VPWR VPB abpmos
+X1 a_394_47# a_282_47# VPWR VPB abpmos
+X2 a_27_47# A VPWR VPB abpmos
+X3 a_27_47# A VPWR VPB abpmos
+X4 a_27_47# A VPWR VPB abpmos
+X5 a_282_47# a_27_47# VPWR VPB abpmos
+X6 a_282_47# a_27_47# VPWR VPB abpmos
+X7 a_27_47# A VGND VNB abnmos
+X8 X a_394_47# VGND VNB abnmos
+X9 X a_394_47# VPWR VPB abpmos
+X10 X a_394_47# VPWR VPB abpmos
+X11 X a_394_47# VPWR VPB abpmos
+X12 a_282_47# a_27_47# VGND VNB abnmos
+X13 a_282_47# a_27_47# VGND VNB abnmos
+X14 a_394_47# a_282_47# VGND VNB abnmos
+X15 a_394_47# a_282_47# VGND VNB abnmos
+.ends CLKDLYBUF4S15D1B

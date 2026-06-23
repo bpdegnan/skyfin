@@ -1,0 +1,31 @@
+* EINVND2 : abstract conversion of sky130_fd_sc_hd__einvn_2
+* 23 abstract devices (width -> parallel min-width fingers)
+.subckt EINVND2 A TE_B VGND VPWR Z
+XEINVND2B A TE_B VGND VGND VPWR VPWR Z EINVND2B
+.ends EINVND2
+
+.subckt EINVND2B A TE_B VGND VNB VPB VPWR Z
+X0 a_214_120# a_27_47# VGND VNB abnmos
+X1 a_214_120# a_27_47# VGND VNB abnmos
+X2 Z A a_204_309# VPB abpmos
+X3 Z A a_204_309# VPB abpmos
+X4 Z A a_204_309# VPB abpmos
+X5 a_204_309# TE_B VPWR VPB abpmos
+X6 a_204_309# TE_B VPWR VPB abpmos
+X7 a_204_309# TE_B VPWR VPB abpmos
+X8 a_214_120# A Z VNB abnmos
+X9 a_214_120# A Z VNB abnmos
+X10 a_204_309# TE_B VPWR VPB abpmos
+X11 a_204_309# TE_B VPWR VPB abpmos
+X12 a_204_309# TE_B VPWR VPB abpmos
+X13 a_204_309# A Z VPB abpmos
+X14 a_204_309# A Z VPB abpmos
+X15 a_204_309# A Z VPB abpmos
+X16 a_214_120# a_27_47# VGND VNB abnmos
+X17 a_214_120# a_27_47# VGND VNB abnmos
+X18 a_27_47# TE_B VPWR VPB abpmos
+X19 a_27_47# TE_B VPWR VPB abpmos
+X20 a_27_47# TE_B VGND VNB abnmos
+X21 Z A a_214_120# VNB abnmos
+X22 Z A a_214_120# VNB abnmos
+.ends EINVND2B

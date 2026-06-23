@@ -1,0 +1,8 @@
+* FILLD4 : abstract conversion of sky130_fd_sc_hd__fill_4
+* 0 abstract devices (width -> parallel min-width fingers)
+.subckt FILLD4 VGND VPWR
+XFILLD4B VGND VGND VPWR VPWR FILLD4B
+.ends FILLD4
+
+.subckt FILLD4B VGND VNB VPB VPWR
+.ends FILLD4B

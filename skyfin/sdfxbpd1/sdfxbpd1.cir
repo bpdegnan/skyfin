@@ -1,0 +1,63 @@
+* SDFXBPD1 : abstract conversion of sky130_fd_sc_hd__sdfxbp_1
+* 55 abstract devices (width -> parallel min-width fingers)
+.subckt SDFXBPD1 CLK D SCD SCE VGND VPWR Q Q_N
+XSDFXBPD1B CLK D SCD SCE VGND VGND VPWR VPWR Q Q_N SDFXBPD1B
+.ends SDFXBPD1
+
+.subckt SDFXBPD1B CLK D SCD SCE VGND VNB VPB VPWR Q Q_N
+X0 a_1089_183# a_193_47# a_1346_413# VNB abnmos
+X1 a_465_369# SCE VPWR VPB abpmos
+X2 a_465_369# SCE VPWR VPB abpmos
+X3 a_1027_47# a_1089_183# VGND VNB abnmos
+X4 a_1023_413# a_1089_183# VPWR VPB abpmos
+X5 Q_N a_1948_47# VPWR VPB abpmos
+X6 Q_N a_1948_47# VPWR VPB abpmos
+X7 Q_N a_1948_47# VPWR VPB abpmos
+X8 a_299_47# SCE VPWR VPB abpmos
+X9 a_299_47# SCE VPWR VPB abpmos
+X10 a_1517_315# a_1346_413# VGND VNB abnmos
+X11 a_1517_315# a_1346_413# VGND VNB abnmos
+X12 a_930_413# a_193_47# a_1027_47# VNB abnmos
+X13 a_1089_183# a_27_47# a_1346_413# VPB abpmos
+X14 a_1517_315# a_1346_413# VPWR VPB abpmos
+X15 a_1517_315# a_1346_413# VPWR VPB abpmos
+X16 a_1517_315# a_1346_413# VPWR VPB abpmos
+X17 a_640_369# SCD VPWR VPB abpmos
+X18 a_640_369# SCD VPWR VPB abpmos
+X19 Q a_1517_315# VPWR VPB abpmos
+X20 Q a_1517_315# VPWR VPB abpmos
+X21 Q a_1517_315# VPWR VPB abpmos
+X22 a_483_47# D a_556_369# VNB abnmos
+X23 a_1346_413# a_193_47# a_1430_413# VPB abpmos
+X24 a_1948_47# a_1517_315# VGND VNB abnmos
+X25 a_465_369# D a_556_369# VPB abpmos
+X26 a_465_369# D a_556_369# VPB abpmos
+X27 a_556_369# SCE a_657_47# VNB abnmos
+X28 a_1089_183# a_930_413# VGND VNB abnmos
+X29 a_1089_183# a_930_413# VGND VNB abnmos
+X30 a_556_369# a_193_47# a_930_413# VPB abpmos
+X31 a_193_47# a_27_47# VGND VNB abnmos
+X32 a_27_47# CLK VGND VNB abnmos
+X33 a_1089_183# a_930_413# VPWR VPB abpmos
+X34 a_1089_183# a_930_413# VPWR VPB abpmos
+X35 a_27_47# CLK VPWR VPB abpmos
+X36 a_27_47# CLK VPWR VPB abpmos
+X37 a_1948_47# a_1517_315# VPWR VPB abpmos
+X38 a_1948_47# a_1517_315# VPWR VPB abpmos
+X39 a_930_413# a_27_47# a_1023_413# VPB abpmos
+X40 a_556_369# a_27_47# a_930_413# VNB abnmos
+X41 a_1346_413# a_27_47# a_1475_47# VNB abnmos
+X42 Q_N a_1948_47# VGND VNB abnmos
+X43 Q_N a_1948_47# VGND VNB abnmos
+X44 a_193_47# a_27_47# VPWR VPB abpmos
+X45 a_193_47# a_27_47# VPWR VPB abpmos
+X46 a_556_369# a_299_47# a_640_369# VPB abpmos
+X47 a_556_369# a_299_47# a_640_369# VPB abpmos
+X48 a_299_47# SCE VGND VNB abnmos
+X49 a_657_47# SCD VGND VNB abnmos
+X50 a_1430_413# a_1517_315# VPWR VPB abpmos
+X51 a_483_47# a_299_47# VGND VNB abnmos
+X52 a_1475_47# a_1517_315# VGND VNB abnmos
+X53 Q a_1517_315# VGND VNB abnmos
+X54 Q a_1517_315# VGND VNB abnmos
+.ends SDFXBPD1B

@@ -1,0 +1,34 @@
+* EBUFND2 : abstract conversion of sky130_fd_sc_hd__ebufn_2
+* 26 abstract devices (width -> parallel min-width fingers)
+.subckt EBUFND2 A TE_B VGND VPWR Z
+XEBUFND2B A TE_B VGND VGND VPWR VPWR Z EBUFND2B
+.ends EBUFND2
+
+.subckt EBUFND2B A TE_B VGND VNB VPB VPWR Z
+X0 a_214_47# TE_B VGND VNB abnmos
+X1 a_392_47# a_27_47# Z VNB abnmos
+X2 a_392_47# a_27_47# Z VNB abnmos
+X3 a_214_47# TE_B VPWR VPB abpmos
+X4 a_214_47# TE_B VPWR VPB abpmos
+X5 a_27_47# A VPWR VPB abpmos
+X6 a_27_47# A VPWR VPB abpmos
+X7 Z a_27_47# a_320_309# VPB abpmos
+X8 Z a_27_47# a_320_309# VPB abpmos
+X9 Z a_27_47# a_320_309# VPB abpmos
+X10 a_392_47# a_214_47# VGND VNB abnmos
+X11 a_392_47# a_214_47# VGND VNB abnmos
+X12 a_320_309# TE_B VPWR VPB abpmos
+X13 a_320_309# TE_B VPWR VPB abpmos
+X14 a_320_309# TE_B VPWR VPB abpmos
+X15 a_27_47# A VGND VNB abnmos
+X16 a_320_309# a_27_47# Z VPB abpmos
+X17 a_320_309# a_27_47# Z VPB abpmos
+X18 a_320_309# a_27_47# Z VPB abpmos
+X19 a_392_47# a_214_47# VGND VNB abnmos
+X20 a_392_47# a_214_47# VGND VNB abnmos
+X21 a_320_309# TE_B VPWR VPB abpmos
+X22 a_320_309# TE_B VPWR VPB abpmos
+X23 a_320_309# TE_B VPWR VPB abpmos
+X24 Z a_27_47# a_392_47# VNB abnmos
+X25 Z a_27_47# a_392_47# VNB abnmos
+.ends EBUFND2B

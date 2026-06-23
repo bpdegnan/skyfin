@@ -1,0 +1,69 @@
+* XNOR3D4 : abstract conversion of sky130_fd_sc_hd__xnor3_4
+* 61 abstract devices (width -> parallel min-width fingers)
+.subckt XNOR3D4 A B C VGND VPWR X
+XXNOR3D4B A B C VGND VGND VPWR VPWR X XNOR3D4B
+.ends XNOR3D4
+
+.subckt XNOR3D4B A B C VGND VNB VPB VPWR X
+X0 a_1382_49# B a_607_325# VPB abpmos
+X1 a_1382_49# B a_607_325# VPB abpmos
+X2 a_631_49# C a_101_21# VNB abnmos
+X3 a_631_49# C a_101_21# VNB abnmos
+X4 a_1382_49# a_1117_297# VGND VNB abnmos
+X5 a_1382_49# a_1117_297# VGND VNB abnmos
+X6 X a_101_21# VPWR VPB abpmos
+X7 X a_101_21# VPWR VPB abpmos
+X8 X a_101_21# VPWR VPB abpmos
+X9 a_1011_297# B VPWR VPB abpmos
+X10 a_1011_297# B VPWR VPB abpmos
+X11 a_1011_297# B VPWR VPB abpmos
+X12 a_1382_49# B a_631_49# VNB abnmos
+X13 a_1382_49# B a_631_49# VNB abnmos
+X14 a_1117_297# A VGND VNB abnmos
+X15 a_1117_297# A VGND VNB abnmos
+X16 a_1117_297# B a_631_49# VPB abpmos
+X17 a_1117_297# B a_631_49# VPB abpmos
+X18 a_1117_297# B a_607_325# VNB abnmos
+X19 a_1117_297# B a_607_325# VNB abnmos
+X20 X a_101_21# VGND VNB abnmos
+X21 X a_101_21# VGND VNB abnmos
+X22 a_631_49# a_1011_297# a_1382_49# VPB abpmos
+X23 a_631_49# a_1011_297# a_1382_49# VPB abpmos
+X24 X a_101_21# VPWR VPB abpmos
+X25 X a_101_21# VPWR VPB abpmos
+X26 X a_101_21# VPWR VPB abpmos
+X27 a_492_93# C VPWR VPB abpmos
+X28 a_492_93# C VPWR VPB abpmos
+X29 a_101_21# a_492_93# a_631_49# VPB abpmos
+X30 a_101_21# a_492_93# a_631_49# VPB abpmos
+X31 a_101_21# a_492_93# a_607_325# VNB abnmos
+X32 a_101_21# a_492_93# a_607_325# VNB abnmos
+X33 a_631_49# a_1011_297# a_1117_297# VNB abnmos
+X34 a_631_49# a_1011_297# a_1117_297# VNB abnmos
+X35 a_607_325# C a_101_21# VPB abpmos
+X36 a_607_325# C a_101_21# VPB abpmos
+X37 a_607_325# a_1011_297# a_1117_297# VPB abpmos
+X38 a_607_325# a_1011_297# a_1117_297# VPB abpmos
+X39 X a_101_21# VGND VNB abnmos
+X40 X a_101_21# VGND VNB abnmos
+X41 a_1011_297# B VGND VNB abnmos
+X42 a_1011_297# B VGND VNB abnmos
+X43 a_1382_49# a_1117_297# VPWR VPB abpmos
+X44 a_1382_49# a_1117_297# VPWR VPB abpmos
+X45 a_1382_49# a_1117_297# VPWR VPB abpmos
+X46 X a_101_21# VGND VNB abnmos
+X47 X a_101_21# VGND VNB abnmos
+X48 X a_101_21# VGND VNB abnmos
+X49 X a_101_21# VGND VNB abnmos
+X50 a_492_93# C VGND VNB abnmos
+X51 a_1117_297# A VPWR VPB abpmos
+X52 a_1117_297# A VPWR VPB abpmos
+X53 a_1117_297# A VPWR VPB abpmos
+X54 a_607_325# a_1011_297# a_1382_49# VNB abnmos
+X55 X a_101_21# VPWR VPB abpmos
+X56 X a_101_21# VPWR VPB abpmos
+X57 X a_101_21# VPWR VPB abpmos
+X58 X a_101_21# VPWR VPB abpmos
+X59 X a_101_21# VPWR VPB abpmos
+X60 X a_101_21# VPWR VPB abpmos
+.ends XNOR3D4B

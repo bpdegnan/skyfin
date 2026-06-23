@@ -1,0 +1,29 @@
+* DLYMETAL6S2SD1 : abstract conversion of sky130_fd_sc_hd__dlymetal6s2s_1
+* 21 abstract devices (width -> parallel min-width fingers)
+.subckt DLYMETAL6S2SD1 A VGND VPWR X
+XDLYMETAL6S2SD1B A VGND VGND VPWR VPWR X DLYMETAL6S2SD1B
+.ends DLYMETAL6S2SD1
+
+.subckt DLYMETAL6S2SD1B A VGND VNB VPB VPWR X
+X0 a_381_47# X VPWR VPB abpmos
+X1 a_381_47# X VGND VNB abnmos
+X2 a_664_47# a_558_47# VPWR VPB abpmos
+X3 a_62_47# A VGND VNB abnmos
+X4 a_841_47# a_664_47# VPWR VPB abpmos
+X5 a_841_47# a_664_47# VPWR VPB abpmos
+X6 a_841_47# a_664_47# VPWR VPB abpmos
+X7 a_558_47# a_381_47# VGND VNB abnmos
+X8 a_558_47# a_381_47# VGND VNB abnmos
+X9 X a_62_47# VGND VNB abnmos
+X10 X a_62_47# VGND VNB abnmos
+X11 X a_62_47# VPWR VPB abpmos
+X12 X a_62_47# VPWR VPB abpmos
+X13 X a_62_47# VPWR VPB abpmos
+X14 a_664_47# a_558_47# VGND VNB abnmos
+X15 a_62_47# A VPWR VPB abpmos
+X16 a_558_47# a_381_47# VPWR VPB abpmos
+X17 a_558_47# a_381_47# VPWR VPB abpmos
+X18 a_558_47# a_381_47# VPWR VPB abpmos
+X19 a_841_47# a_664_47# VGND VNB abnmos
+X20 a_841_47# a_664_47# VGND VNB abnmos
+.ends DLYMETAL6S2SD1B

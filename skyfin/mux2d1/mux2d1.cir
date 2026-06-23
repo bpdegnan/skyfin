@@ -1,0 +1,23 @@
+* MUX2D1 : abstract conversion of sky130_fd_sc_hd__mux2_1
+* 15 abstract devices (width -> parallel min-width fingers)
+.subckt MUX2D1 A0 A1 S VGND VPWR X
+XMUX2D1B A0 A1 S VGND VGND VPWR VPWR X MUX2D1B
+.ends MUX2D1
+
+.subckt MUX2D1B A0 A1 S VGND VNB VPB VPWR X
+X0 a_218_374# S VPWR VPB abpmos
+X1 a_76_199# A0 a_439_47# VNB abnmos
+X2 a_535_374# a_505_21# VPWR VPB abpmos
+X3 a_505_21# S VPWR VPB abpmos
+X4 a_76_199# A1 a_535_374# VPB abpmos
+X5 a_218_47# A1 a_76_199# VNB abnmos
+X6 a_218_374# A0 a_76_199# VPB abpmos
+X7 X a_76_199# VGND VNB abnmos
+X8 X a_76_199# VGND VNB abnmos
+X9 X a_76_199# VPWR VPB abpmos
+X10 X a_76_199# VPWR VPB abpmos
+X11 X a_76_199# VPWR VPB abpmos
+X12 a_218_47# S VGND VNB abnmos
+X13 a_505_21# S VGND VNB abnmos
+X14 a_439_47# a_505_21# VGND VNB abnmos
+.ends MUX2D1B

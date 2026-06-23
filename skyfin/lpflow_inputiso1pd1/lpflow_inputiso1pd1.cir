@@ -1,0 +1,17 @@
+* LPFLOW_INPUTISO1PD1 : abstract conversion of sky130_fd_sc_hd__lpflow_inputiso1p_1
+* 9 abstract devices (width -> parallel min-width fingers)
+.subckt LPFLOW_INPUTISO1PD1 A SLEEP VGND VPWR X
+XLPFLOW_INPUTISO1PD1B A SLEEP VGND VGND VPWR VPWR X LPFLOW_INPUTISO1PD1B
+.ends LPFLOW_INPUTISO1PD1
+
+.subckt LPFLOW_INPUTISO1PD1B A SLEEP VGND VNB VPB VPWR X
+X0 a_150_297# SLEEP VPWR VPB abpmos
+X1 X a_68_297# VGND VNB abnmos
+X2 X a_68_297# VGND VNB abnmos
+X3 a_68_297# A VGND VNB abnmos
+X4 a_68_297# SLEEP VGND VNB abnmos
+X5 a_68_297# A a_150_297# VPB abpmos
+X6 X a_68_297# VPWR VPB abpmos
+X7 X a_68_297# VPWR VPB abpmos
+X8 X a_68_297# VPWR VPB abpmos
+.ends LPFLOW_INPUTISO1PD1B

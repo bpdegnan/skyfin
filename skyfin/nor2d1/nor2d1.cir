@@ -1,0 +1,18 @@
+* NOR2D1 : abstract conversion of sky130_fd_sc_hd__nor2_1
+* 10 abstract devices (width -> parallel min-width fingers)
+.subckt NOR2D1 A B VGND VPWR Y
+XNOR2D1B A B VGND VGND VPWR VPWR Y NOR2D1B
+.ends NOR2D1
+
+.subckt NOR2D1B A B VGND VNB VPB VPWR Y
+X0 a_109_297# A VPWR VPB abpmos
+X1 a_109_297# A VPWR VPB abpmos
+X2 a_109_297# A VPWR VPB abpmos
+X3 Y A VGND VNB abnmos
+X4 Y A VGND VNB abnmos
+X5 Y B VGND VNB abnmos
+X6 Y B VGND VNB abnmos
+X7 Y B a_109_297# VPB abpmos
+X8 Y B a_109_297# VPB abpmos
+X9 Y B a_109_297# VPB abpmos
+.ends NOR2D1B

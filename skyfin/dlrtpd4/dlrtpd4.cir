@@ -1,0 +1,56 @@
+* DLRTPD4 : abstract conversion of sky130_fd_sc_hd__dlrtp_4
+* 48 abstract devices (width -> parallel min-width fingers)
+.subckt DLRTPD4 D GATE RESET_B VGND VPWR Q
+XDLRTPD4B D GATE RESET_B VGND VGND VPWR VPWR Q DLRTPD4B
+.ends DLRTPD4
+
+.subckt DLRTPD4B D GATE RESET_B VGND VNB VPB VPWR Q
+X0 a_562_413# a_193_47# a_683_413# VPB abpmos
+X1 a_683_413# a_725_21# VPWR VPB abpmos
+X2 a_725_21# a_562_413# a_943_47# VNB abnmos
+X3 a_725_21# a_562_413# a_943_47# VNB abnmos
+X4 Q a_725_21# VGND VNB abnmos
+X5 Q a_725_21# VGND VNB abnmos
+X6 a_466_369# a_300_47# VPWR VPB abpmos
+X7 a_466_369# a_300_47# VPWR VPB abpmos
+X8 a_466_369# a_27_47# a_562_413# VPB abpmos
+X9 a_725_21# RESET_B VPWR VPB abpmos
+X10 a_725_21# RESET_B VPWR VPB abpmos
+X11 a_725_21# RESET_B VPWR VPB abpmos
+X12 Q a_725_21# VPWR VPB abpmos
+X13 Q a_725_21# VPWR VPB abpmos
+X14 Q a_725_21# VPWR VPB abpmos
+X15 a_300_47# D VPWR VPB abpmos
+X16 a_300_47# D VPWR VPB abpmos
+X17 a_943_47# RESET_B VGND VNB abnmos
+X18 a_943_47# RESET_B VGND VNB abnmos
+X19 Q a_725_21# VGND VNB abnmos
+X20 Q a_725_21# VGND VNB abnmos
+X21 Q a_725_21# VGND VNB abnmos
+X22 Q a_725_21# VGND VNB abnmos
+X23 a_466_47# a_300_47# VGND VNB abnmos
+X24 Q a_725_21# VPWR VPB abpmos
+X25 Q a_725_21# VPWR VPB abpmos
+X26 Q a_725_21# VPWR VPB abpmos
+X27 a_466_47# a_193_47# a_562_413# VNB abnmos
+X28 a_300_47# D VGND VNB abnmos
+X29 a_562_413# a_27_47# a_660_47# VNB abnmos
+X30 a_193_47# a_27_47# VGND VNB abnmos
+X31 a_27_47# GATE VGND VNB abnmos
+X32 Q a_725_21# VPWR VPB abpmos
+X33 Q a_725_21# VPWR VPB abpmos
+X34 Q a_725_21# VPWR VPB abpmos
+X35 a_27_47# GATE VPWR VPB abpmos
+X36 a_27_47# GATE VPWR VPB abpmos
+X37 Q a_725_21# VGND VNB abnmos
+X38 Q a_725_21# VGND VNB abnmos
+X39 a_193_47# a_27_47# VPWR VPB abpmos
+X40 a_193_47# a_27_47# VPWR VPB abpmos
+X41 a_725_21# a_562_413# VPWR VPB abpmos
+X42 a_725_21# a_562_413# VPWR VPB abpmos
+X43 a_725_21# a_562_413# VPWR VPB abpmos
+X44 a_660_47# a_725_21# VGND VNB abnmos
+X45 Q a_725_21# VPWR VPB abpmos
+X46 Q a_725_21# VPWR VPB abpmos
+X47 Q a_725_21# VPWR VPB abpmos
+.ends DLRTPD4B

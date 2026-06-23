@@ -1,0 +1,28 @@
+* CLKDLYBUF4S50D2 : abstract conversion of sky130_fd_sc_hd__clkdlybuf4s50_2
+* 20 abstract devices (width -> parallel min-width fingers)
+.subckt CLKDLYBUF4S50D2 A VGND VPWR X
+XCLKDLYBUF4S50D2B A VGND VGND VPWR VPWR X CLKDLYBUF4S50D2B
+.ends CLKDLYBUF4S50D2
+
+.subckt CLKDLYBUF4S50D2B A VGND VNB VPB VPWR X
+X0 a_27_47# A VPWR VPB abpmos
+X1 a_27_47# A VPWR VPB abpmos
+X2 a_27_47# A VPWR VPB abpmos
+X3 a_283_47# a_27_47# VPWR VPB abpmos
+X4 a_283_47# a_27_47# VPWR VPB abpmos
+X5 X a_390_47# VPWR VPB abpmos
+X6 X a_390_47# VPWR VPB abpmos
+X7 X a_390_47# VPWR VPB abpmos
+X8 a_283_47# a_27_47# VGND VNB abnmos
+X9 a_283_47# a_27_47# VGND VNB abnmos
+X10 a_390_47# a_283_47# VGND VNB abnmos
+X11 a_390_47# a_283_47# VGND VNB abnmos
+X12 X a_390_47# VGND VNB abnmos
+X13 X a_390_47# VPWR VPB abpmos
+X14 X a_390_47# VPWR VPB abpmos
+X15 X a_390_47# VPWR VPB abpmos
+X16 X a_390_47# VGND VNB abnmos
+X17 a_390_47# a_283_47# VPWR VPB abpmos
+X18 a_390_47# a_283_47# VPWR VPB abpmos
+X19 a_27_47# A VGND VNB abnmos
+.ends CLKDLYBUF4S50D2B

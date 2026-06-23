@@ -1,0 +1,14 @@
+* LPFLOW_CLKBUFKAPWRD1 : abstract conversion of sky130_fd_sc_hd__lpflow_clkbufkapwr_1
+* 6 abstract devices (width -> parallel min-width fingers) ; secondary power ['KAPWR'] collapsed onto VPWR
+.subckt LPFLOW_CLKBUFKAPWRD1 A VGND VPWR X
+XLPFLOW_CLKBUFKAPWRD1B A VPWR VGND VGND VPWR VPWR X LPFLOW_CLKBUFKAPWRD1B
+.ends LPFLOW_CLKBUFKAPWRD1
+
+.subckt LPFLOW_CLKBUFKAPWRD1B A KAPWR VGND VNB VPB VPWR X
+X0 a_75_212# A VGND VNB abnmos
+X1 X a_75_212# KAPWR VPB abpmos
+X2 X a_75_212# KAPWR VPB abpmos
+X3 X a_75_212# VGND VNB abnmos
+X4 KAPWR A a_75_212# VPB abpmos
+X5 KAPWR A a_75_212# VPB abpmos
+.ends LPFLOW_CLKBUFKAPWRD1B

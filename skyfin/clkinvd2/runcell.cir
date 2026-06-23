@@ -1,0 +1,19 @@
+* auto-generated runcell for CLKINVD2
+.lib "$SPICE_LIB/sky130.lib.spice" tt
+.include "$SPICE_DEVICES/devices.cir"
+.include "clkinvd2.cir"
+
+.param pvdd=1.8V
+VVPWR VDD 0 {pvdd}
+V_GND VGND 0 0
+
+V_A A 0 PWL( 0ns 0 10ns 0 10.1ns {pvdd} 20ns {pvdd} )
+
+X1 A VGND VDD Y CLKINVD2
+CL_Y Y VGND 0.1f
+
+.control
+tran 0.05n 20n
+wrdata result.raw v(A) v(Y)
+.endc
+.end

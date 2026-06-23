@@ -1,0 +1,28 @@
+* NAND4D1 : abstract conversion of sky130_fd_sc_hd__nand4_1
+* 20 abstract devices (width -> parallel min-width fingers)
+.subckt NAND4D1 A B C D VGND VPWR Y
+XNAND4D1B A B C D VGND VGND VPWR VPWR Y NAND4D1B
+.ends NAND4D1
+
+.subckt NAND4D1B A B C D VGND VNB VPB VPWR Y
+X0 a_277_47# A Y VNB abnmos
+X1 a_277_47# A Y VNB abnmos
+X2 a_193_47# B a_277_47# VNB abnmos
+X3 a_193_47# B a_277_47# VNB abnmos
+X4 a_109_47# C a_193_47# VNB abnmos
+X5 a_109_47# C a_193_47# VNB abnmos
+X6 Y B VPWR VPB abpmos
+X7 Y B VPWR VPB abpmos
+X8 Y B VPWR VPB abpmos
+X9 a_109_47# D VGND VNB abnmos
+X10 a_109_47# D VGND VNB abnmos
+X11 Y A VPWR VPB abpmos
+X12 Y A VPWR VPB abpmos
+X13 Y A VPWR VPB abpmos
+X14 Y D VPWR VPB abpmos
+X15 Y D VPWR VPB abpmos
+X16 Y D VPWR VPB abpmos
+X17 Y C VPWR VPB abpmos
+X18 Y C VPWR VPB abpmos
+X19 Y C VPWR VPB abpmos
+.ends NAND4D1B

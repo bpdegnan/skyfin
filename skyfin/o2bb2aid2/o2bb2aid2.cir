@@ -1,0 +1,58 @@
+* O2BB2AID2 : abstract conversion of sky130_fd_sc_hd__o2bb2ai_2
+* 50 abstract devices (width -> parallel min-width fingers)
+.subckt O2BB2AID2 A1_N A2_N B1 B2 VGND VPWR Y
+XO2BB2AID2B A1_N A2_N B1 B2 VGND VGND VPWR VPWR Y O2BB2AID2B
+.ends O2BB2AID2
+
+.subckt O2BB2AID2B A1_N A2_N B1 B2 VGND VNB VPB VPWR Y
+X0 a_113_47# A1_N VGND VNB abnmos
+X1 a_113_47# A1_N VGND VNB abnmos
+X2 a_471_47# B2 VGND VNB abnmos
+X3 a_471_47# B2 VGND VNB abnmos
+X4 a_113_297# A2_N VPWR VPB abpmos
+X5 a_113_297# A2_N VPWR VPB abpmos
+X6 a_113_297# A2_N VPWR VPB abpmos
+X7 a_113_297# A1_N VPWR VPB abpmos
+X8 a_113_297# A1_N VPWR VPB abpmos
+X9 a_113_297# A1_N VPWR VPB abpmos
+X10 a_113_297# A2_N a_113_47# VNB abnmos
+X11 a_113_297# A2_N a_113_47# VNB abnmos
+X12 a_113_297# A2_N VPWR VPB abpmos
+X13 a_113_297# A2_N VPWR VPB abpmos
+X14 a_113_297# A2_N VPWR VPB abpmos
+X15 a_113_297# A1_N VPWR VPB abpmos
+X16 a_113_297# A1_N VPWR VPB abpmos
+X17 a_113_297# A1_N VPWR VPB abpmos
+X18 a_113_47# A1_N VGND VNB abnmos
+X19 a_113_47# A1_N VGND VNB abnmos
+X20 Y a_113_297# a_471_47# VNB abnmos
+X21 Y a_113_297# a_471_47# VNB abnmos
+X22 a_730_297# B1 VPWR VPB abpmos
+X23 a_730_297# B1 VPWR VPB abpmos
+X24 a_730_297# B1 VPWR VPB abpmos
+X25 a_113_47# A2_N a_113_297# VNB abnmos
+X26 a_113_47# A2_N a_113_297# VNB abnmos
+X27 a_471_47# a_113_297# Y VNB abnmos
+X28 a_471_47# a_113_297# Y VNB abnmos
+X29 a_471_47# B1 VGND VNB abnmos
+X30 a_471_47# B1 VGND VNB abnmos
+X31 Y a_113_297# VPWR VPB abpmos
+X32 Y a_113_297# VPWR VPB abpmos
+X33 Y a_113_297# VPWR VPB abpmos
+X34 Y B2 a_730_297# VPB abpmos
+X35 Y B2 a_730_297# VPB abpmos
+X36 Y B2 a_730_297# VPB abpmos
+X37 a_471_47# B1 VGND VNB abnmos
+X38 a_471_47# B1 VGND VNB abnmos
+X39 Y a_113_297# VPWR VPB abpmos
+X40 Y a_113_297# VPWR VPB abpmos
+X41 Y a_113_297# VPWR VPB abpmos
+X42 a_730_297# B2 Y VPB abpmos
+X43 a_730_297# B2 Y VPB abpmos
+X44 a_730_297# B2 Y VPB abpmos
+X45 a_730_297# B1 VPWR VPB abpmos
+X46 a_730_297# B1 VPWR VPB abpmos
+X47 a_730_297# B1 VPWR VPB abpmos
+X48 a_471_47# B2 VGND VNB abnmos
+X49 a_471_47# B2 VGND VNB abnmos
+.ends O2BB2AID2B

@@ -1,0 +1,36 @@
+* DLXTND1 : abstract conversion of sky130_fd_sc_hd__dlxtn_1
+* 28 abstract devices (width -> parallel min-width fingers)
+.subckt DLXTND1 D GATE_N VGND VPWR Q
+XDLXTND1B D GATE_N VGND VGND VPWR VPWR Q DLXTND1B
+.ends DLXTND1
+
+.subckt DLXTND1B D GATE_N VGND VNB VPB VPWR Q
+X0 a_560_47# a_27_47# a_644_413# VPB abpmos
+X1 a_715_21# a_560_47# VPWR VPB abpmos
+X2 a_715_21# a_560_47# VPWR VPB abpmos
+X3 a_715_21# a_560_47# VPWR VPB abpmos
+X4 a_650_47# a_715_21# VGND VNB abnmos
+X5 a_465_369# a_193_47# a_560_47# VPB abpmos
+X6 Q a_715_21# VPWR VPB abpmos
+X7 Q a_715_21# VPWR VPB abpmos
+X8 Q a_715_21# VPWR VPB abpmos
+X9 a_465_369# a_299_47# VPWR VPB abpmos
+X10 a_465_369# a_299_47# VPWR VPB abpmos
+X11 a_715_21# a_560_47# VGND VNB abnmos
+X12 a_715_21# a_560_47# VGND VNB abnmos
+X13 a_299_47# D VPWR VPB abpmos
+X14 a_299_47# D VPWR VPB abpmos
+X15 a_644_413# a_715_21# VPWR VPB abpmos
+X16 a_465_47# a_299_47# VGND VNB abnmos
+X17 a_193_47# a_27_47# VGND VNB abnmos
+X18 a_560_47# a_193_47# a_650_47# VNB abnmos
+X19 a_27_47# GATE_N VGND VNB abnmos
+X20 a_27_47# GATE_N VPWR VPB abpmos
+X21 a_27_47# GATE_N VPWR VPB abpmos
+X22 a_193_47# a_27_47# VPWR VPB abpmos
+X23 a_193_47# a_27_47# VPWR VPB abpmos
+X24 a_299_47# D VGND VNB abnmos
+X25 a_465_47# a_27_47# a_560_47# VNB abnmos
+X26 Q a_715_21# VGND VNB abnmos
+X27 Q a_715_21# VGND VNB abnmos
+.ends DLXTND1B

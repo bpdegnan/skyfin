@@ -1,0 +1,21 @@
+* BUFD2 : abstract conversion of sky130_fd_sc_hd__buf_2
+* 13 abstract devices (width -> parallel min-width fingers)
+.subckt BUFD2 A VGND VPWR X
+XBUFD2B A VGND VGND VPWR VPWR X BUFD2B
+.ends BUFD2
+
+.subckt BUFD2B A VGND VNB VPB VPWR X
+X0 X a_27_47# VGND VNB abnmos
+X1 X a_27_47# VGND VNB abnmos
+X2 a_27_47# A VPWR VPB abpmos
+X3 a_27_47# A VPWR VPB abpmos
+X4 X a_27_47# VGND VNB abnmos
+X5 X a_27_47# VGND VNB abnmos
+X6 X a_27_47# VPWR VPB abpmos
+X7 X a_27_47# VPWR VPB abpmos
+X8 X a_27_47# VPWR VPB abpmos
+X9 X a_27_47# VPWR VPB abpmos
+X10 X a_27_47# VPWR VPB abpmos
+X11 X a_27_47# VPWR VPB abpmos
+X12 a_27_47# A VGND VNB abnmos
+.ends BUFD2B

@@ -1,0 +1,25 @@
+* OR4BBD1 : abstract conversion of sky130_fd_sc_hd__or4bb_1
+* 17 abstract devices (width -> parallel min-width fingers)
+.subckt OR4BBD1 A B C_N D_N VGND VPWR X
+XOR4BBD1B A B C_N D_N VGND VGND VPWR VPWR X OR4BBD1B
+.ends OR4BBD1
+
+.subckt OR4BBD1B A B C_N D_N VGND VNB VPB VPWR X
+X0 a_311_413# a_205_93# VGND VNB abnmos
+X1 a_393_413# a_27_410# a_489_297# VPB abpmos
+X2 a_311_413# a_205_93# a_393_413# VPB abpmos
+X3 a_27_410# C_N VPWR VPB abpmos
+X4 a_27_410# C_N VGND VNB abnmos
+X5 a_489_297# B a_561_297# VPB abpmos
+X6 a_561_297# A VPWR VPB abpmos
+X7 X a_311_413# VPWR VPB abpmos
+X8 X a_311_413# VPWR VPB abpmos
+X9 X a_311_413# VPWR VPB abpmos
+X10 a_311_413# A VGND VNB abnmos
+X11 a_311_413# B VGND VNB abnmos
+X12 a_205_93# D_N VGND VNB abnmos
+X13 a_205_93# D_N VPWR VPB abpmos
+X14 a_311_413# a_27_410# VGND VNB abnmos
+X15 X a_311_413# VGND VNB abnmos
+X16 X a_311_413# VGND VNB abnmos
+.ends OR4BBD1B

@@ -1,0 +1,37 @@
+* MUX4D1 : abstract conversion of sky130_fd_sc_hd__mux4_1
+* 29 abstract devices (width -> parallel min-width fingers)
+.subckt MUX4D1 A0 A1 A2 A3 S0 S1 VGND VPWR X
+XMUX4D1B A0 A1 A2 A3 S0 S1 VGND VGND VPWR VPWR X MUX4D1B
+.ends MUX4D1
+
+.subckt MUX4D1B A0 A1 A2 A3 S0 S1 VGND VNB VPB VPWR X
+X0 a_277_47# S1 a_1478_413# VPB abpmos
+X1 a_757_363# S0 a_750_97# VPB abpmos
+X2 a_668_97# S0 a_750_97# VNB abnmos
+X3 a_750_97# S1 a_1478_413# VNB abnmos
+X4 a_757_363# A2 VPWR VPB abpmos
+X5 a_277_47# S0 a_27_47# VNB abnmos
+X6 a_1478_413# a_1290_413# a_277_47# VNB abnmos
+X7 a_277_47# S0 a_193_413# VPB abpmos
+X8 a_923_363# A3 VPWR VPB abpmos
+X9 X a_1478_413# VPWR VPB abpmos
+X10 X a_1478_413# VPWR VPB abpmos
+X11 X a_1478_413# VPWR VPB abpmos
+X12 a_27_413# a_247_21# a_277_47# VPB abpmos
+X13 a_668_97# A3 VGND VNB abnmos
+X14 X a_1478_413# VGND VNB abnmos
+X15 X a_1478_413# VGND VNB abnmos
+X16 a_193_47# a_247_21# a_277_47# VNB abnmos
+X17 a_247_21# S0 VGND VNB abnmos
+X18 a_27_413# A1 VPWR VPB abpmos
+X19 a_193_413# A0 VPWR VPB abpmos
+X20 a_1478_413# a_1290_413# a_750_97# VPB abpmos
+X21 a_247_21# S0 VPWR VPB abpmos
+X22 a_750_97# a_247_21# a_923_363# VPB abpmos
+X23 a_1290_413# S1 VPWR VPB abpmos
+X24 a_193_47# A0 VGND VNB abnmos
+X25 a_27_47# A1 VGND VNB abnmos
+X26 a_834_97# A2 VGND VNB abnmos
+X27 a_750_97# a_247_21# a_834_97# VNB abnmos
+X28 a_1290_413# S1 VGND VNB abnmos
+.ends MUX4D1B

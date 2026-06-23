@@ -1,0 +1,38 @@
+* NAND3D2 : abstract conversion of sky130_fd_sc_hd__nand3_2
+* 30 abstract devices (width -> parallel min-width fingers)
+.subckt NAND3D2 A B C VGND VPWR Y
+XNAND3D2B A B C VGND VGND VPWR VPWR Y NAND3D2B
+.ends NAND3D2
+
+.subckt NAND3D2B A B C VGND VNB VPB VPWR Y
+X0 a_277_47# C VGND VNB abnmos
+X1 a_277_47# C VGND VNB abnmos
+X2 Y C VPWR VPB abpmos
+X3 Y C VPWR VPB abpmos
+X4 Y C VPWR VPB abpmos
+X5 a_277_47# B a_27_47# VNB abnmos
+X6 a_277_47# B a_27_47# VNB abnmos
+X7 Y C VPWR VPB abpmos
+X8 Y C VPWR VPB abpmos
+X9 Y C VPWR VPB abpmos
+X10 a_27_47# B a_277_47# VNB abnmos
+X11 a_27_47# B a_277_47# VNB abnmos
+X12 a_277_47# C VGND VNB abnmos
+X13 a_277_47# C VGND VNB abnmos
+X14 Y A a_27_47# VNB abnmos
+X15 Y A a_27_47# VNB abnmos
+X16 Y B VPWR VPB abpmos
+X17 Y B VPWR VPB abpmos
+X18 Y B VPWR VPB abpmos
+X19 a_27_47# A Y VNB abnmos
+X20 a_27_47# A Y VNB abnmos
+X21 Y A VPWR VPB abpmos
+X22 Y A VPWR VPB abpmos
+X23 Y A VPWR VPB abpmos
+X24 Y A VPWR VPB abpmos
+X25 Y A VPWR VPB abpmos
+X26 Y A VPWR VPB abpmos
+X27 Y B VPWR VPB abpmos
+X28 Y B VPWR VPB abpmos
+X29 Y B VPWR VPB abpmos
+.ends NAND3D2B

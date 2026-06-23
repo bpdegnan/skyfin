@@ -1,0 +1,19 @@
+* CLKINVD2 : abstract conversion of sky130_fd_sc_hd__clkinv_2
+* 11 abstract devices (width -> parallel min-width fingers)
+.subckt CLKINVD2 A VGND VPWR Y
+XCLKINVD2B A VGND VGND VPWR VPWR Y CLKINVD2B
+.ends CLKINVD2
+
+.subckt CLKINVD2B A VGND VNB VPB VPWR Y
+X0 Y A VPWR VPB abpmos
+X1 Y A VPWR VPB abpmos
+X2 Y A VPWR VPB abpmos
+X3 Y A VPWR VPB abpmos
+X4 Y A VPWR VPB abpmos
+X5 Y A VPWR VPB abpmos
+X6 Y A VPWR VPB abpmos
+X7 Y A VPWR VPB abpmos
+X8 Y A VPWR VPB abpmos
+X9 Y A VGND VNB abnmos
+X10 Y A VGND VNB abnmos
+.ends CLKINVD2B

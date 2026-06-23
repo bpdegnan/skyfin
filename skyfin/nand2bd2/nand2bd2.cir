@@ -1,0 +1,30 @@
+* NAND2BD2 : abstract conversion of sky130_fd_sc_hd__nand2b_2
+* 22 abstract devices (width -> parallel min-width fingers)
+.subckt NAND2BD2 A_N B VGND VPWR Y
+XNAND2BD2B A_N B VGND VGND VPWR VPWR Y NAND2BD2B
+.ends NAND2BD2
+
+.subckt NAND2BD2B A_N B VGND VNB VPB VPWR Y
+X0 a_229_47# B VGND VNB abnmos
+X1 a_229_47# B VGND VNB abnmos
+X2 Y B VPWR VPB abpmos
+X3 Y B VPWR VPB abpmos
+X4 Y B VPWR VPB abpmos
+X5 Y a_27_93# a_229_47# VNB abnmos
+X6 Y a_27_93# a_229_47# VNB abnmos
+X7 a_27_93# A_N VGND VNB abnmos
+X8 Y B VPWR VPB abpmos
+X9 Y B VPWR VPB abpmos
+X10 Y B VPWR VPB abpmos
+X11 a_229_47# a_27_93# Y VNB abnmos
+X12 a_229_47# a_27_93# Y VNB abnmos
+X13 a_27_93# A_N VPWR VPB abpmos
+X14 Y a_27_93# VPWR VPB abpmos
+X15 Y a_27_93# VPWR VPB abpmos
+X16 Y a_27_93# VPWR VPB abpmos
+X17 Y a_27_93# VPWR VPB abpmos
+X18 Y a_27_93# VPWR VPB abpmos
+X19 Y a_27_93# VPWR VPB abpmos
+X20 a_229_47# B VGND VNB abnmos
+X21 a_229_47# B VGND VNB abnmos
+.ends NAND2BD2B

@@ -1,0 +1,71 @@
+* BUFBUFD8 : abstract conversion of sky130_fd_sc_hd__bufbuf_8
+* 63 abstract devices (width -> parallel min-width fingers)
+.subckt BUFBUFD8 A VGND VPWR X
+XBUFBUFD8B A VGND VGND VPWR VPWR X BUFBUFD8B
+.ends BUFBUFD8
+
+.subckt BUFBUFD8B A VGND VNB VPB VPWR X
+X0 X a_318_47# VGND VNB abnmos
+X1 X a_318_47# VGND VNB abnmos
+X2 X a_318_47# VGND VNB abnmos
+X3 X a_318_47# VGND VNB abnmos
+X4 X a_318_47# VPWR VPB abpmos
+X5 X a_318_47# VPWR VPB abpmos
+X6 X a_318_47# VPWR VPB abpmos
+X7 X a_318_47# VGND VNB abnmos
+X8 X a_318_47# VGND VNB abnmos
+X9 X a_318_47# VPWR VPB abpmos
+X10 X a_318_47# VPWR VPB abpmos
+X11 X a_318_47# VPWR VPB abpmos
+X12 X a_318_47# VGND VNB abnmos
+X13 X a_318_47# VGND VNB abnmos
+X14 X a_318_47# VPWR VPB abpmos
+X15 X a_318_47# VPWR VPB abpmos
+X16 X a_318_47# VPWR VPB abpmos
+X17 X a_318_47# VPWR VPB abpmos
+X18 X a_318_47# VPWR VPB abpmos
+X19 X a_318_47# VPWR VPB abpmos
+X20 X a_318_47# VPWR VPB abpmos
+X21 X a_318_47# VPWR VPB abpmos
+X22 X a_318_47# VPWR VPB abpmos
+X23 a_318_47# a_206_47# VGND VNB abnmos
+X24 a_318_47# a_206_47# VGND VNB abnmos
+X25 X a_318_47# VGND VNB abnmos
+X26 X a_318_47# VGND VNB abnmos
+X27 a_206_47# a_27_47# VGND VNB abnmos
+X28 a_206_47# a_27_47# VGND VNB abnmos
+X29 a_318_47# a_206_47# VGND VNB abnmos
+X30 a_318_47# a_206_47# VGND VNB abnmos
+X31 a_318_47# a_206_47# VPWR VPB abpmos
+X32 a_318_47# a_206_47# VPWR VPB abpmos
+X33 a_318_47# a_206_47# VPWR VPB abpmos
+X34 X a_318_47# VPWR VPB abpmos
+X35 X a_318_47# VPWR VPB abpmos
+X36 X a_318_47# VPWR VPB abpmos
+X37 a_27_47# A VGND VNB abnmos
+X38 a_318_47# a_206_47# VGND VNB abnmos
+X39 a_318_47# a_206_47# VGND VNB abnmos
+X40 a_206_47# a_27_47# VPWR VPB abpmos
+X41 a_206_47# a_27_47# VPWR VPB abpmos
+X42 a_206_47# a_27_47# VPWR VPB abpmos
+X43 X a_318_47# VGND VNB abnmos
+X44 X a_318_47# VGND VNB abnmos
+X45 a_27_47# A VPWR VPB abpmos
+X46 a_27_47# A VPWR VPB abpmos
+X47 a_318_47# a_206_47# VPWR VPB abpmos
+X48 a_318_47# a_206_47# VPWR VPB abpmos
+X49 a_318_47# a_206_47# VPWR VPB abpmos
+X50 X a_318_47# VPWR VPB abpmos
+X51 X a_318_47# VPWR VPB abpmos
+X52 X a_318_47# VPWR VPB abpmos
+X53 X a_318_47# VGND VNB abnmos
+X54 X a_318_47# VGND VNB abnmos
+X55 X a_318_47# VPWR VPB abpmos
+X56 X a_318_47# VPWR VPB abpmos
+X57 X a_318_47# VPWR VPB abpmos
+X58 X a_318_47# VGND VNB abnmos
+X59 X a_318_47# VGND VNB abnmos
+X60 a_318_47# a_206_47# VPWR VPB abpmos
+X61 a_318_47# a_206_47# VPWR VPB abpmos
+X62 a_318_47# a_206_47# VPWR VPB abpmos
+.ends BUFBUFD8B

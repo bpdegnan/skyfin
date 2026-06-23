@@ -1,0 +1,28 @@
+* HAD1 : abstract conversion of sky130_fd_sc_hd__ha_1
+* 20 abstract devices (width -> parallel min-width fingers)
+.subckt HAD1 A B VGND VPWR COUT SUM
+XHAD1B A B VGND VGND VPWR VPWR COUT SUM HAD1B
+.ends HAD1
+
+.subckt HAD1B A B VGND VNB VPB VPWR COUT SUM
+X0 a_250_199# B a_674_47# VNB abnmos
+X1 a_79_21# a_250_199# a_297_47# VNB abnmos
+X2 a_250_199# A VPWR VPB abpmos
+X3 COUT a_250_199# VPWR VPB abpmos
+X4 COUT a_250_199# VPWR VPB abpmos
+X5 COUT a_250_199# VPWR VPB abpmos
+X6 a_297_47# A VGND VNB abnmos
+X7 a_79_21# B a_376_413# VPB abpmos
+X8 a_376_413# A VPWR VPB abpmos
+X9 SUM a_79_21# VGND VNB abnmos
+X10 SUM a_79_21# VGND VNB abnmos
+X11 a_674_47# A VGND VNB abnmos
+X12 SUM a_79_21# VPWR VPB abpmos
+X13 SUM a_79_21# VPWR VPB abpmos
+X14 SUM a_79_21# VPWR VPB abpmos
+X15 a_79_21# a_250_199# VPWR VPB abpmos
+X16 a_297_47# B VGND VNB abnmos
+X17 COUT a_250_199# VGND VNB abnmos
+X18 COUT a_250_199# VGND VNB abnmos
+X19 a_250_199# B VPWR VPB abpmos
+.ends HAD1B

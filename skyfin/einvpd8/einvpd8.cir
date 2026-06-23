@@ -1,0 +1,93 @@
+* EINVPD8 : abstract conversion of sky130_fd_sc_hd__einvp_8
+* 85 abstract devices (width -> parallel min-width fingers)
+.subckt EINVPD8 A TE VGND VPWR Z
+XEINVPD8B A TE VGND VGND VPWR VPWR Z EINVPD8B
+.ends EINVPD8
+
+.subckt EINVPD8B A TE VGND VNB VPB VPWR Z
+X0 a_215_309# a_27_47# VPWR VPB abpmos
+X1 a_215_309# a_27_47# VPWR VPB abpmos
+X2 a_215_309# a_27_47# VPWR VPB abpmos
+X3 a_193_47# TE VGND VNB abnmos
+X4 a_193_47# TE VGND VNB abnmos
+X5 Z A a_193_47# VNB abnmos
+X6 Z A a_193_47# VNB abnmos
+X7 a_215_309# a_27_47# VPWR VPB abpmos
+X8 a_215_309# a_27_47# VPWR VPB abpmos
+X9 a_215_309# a_27_47# VPWR VPB abpmos
+X10 Z A a_193_47# VNB abnmos
+X11 Z A a_193_47# VNB abnmos
+X12 a_215_309# a_27_47# VPWR VPB abpmos
+X13 a_215_309# a_27_47# VPWR VPB abpmos
+X14 a_215_309# a_27_47# VPWR VPB abpmos
+X15 a_215_309# a_27_47# VPWR VPB abpmos
+X16 a_215_309# a_27_47# VPWR VPB abpmos
+X17 a_215_309# a_27_47# VPWR VPB abpmos
+X18 a_193_47# TE VGND VNB abnmos
+X19 a_193_47# TE VGND VNB abnmos
+X20 a_193_47# A Z VNB abnmos
+X21 a_193_47# A Z VNB abnmos
+X22 a_215_309# a_27_47# VPWR VPB abpmos
+X23 a_215_309# a_27_47# VPWR VPB abpmos
+X24 a_215_309# a_27_47# VPWR VPB abpmos
+X25 a_215_309# A Z VPB abpmos
+X26 a_215_309# A Z VPB abpmos
+X27 a_215_309# A Z VPB abpmos
+X28 a_193_47# TE VGND VNB abnmos
+X29 a_193_47# TE VGND VNB abnmos
+X30 Z A a_215_309# VPB abpmos
+X31 Z A a_215_309# VPB abpmos
+X32 Z A a_215_309# VPB abpmos
+X33 Z A a_215_309# VPB abpmos
+X34 Z A a_215_309# VPB abpmos
+X35 Z A a_215_309# VPB abpmos
+X36 a_193_47# A Z VNB abnmos
+X37 a_193_47# A Z VNB abnmos
+X38 a_193_47# TE VGND VNB abnmos
+X39 a_193_47# TE VGND VNB abnmos
+X40 a_193_47# A Z VNB abnmos
+X41 a_193_47# A Z VNB abnmos
+X42 a_215_309# a_27_47# VPWR VPB abpmos
+X43 a_215_309# a_27_47# VPWR VPB abpmos
+X44 a_215_309# a_27_47# VPWR VPB abpmos
+X45 a_193_47# TE VGND VNB abnmos
+X46 a_193_47# TE VGND VNB abnmos
+X47 a_215_309# a_27_47# VPWR VPB abpmos
+X48 a_215_309# a_27_47# VPWR VPB abpmos
+X49 a_215_309# a_27_47# VPWR VPB abpmos
+X50 Z A a_193_47# VNB abnmos
+X51 Z A a_193_47# VNB abnmos
+X52 a_215_309# a_27_47# VPWR VPB abpmos
+X53 a_215_309# a_27_47# VPWR VPB abpmos
+X54 a_215_309# a_27_47# VPWR VPB abpmos
+X55 Z A a_215_309# VPB abpmos
+X56 Z A a_215_309# VPB abpmos
+X57 Z A a_215_309# VPB abpmos
+X58 a_193_47# TE VGND VNB abnmos
+X59 a_193_47# TE VGND VNB abnmos
+X60 a_27_47# TE VGND VNB abnmos
+X61 a_27_47# TE VGND VNB abnmos
+X62 a_215_309# A Z VPB abpmos
+X63 a_215_309# A Z VPB abpmos
+X64 a_215_309# A Z VPB abpmos
+X65 a_215_309# A Z VPB abpmos
+X66 a_215_309# A Z VPB abpmos
+X67 a_215_309# A Z VPB abpmos
+X68 Z A a_193_47# VNB abnmos
+X69 Z A a_193_47# VNB abnmos
+X70 a_215_309# A Z VPB abpmos
+X71 a_215_309# A Z VPB abpmos
+X72 a_215_309# A Z VPB abpmos
+X73 a_27_47# TE VPWR VPB abpmos
+X74 a_27_47# TE VPWR VPB abpmos
+X75 a_27_47# TE VPWR VPB abpmos
+X76 a_193_47# TE VGND VNB abnmos
+X77 a_193_47# TE VGND VNB abnmos
+X78 a_193_47# TE VGND VNB abnmos
+X79 a_193_47# TE VGND VNB abnmos
+X80 Z A a_215_309# VPB abpmos
+X81 Z A a_215_309# VPB abpmos
+X82 Z A a_215_309# VPB abpmos
+X83 a_193_47# A Z VNB abnmos
+X84 a_193_47# A Z VNB abnmos
+.ends EINVPD8B

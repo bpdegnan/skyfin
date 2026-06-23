@@ -1,0 +1,53 @@
+* LPFLOW_ISOBUFSRCD4 : abstract conversion of sky130_fd_sc_hd__lpflow_isobufsrc_4
+* 45 abstract devices (width -> parallel min-width fingers)
+.subckt LPFLOW_ISOBUFSRCD4 A SLEEP VGND VPWR X
+XLPFLOW_ISOBUFSRCD4B A SLEEP VGND VGND VPWR VPWR X LPFLOW_ISOBUFSRCD4B
+.ends LPFLOW_ISOBUFSRCD4
+
+.subckt LPFLOW_ISOBUFSRCD4B A SLEEP VGND VNB VPB VPWR X
+X0 a_27_297# a_419_21# X VPB abpmos
+X1 a_27_297# a_419_21# X VPB abpmos
+X2 a_27_297# a_419_21# X VPB abpmos
+X3 X SLEEP VGND VNB abnmos
+X4 X SLEEP VGND VNB abnmos
+X5 a_27_297# SLEEP VPWR VPB abpmos
+X6 a_27_297# SLEEP VPWR VPB abpmos
+X7 a_27_297# SLEEP VPWR VPB abpmos
+X8 a_27_297# SLEEP VPWR VPB abpmos
+X9 a_27_297# SLEEP VPWR VPB abpmos
+X10 a_27_297# SLEEP VPWR VPB abpmos
+X11 X a_419_21# a_27_297# VPB abpmos
+X12 X a_419_21# a_27_297# VPB abpmos
+X13 X a_419_21# a_27_297# VPB abpmos
+X14 X SLEEP VGND VNB abnmos
+X15 X SLEEP VGND VNB abnmos
+X16 a_27_297# SLEEP VPWR VPB abpmos
+X17 a_27_297# SLEEP VPWR VPB abpmos
+X18 a_27_297# SLEEP VPWR VPB abpmos
+X19 a_27_297# SLEEP VPWR VPB abpmos
+X20 a_27_297# SLEEP VPWR VPB abpmos
+X21 a_27_297# SLEEP VPWR VPB abpmos
+X22 X SLEEP VGND VNB abnmos
+X23 X SLEEP VGND VNB abnmos
+X24 X a_419_21# VGND VNB abnmos
+X25 X a_419_21# VGND VNB abnmos
+X26 a_27_297# a_419_21# X VPB abpmos
+X27 a_27_297# a_419_21# X VPB abpmos
+X28 a_27_297# a_419_21# X VPB abpmos
+X29 X SLEEP VGND VNB abnmos
+X30 X SLEEP VGND VNB abnmos
+X31 X a_419_21# VGND VNB abnmos
+X32 X a_419_21# VGND VNB abnmos
+X33 a_419_21# A VPWR VPB abpmos
+X34 a_419_21# A VPWR VPB abpmos
+X35 a_419_21# A VPWR VPB abpmos
+X36 X a_419_21# a_27_297# VPB abpmos
+X37 X a_419_21# a_27_297# VPB abpmos
+X38 X a_419_21# a_27_297# VPB abpmos
+X39 a_419_21# A VGND VNB abnmos
+X40 a_419_21# A VGND VNB abnmos
+X41 X a_419_21# VGND VNB abnmos
+X42 X a_419_21# VGND VNB abnmos
+X43 X a_419_21# VGND VNB abnmos
+X44 X a_419_21# VGND VNB abnmos
+.ends LPFLOW_ISOBUFSRCD4B

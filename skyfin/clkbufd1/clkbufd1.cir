@@ -1,0 +1,14 @@
+* CLKBUFD1 : abstract conversion of sky130_fd_sc_hd__clkbuf_1
+* 6 abstract devices (width -> parallel min-width fingers)
+.subckt CLKBUFD1 A VGND VPWR X
+XCLKBUFD1B A VGND VGND VPWR VPWR X CLKBUFD1B
+.ends CLKBUFD1
+
+.subckt CLKBUFD1B A VGND VNB VPB VPWR X
+X0 a_75_212# A VGND VNB abnmos
+X1 X a_75_212# VPWR VPB abpmos
+X2 X a_75_212# VPWR VPB abpmos
+X3 X a_75_212# VGND VNB abnmos
+X4 a_75_212# A VPWR VPB abpmos
+X5 a_75_212# A VPWR VPB abpmos
+.ends CLKBUFD1B

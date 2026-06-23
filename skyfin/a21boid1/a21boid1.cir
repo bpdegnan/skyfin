@@ -1,0 +1,25 @@
+* A21BOID1 : abstract conversion of sky130_fd_sc_hd__a21boi_1
+* 17 abstract devices (width -> parallel min-width fingers)
+.subckt A21BOID1 A1 A2 B1_N VGND VPWR Y
+XA21BOID1B A1 A2 B1_N VGND VGND VPWR VPWR Y A21BOID1B
+.ends A21BOID1
+
+.subckt A21BOID1B A1 A2 B1_N VGND VNB VPB VPWR Y
+X0 a_384_47# A2 VGND VNB abnmos
+X1 a_384_47# A2 VGND VNB abnmos
+X2 Y a_27_413# VGND VNB abnmos
+X3 Y a_27_413# VGND VNB abnmos
+X4 a_300_297# A1 VPWR VPB abpmos
+X5 a_300_297# A1 VPWR VPB abpmos
+X6 a_300_297# A1 VPWR VPB abpmos
+X7 Y a_27_413# a_300_297# VPB abpmos
+X8 Y a_27_413# a_300_297# VPB abpmos
+X9 Y a_27_413# a_300_297# VPB abpmos
+X10 a_27_413# B1_N VGND VNB abnmos
+X11 Y A1 a_384_47# VNB abnmos
+X12 Y A1 a_384_47# VNB abnmos
+X13 a_27_413# B1_N VPWR VPB abpmos
+X14 a_300_297# A2 VPWR VPB abpmos
+X15 a_300_297# A2 VPWR VPB abpmos
+X16 a_300_297# A2 VPWR VPB abpmos
+.ends A21BOID1B

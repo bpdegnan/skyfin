@@ -1,0 +1,38 @@
+* INVD6 : abstract conversion of sky130_fd_sc_hd__inv_6
+* 30 abstract devices (width -> parallel min-width fingers)
+.subckt INVD6 A VGND VPWR Y
+XINVD6B A VGND VGND VPWR VPWR Y INVD6B
+.ends INVD6
+
+.subckt INVD6B A VGND VNB VPB VPWR Y
+X0 Y A VPWR VPB abpmos
+X1 Y A VPWR VPB abpmos
+X2 Y A VPWR VPB abpmos
+X3 Y A VPWR VPB abpmos
+X4 Y A VPWR VPB abpmos
+X5 Y A VPWR VPB abpmos
+X6 Y A VGND VNB abnmos
+X7 Y A VGND VNB abnmos
+X8 Y A VPWR VPB abpmos
+X9 Y A VPWR VPB abpmos
+X10 Y A VPWR VPB abpmos
+X11 Y A VPWR VPB abpmos
+X12 Y A VPWR VPB abpmos
+X13 Y A VPWR VPB abpmos
+X14 Y A VPWR VPB abpmos
+X15 Y A VPWR VPB abpmos
+X16 Y A VPWR VPB abpmos
+X17 Y A VGND VNB abnmos
+X18 Y A VGND VNB abnmos
+X19 Y A VPWR VPB abpmos
+X20 Y A VPWR VPB abpmos
+X21 Y A VPWR VPB abpmos
+X22 Y A VGND VNB abnmos
+X23 Y A VGND VNB abnmos
+X24 Y A VGND VNB abnmos
+X25 Y A VGND VNB abnmos
+X26 Y A VGND VNB abnmos
+X27 Y A VGND VNB abnmos
+X28 Y A VGND VNB abnmos
+X29 Y A VGND VNB abnmos
+.ends INVD6B

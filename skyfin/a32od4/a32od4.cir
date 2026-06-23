@@ -1,0 +1,78 @@
+* A32OD4 : abstract conversion of sky130_fd_sc_hd__a32o_4
+* 70 abstract devices (width -> parallel min-width fingers)
+.subckt A32OD4 A1 A2 A3 B1 B2 VGND VPWR X
+XA32OD4B A1 A2 A3 B1 B2 VGND VGND VPWR VPWR X A32OD4B
+.ends A32OD4
+
+.subckt A32OD4B A1 A2 A3 B1 B2 VGND VNB VPB VPWR X
+X0 a_445_297# B2 a_79_21# VPB abpmos
+X1 a_445_297# B2 a_79_21# VPB abpmos
+X2 a_445_297# B2 a_79_21# VPB abpmos
+X3 a_635_47# A1 a_79_21# VNB abnmos
+X4 a_635_47# A1 a_79_21# VNB abnmos
+X5 a_79_21# B1 a_1142_47# VNB abnmos
+X6 a_79_21# B1 a_1142_47# VNB abnmos
+X7 a_445_47# A3 VGND VNB abnmos
+X8 a_445_47# A3 VGND VNB abnmos
+X9 a_445_297# A3 VPWR VPB abpmos
+X10 a_445_297# A3 VPWR VPB abpmos
+X11 a_445_297# A3 VPWR VPB abpmos
+X12 a_445_47# A2 a_635_47# VNB abnmos
+X13 a_445_47# A2 a_635_47# VNB abnmos
+X14 a_1142_47# B1 a_79_21# VNB abnmos
+X15 a_1142_47# B1 a_79_21# VNB abnmos
+X16 X a_79_21# VGND VNB abnmos
+X17 X a_79_21# VGND VNB abnmos
+X18 a_445_47# A3 VGND VNB abnmos
+X19 a_445_47# A3 VGND VNB abnmos
+X20 a_445_297# B1 a_79_21# VPB abpmos
+X21 a_445_297# B1 a_79_21# VPB abpmos
+X22 a_445_297# B1 a_79_21# VPB abpmos
+X23 a_635_47# A2 a_445_47# VNB abnmos
+X24 a_635_47# A2 a_445_47# VNB abnmos
+X25 X a_79_21# VGND VNB abnmos
+X26 X a_79_21# VGND VNB abnmos
+X27 a_1142_47# B2 VGND VNB abnmos
+X28 a_1142_47# B2 VGND VNB abnmos
+X29 a_445_297# A1 VPWR VPB abpmos
+X30 a_445_297# A1 VPWR VPB abpmos
+X31 a_445_297# A1 VPWR VPB abpmos
+X32 X a_79_21# VGND VNB abnmos
+X33 X a_79_21# VGND VNB abnmos
+X34 X a_79_21# VPWR VPB abpmos
+X35 X a_79_21# VPWR VPB abpmos
+X36 X a_79_21# VPWR VPB abpmos
+X37 a_445_297# A2 VPWR VPB abpmos
+X38 a_445_297# A2 VPWR VPB abpmos
+X39 a_445_297# A2 VPWR VPB abpmos
+X40 X a_79_21# VGND VNB abnmos
+X41 X a_79_21# VGND VNB abnmos
+X42 a_1142_47# B2 VGND VNB abnmos
+X43 a_1142_47# B2 VGND VNB abnmos
+X44 a_445_297# A1 VPWR VPB abpmos
+X45 a_445_297# A1 VPWR VPB abpmos
+X46 a_445_297# A1 VPWR VPB abpmos
+X47 a_445_297# A3 VPWR VPB abpmos
+X48 a_445_297# A3 VPWR VPB abpmos
+X49 a_445_297# A3 VPWR VPB abpmos
+X50 a_79_21# B1 a_445_297# VPB abpmos
+X51 a_79_21# B1 a_445_297# VPB abpmos
+X52 a_79_21# B1 a_445_297# VPB abpmos
+X53 X a_79_21# VPWR VPB abpmos
+X54 X a_79_21# VPWR VPB abpmos
+X55 X a_79_21# VPWR VPB abpmos
+X56 X a_79_21# VPWR VPB abpmos
+X57 X a_79_21# VPWR VPB abpmos
+X58 X a_79_21# VPWR VPB abpmos
+X59 a_79_21# B2 a_445_297# VPB abpmos
+X60 a_79_21# B2 a_445_297# VPB abpmos
+X61 a_79_21# B2 a_445_297# VPB abpmos
+X62 a_79_21# A1 a_635_47# VNB abnmos
+X63 a_79_21# A1 a_635_47# VNB abnmos
+X64 a_445_297# A2 VPWR VPB abpmos
+X65 a_445_297# A2 VPWR VPB abpmos
+X66 a_445_297# A2 VPWR VPB abpmos
+X67 X a_79_21# VPWR VPB abpmos
+X68 X a_79_21# VPWR VPB abpmos
+X69 X a_79_21# VPWR VPB abpmos
+.ends A32OD4B

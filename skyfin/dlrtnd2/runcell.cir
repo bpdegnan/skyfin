@@ -1,0 +1,22 @@
+* auto-generated runcell for DLRTND2
+* NOTE: sequential cell -- combinational sweep only, not a functional test
+.lib "$SPICE_LIB/sky130.lib.spice" tt
+.include "$SPICE_DEVICES/devices.cir"
+.include "dlrtnd2.cir"
+
+.param pvdd=1.8V
+VVPWR VDD 0 {pvdd}
+V_GND VGND 0 0
+
+V_RESET_B RESET_B 0 PWL( 0ns 0 10ns 0 10.1ns {pvdd} 20ns {pvdd} 20.1ns 0 30ns 0 30.1ns {pvdd} 40ns {pvdd} 40.1ns 0 50ns 0 50.1ns {pvdd} 60ns {pvdd} 60.1ns 0 70ns 0 70.1ns {pvdd} 80ns {pvdd} )
+V_D D 0 PWL( 0ns 0 20ns 0 20.1ns {pvdd} 40ns {pvdd} 40.1ns 0 60ns 0 60.1ns {pvdd} 80ns {pvdd} )
+V_GATE_N GATE_N 0 PWL( 0ns 0 40ns 0 40.1ns {pvdd} 80ns {pvdd} )
+
+X1 D GATE_N RESET_B VGND VDD Q DLRTND2
+CL_Q Q VGND 0.1f
+
+.control
+tran 0.05n 80n
+wrdata result.raw v(RESET_B) v(D) v(GATE_N) v(Q)
+.endc
+.end

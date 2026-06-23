@@ -1,0 +1,88 @@
+* NAND2D8 : abstract conversion of sky130_fd_sc_hd__nand2_8
+* 80 abstract devices (width -> parallel min-width fingers)
+.subckt NAND2D8 A B VGND VPWR Y
+XNAND2D8B A B VGND VGND VPWR VPWR Y NAND2D8B
+.ends NAND2D8
+
+.subckt NAND2D8B A B VGND VNB VPB VPWR Y
+X0 Y A VPWR VPB abpmos
+X1 Y A VPWR VPB abpmos
+X2 Y A VPWR VPB abpmos
+X3 a_27_47# B VGND VNB abnmos
+X4 a_27_47# B VGND VNB abnmos
+X5 a_27_47# B VGND VNB abnmos
+X6 a_27_47# B VGND VNB abnmos
+X7 Y A VPWR VPB abpmos
+X8 Y A VPWR VPB abpmos
+X9 Y A VPWR VPB abpmos
+X10 Y B VPWR VPB abpmos
+X11 Y B VPWR VPB abpmos
+X12 Y B VPWR VPB abpmos
+X13 Y A a_27_47# VNB abnmos
+X14 Y A a_27_47# VNB abnmos
+X15 Y B VPWR VPB abpmos
+X16 Y B VPWR VPB abpmos
+X17 Y B VPWR VPB abpmos
+X18 a_27_47# B VGND VNB abnmos
+X19 a_27_47# B VGND VNB abnmos
+X20 Y A VPWR VPB abpmos
+X21 Y A VPWR VPB abpmos
+X22 Y A VPWR VPB abpmos
+X23 a_27_47# A Y VNB abnmos
+X24 a_27_47# A Y VNB abnmos
+X25 Y A VPWR VPB abpmos
+X26 Y A VPWR VPB abpmos
+X27 Y A VPWR VPB abpmos
+X28 a_27_47# A Y VNB abnmos
+X29 a_27_47# A Y VNB abnmos
+X30 Y B VPWR VPB abpmos
+X31 Y B VPWR VPB abpmos
+X32 Y B VPWR VPB abpmos
+X33 Y A VPWR VPB abpmos
+X34 Y A VPWR VPB abpmos
+X35 Y A VPWR VPB abpmos
+X36 Y A VPWR VPB abpmos
+X37 Y A VPWR VPB abpmos
+X38 Y A VPWR VPB abpmos
+X39 a_27_47# B VGND VNB abnmos
+X40 a_27_47# B VGND VNB abnmos
+X41 Y A VPWR VPB abpmos
+X42 Y A VPWR VPB abpmos
+X43 Y A VPWR VPB abpmos
+X44 Y A a_27_47# VNB abnmos
+X45 Y A a_27_47# VNB abnmos
+X46 Y A a_27_47# VNB abnmos
+X47 Y A a_27_47# VNB abnmos
+X48 Y A a_27_47# VNB abnmos
+X49 Y A a_27_47# VNB abnmos
+X50 Y A VPWR VPB abpmos
+X51 Y A VPWR VPB abpmos
+X52 Y A VPWR VPB abpmos
+X53 a_27_47# A Y VNB abnmos
+X54 a_27_47# A Y VNB abnmos
+X55 a_27_47# B VGND VNB abnmos
+X56 a_27_47# B VGND VNB abnmos
+X57 a_27_47# B VGND VNB abnmos
+X58 a_27_47# B VGND VNB abnmos
+X59 Y B VPWR VPB abpmos
+X60 Y B VPWR VPB abpmos
+X61 Y B VPWR VPB abpmos
+X62 a_27_47# B VGND VNB abnmos
+X63 a_27_47# B VGND VNB abnmos
+X64 a_27_47# A Y VNB abnmos
+X65 a_27_47# A Y VNB abnmos
+X66 Y B VPWR VPB abpmos
+X67 Y B VPWR VPB abpmos
+X68 Y B VPWR VPB abpmos
+X69 Y B VPWR VPB abpmos
+X70 Y B VPWR VPB abpmos
+X71 Y B VPWR VPB abpmos
+X72 Y B VPWR VPB abpmos
+X73 Y B VPWR VPB abpmos
+X74 Y B VPWR VPB abpmos
+X75 a_27_47# B VGND VNB abnmos
+X76 a_27_47# B VGND VNB abnmos
+X77 Y B VPWR VPB abpmos
+X78 Y B VPWR VPB abpmos
+X79 Y B VPWR VPB abpmos
+.ends NAND2D8B

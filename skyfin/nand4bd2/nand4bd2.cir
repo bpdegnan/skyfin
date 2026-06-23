@@ -1,0 +1,50 @@
+* NAND4BD2 : abstract conversion of sky130_fd_sc_hd__nand4b_2
+* 42 abstract devices (width -> parallel min-width fingers)
+.subckt NAND4BD2 A_N B C D VGND VPWR Y
+XNAND4BD2B A_N B C D VGND VGND VPWR VPWR Y NAND4BD2B
+.ends NAND4BD2
+
+.subckt NAND4BD2B A_N B C D VGND VNB VPB VPWR Y
+X0 Y D VPWR VPB abpmos
+X1 Y D VPWR VPB abpmos
+X2 Y D VPWR VPB abpmos
+X3 a_215_47# a_27_47# Y VNB abnmos
+X4 a_215_47# a_27_47# Y VNB abnmos
+X5 Y B VPWR VPB abpmos
+X6 Y B VPWR VPB abpmos
+X7 Y B VPWR VPB abpmos
+X8 Y a_27_47# VPWR VPB abpmos
+X9 Y a_27_47# VPWR VPB abpmos
+X10 Y a_27_47# VPWR VPB abpmos
+X11 Y B VPWR VPB abpmos
+X12 Y B VPWR VPB abpmos
+X13 Y B VPWR VPB abpmos
+X14 Y a_27_47# VPWR VPB abpmos
+X15 Y a_27_47# VPWR VPB abpmos
+X16 Y a_27_47# VPWR VPB abpmos
+X17 Y C VPWR VPB abpmos
+X18 Y C VPWR VPB abpmos
+X19 Y C VPWR VPB abpmos
+X20 a_465_47# B a_215_47# VNB abnmos
+X21 a_465_47# B a_215_47# VNB abnmos
+X22 a_27_47# A_N VPWR VPB abpmos
+X23 Y C VPWR VPB abpmos
+X24 Y C VPWR VPB abpmos
+X25 Y C VPWR VPB abpmos
+X26 a_215_47# B a_465_47# VNB abnmos
+X27 a_215_47# B a_465_47# VNB abnmos
+X28 a_655_47# C a_465_47# VNB abnmos
+X29 a_655_47# C a_465_47# VNB abnmos
+X30 a_655_47# D VGND VNB abnmos
+X31 a_655_47# D VGND VNB abnmos
+X32 a_27_47# A_N VGND VNB abnmos
+X33 a_465_47# C a_655_47# VNB abnmos
+X34 a_465_47# C a_655_47# VNB abnmos
+X35 Y a_27_47# a_215_47# VNB abnmos
+X36 Y a_27_47# a_215_47# VNB abnmos
+X37 a_655_47# D VGND VNB abnmos
+X38 a_655_47# D VGND VNB abnmos
+X39 Y D VPWR VPB abpmos
+X40 Y D VPWR VPB abpmos
+X41 Y D VPWR VPB abpmos
+.ends NAND4BD2B

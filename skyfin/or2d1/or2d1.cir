@@ -1,0 +1,17 @@
+* OR2D1 : abstract conversion of sky130_fd_sc_hd__or2_1
+* 9 abstract devices (width -> parallel min-width fingers)
+.subckt OR2D1 A B VGND VPWR X
+XOR2D1B A B VGND VGND VPWR VPWR X OR2D1B
+.ends OR2D1
+
+.subckt OR2D1B A B VGND VNB VPB VPWR X
+X0 a_150_297# A VPWR VPB abpmos
+X1 X a_68_297# VGND VNB abnmos
+X2 X a_68_297# VGND VNB abnmos
+X3 a_68_297# B VGND VNB abnmos
+X4 a_68_297# A VGND VNB abnmos
+X5 a_68_297# B a_150_297# VPB abpmos
+X6 X a_68_297# VPWR VPB abpmos
+X7 X a_68_297# VPWR VPB abpmos
+X8 X a_68_297# VPWR VPB abpmos
+.ends OR2D1B

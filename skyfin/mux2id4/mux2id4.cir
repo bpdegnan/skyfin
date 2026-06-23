@@ -1,0 +1,93 @@
+* MUX2ID4 : abstract conversion of sky130_fd_sc_hd__mux2i_4
+* 85 abstract devices (width -> parallel min-width fingers)
+.subckt MUX2ID4 A0 A1 S VGND VPWR Y
+XMUX2ID4B A0 A1 S VGND VGND VPWR VPWR Y MUX2ID4B
+.ends MUX2ID4
+
+.subckt MUX2ID4B A0 A1 S VGND VNB VPB VPWR Y
+X0 a_445_47# S VGND VNB abnmos
+X1 a_445_47# S VGND VNB abnmos
+X2 Y A1 a_445_47# VNB abnmos
+X3 Y A1 a_445_47# VNB abnmos
+X4 a_109_47# a_1191_21# VGND VNB abnmos
+X5 a_109_47# a_1191_21# VGND VNB abnmos
+X6 Y A1 a_445_47# VNB abnmos
+X7 Y A1 a_445_47# VNB abnmos
+X8 a_445_297# a_1191_21# VPWR VPB abpmos
+X9 a_445_297# a_1191_21# VPWR VPB abpmos
+X10 a_445_297# a_1191_21# VPWR VPB abpmos
+X11 a_445_47# S VGND VNB abnmos
+X12 a_445_47# S VGND VNB abnmos
+X13 a_445_297# A1 Y VPB abpmos
+X14 a_445_297# A1 Y VPB abpmos
+X15 a_445_297# A1 Y VPB abpmos
+X16 a_445_297# A1 Y VPB abpmos
+X17 a_445_297# A1 Y VPB abpmos
+X18 a_445_297# A1 Y VPB abpmos
+X19 a_109_47# A0 Y VNB abnmos
+X20 a_109_47# A0 Y VNB abnmos
+X21 Y A1 a_445_297# VPB abpmos
+X22 Y A1 a_445_297# VPB abpmos
+X23 Y A1 a_445_297# VPB abpmos
+X24 a_445_47# A1 Y VNB abnmos
+X25 a_445_47# A1 Y VNB abnmos
+X26 a_1191_21# S VPWR VPB abpmos
+X27 a_1191_21# S VPWR VPB abpmos
+X28 a_1191_21# S VPWR VPB abpmos
+X29 a_109_297# S VPWR VPB abpmos
+X30 a_109_297# S VPWR VPB abpmos
+X31 a_109_297# S VPWR VPB abpmos
+X32 a_109_297# S VPWR VPB abpmos
+X33 a_109_297# S VPWR VPB abpmos
+X34 a_109_297# S VPWR VPB abpmos
+X35 Y A0 a_109_47# VNB abnmos
+X36 Y A0 a_109_47# VNB abnmos
+X37 a_109_297# S VPWR VPB abpmos
+X38 a_109_297# S VPWR VPB abpmos
+X39 a_109_297# S VPWR VPB abpmos
+X40 a_109_47# A0 Y VNB abnmos
+X41 a_109_47# A0 Y VNB abnmos
+X42 Y A0 a_109_297# VPB abpmos
+X43 Y A0 a_109_297# VPB abpmos
+X44 Y A0 a_109_297# VPB abpmos
+X45 Y A0 a_109_47# VNB abnmos
+X46 Y A0 a_109_47# VNB abnmos
+X47 a_109_297# S VPWR VPB abpmos
+X48 a_109_297# S VPWR VPB abpmos
+X49 a_109_297# S VPWR VPB abpmos
+X50 a_109_47# a_1191_21# VGND VNB abnmos
+X51 a_109_47# a_1191_21# VGND VNB abnmos
+X52 Y A1 a_445_297# VPB abpmos
+X53 Y A1 a_445_297# VPB abpmos
+X54 Y A1 a_445_297# VPB abpmos
+X55 a_445_297# a_1191_21# VPWR VPB abpmos
+X56 a_445_297# a_1191_21# VPWR VPB abpmos
+X57 a_445_297# a_1191_21# VPWR VPB abpmos
+X58 Y A0 a_109_297# VPB abpmos
+X59 Y A0 a_109_297# VPB abpmos
+X60 Y A0 a_109_297# VPB abpmos
+X61 a_445_297# a_1191_21# VPWR VPB abpmos
+X62 a_445_297# a_1191_21# VPWR VPB abpmos
+X63 a_445_297# a_1191_21# VPWR VPB abpmos
+X64 a_109_297# A0 Y VPB abpmos
+X65 a_109_297# A0 Y VPB abpmos
+X66 a_109_297# A0 Y VPB abpmos
+X67 a_445_47# S VGND VNB abnmos
+X68 a_445_47# S VGND VNB abnmos
+X69 a_445_47# A1 Y VNB abnmos
+X70 a_445_47# A1 Y VNB abnmos
+X71 a_109_47# a_1191_21# VGND VNB abnmos
+X72 a_109_47# a_1191_21# VGND VNB abnmos
+X73 a_1191_21# S VGND VNB abnmos
+X74 a_1191_21# S VGND VNB abnmos
+X75 a_109_297# A0 Y VPB abpmos
+X76 a_109_297# A0 Y VPB abpmos
+X77 a_109_297# A0 Y VPB abpmos
+X78 a_109_47# a_1191_21# VGND VNB abnmos
+X79 a_109_47# a_1191_21# VGND VNB abnmos
+X80 a_445_297# a_1191_21# VPWR VPB abpmos
+X81 a_445_297# a_1191_21# VPWR VPB abpmos
+X82 a_445_297# a_1191_21# VPWR VPB abpmos
+X83 a_445_47# S VGND VNB abnmos
+X84 a_445_47# S VGND VNB abnmos
+.ends MUX2ID4B

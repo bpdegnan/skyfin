@@ -1,0 +1,70 @@
+* DFSTPD4 : abstract conversion of sky130_fd_sc_hd__dfstp_4
+* 62 abstract devices (width -> parallel min-width fingers)
+.subckt DFSTPD4 CLK D SET_B VGND VPWR Q
+XDFSTPD4B CLK D SET_B VGND VGND VPWR VPWR Q DFSTPD4B
+.ends DFSTPD4
+
+.subckt DFSTPD4B CLK D SET_B VGND VNB VPB VPWR Q
+X0 a_562_413# a_652_21# VPWR VPB abpmos
+X1 a_956_413# a_27_47# a_1028_413# VPB abpmos
+X2 a_381_47# a_193_47# a_476_47# VPB abpmos
+X3 a_1028_413# a_193_47# a_1136_413# VPB abpmos
+X4 a_1028_413# a_27_47# a_1224_47# VNB abnmos
+X5 Q a_1598_47# VPWR VPB abpmos
+X6 Q a_1598_47# VPWR VPB abpmos
+X7 Q a_1598_47# VPWR VPB abpmos
+X8 Q a_1598_47# VPWR VPB abpmos
+X9 Q a_1598_47# VPWR VPB abpmos
+X10 Q a_1598_47# VPWR VPB abpmos
+X11 a_476_47# a_27_47# a_562_413# VPB abpmos
+X12 a_381_47# a_27_47# a_476_47# VNB abnmos
+X13 a_1056_47# a_476_47# VGND VNB abnmos
+X14 a_1028_413# SET_B VPWR VPB abpmos
+X15 a_1056_47# a_193_47# a_1028_413# VNB abnmos
+X16 a_1178_261# a_1028_413# VGND VNB abnmos
+X17 a_1178_261# a_1028_413# VGND VNB abnmos
+X18 Q a_1598_47# VGND VNB abnmos
+X19 Q a_1598_47# VGND VNB abnmos
+X20 a_1296_47# SET_B VGND VNB abnmos
+X21 a_1598_47# a_1028_413# VGND VNB abnmos
+X22 a_652_21# SET_B VPWR VPB abpmos
+X23 a_796_47# a_476_47# a_652_21# VNB abnmos
+X24 a_956_413# a_476_47# VPWR VPB abpmos
+X25 a_586_47# a_652_21# VGND VNB abnmos
+X26 a_381_47# D VPWR VPB abpmos
+X27 a_381_47# D VPWR VPB abpmos
+X28 a_1178_261# a_1028_413# VPWR VPB abpmos
+X29 a_1178_261# a_1028_413# VPWR VPB abpmos
+X30 a_652_21# a_476_47# VPWR VPB abpmos
+X31 a_1136_413# a_1178_261# VPWR VPB abpmos
+X32 Q a_1598_47# VPWR VPB abpmos
+X33 Q a_1598_47# VPWR VPB abpmos
+X34 Q a_1598_47# VPWR VPB abpmos
+X35 Q a_1598_47# VGND VNB abnmos
+X36 Q a_1598_47# VGND VNB abnmos
+X37 a_476_47# a_193_47# a_586_47# VNB abnmos
+X38 a_193_47# a_27_47# VGND VNB abnmos
+X39 Q a_1598_47# VGND VNB abnmos
+X40 Q a_1598_47# VGND VNB abnmos
+X41 a_27_47# CLK VGND VNB abnmos
+X42 Q a_1598_47# VGND VNB abnmos
+X43 Q a_1598_47# VGND VNB abnmos
+X44 a_27_47# CLK VPWR VPB abpmos
+X45 a_27_47# CLK VPWR VPB abpmos
+X46 Q a_1598_47# VPWR VPB abpmos
+X47 Q a_1598_47# VPWR VPB abpmos
+X48 Q a_1598_47# VPWR VPB abpmos
+X49 Q a_1598_47# VPWR VPB abpmos
+X50 Q a_1598_47# VPWR VPB abpmos
+X51 Q a_1598_47# VPWR VPB abpmos
+X52 a_1224_47# a_1178_261# a_1296_47# VNB abnmos
+X53 a_193_47# a_27_47# VPWR VPB abpmos
+X54 a_193_47# a_27_47# VPWR VPB abpmos
+X55 a_381_47# D VGND VNB abnmos
+X56 a_381_47# D VGND VNB abnmos
+X57 a_796_47# SET_B VGND VNB abnmos
+X58 Q a_1598_47# VGND VNB abnmos
+X59 Q a_1598_47# VGND VNB abnmos
+X60 a_1598_47# a_1028_413# VPWR VPB abpmos
+X61 a_1598_47# a_1028_413# VPWR VPB abpmos
+.ends DFSTPD4B

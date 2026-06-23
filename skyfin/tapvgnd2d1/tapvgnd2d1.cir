@@ -1,0 +1,8 @@
+* TAPVGND2D1 : abstract conversion of sky130_fd_sc_hd__tapvgnd2_1
+* 0 abstract devices (width -> parallel min-width fingers)
+.subckt TAPVGND2D1 VGND VPWR
+XTAPVGND2D1B VGND VPWR VPWR TAPVGND2D1B
+.ends TAPVGND2D1
+
+.subckt TAPVGND2D1B VGND VPB VPWR
+.ends TAPVGND2D1B

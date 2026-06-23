@@ -1,0 +1,57 @@
+* DFXTPD4 : abstract conversion of sky130_fd_sc_hd__dfxtp_4
+* 49 abstract devices (width -> parallel min-width fingers)
+.subckt DFXTPD4 CLK D VGND VPWR Q
+XDFXTPD4B CLK D VGND VGND VPWR VPWR Q DFXTPD4B
+.ends DFXTPD4
+
+.subckt DFXTPD4B CLK D VGND VNB VPB VPWR Q
+X0 a_891_413# a_193_47# a_975_413# VPB abpmos
+X1 a_1062_300# a_891_413# VGND VNB abnmos
+X2 a_1062_300# a_891_413# VGND VNB abnmos
+X3 Q a_1062_300# VGND VNB abnmos
+X4 Q a_1062_300# VGND VNB abnmos
+X5 a_475_413# a_193_47# a_572_47# VNB abnmos
+X6 a_1062_300# a_891_413# VPWR VPB abpmos
+X7 a_1062_300# a_891_413# VPWR VPB abpmos
+X8 a_1062_300# a_891_413# VPWR VPB abpmos
+X9 Q a_1062_300# VPWR VPB abpmos
+X10 Q a_1062_300# VPWR VPB abpmos
+X11 Q a_1062_300# VPWR VPB abpmos
+X12 a_634_183# a_27_47# a_891_413# VPB abpmos
+X13 Q a_1062_300# VPWR VPB abpmos
+X14 Q a_1062_300# VPWR VPB abpmos
+X15 Q a_1062_300# VPWR VPB abpmos
+X16 Q a_1062_300# VGND VNB abnmos
+X17 Q a_1062_300# VGND VNB abnmos
+X18 a_381_47# a_27_47# a_475_413# VNB abnmos
+X19 a_381_47# D VPWR VPB abpmos
+X20 a_634_183# a_475_413# VPWR VPB abpmos
+X21 a_634_183# a_475_413# VPWR VPB abpmos
+X22 Q a_1062_300# VPWR VPB abpmos
+X23 Q a_1062_300# VPWR VPB abpmos
+X24 Q a_1062_300# VPWR VPB abpmos
+X25 a_572_47# a_634_183# VGND VNB abnmos
+X26 a_975_413# a_1062_300# VPWR VPB abpmos
+X27 a_1020_47# a_1062_300# VGND VNB abnmos
+X28 a_891_413# a_27_47# a_1020_47# VNB abnmos
+X29 a_634_183# a_475_413# VGND VNB abnmos
+X30 a_634_183# a_475_413# VGND VNB abnmos
+X31 a_475_413# a_27_47# a_568_413# VPB abpmos
+X32 a_568_413# a_634_183# VPWR VPB abpmos
+X33 Q a_1062_300# VGND VNB abnmos
+X34 Q a_1062_300# VGND VNB abnmos
+X35 a_193_47# a_27_47# VGND VNB abnmos
+X36 a_27_47# CLK VGND VNB abnmos
+X37 a_27_47# CLK VPWR VPB abpmos
+X38 a_27_47# CLK VPWR VPB abpmos
+X39 Q a_1062_300# VGND VNB abnmos
+X40 Q a_1062_300# VGND VNB abnmos
+X41 a_193_47# a_27_47# VPWR VPB abpmos
+X42 a_193_47# a_27_47# VPWR VPB abpmos
+X43 a_381_47# D VGND VNB abnmos
+X44 a_634_183# a_193_47# a_891_413# VNB abnmos
+X45 a_381_47# a_193_47# a_475_413# VPB abpmos
+X46 Q a_1062_300# VPWR VPB abpmos
+X47 Q a_1062_300# VPWR VPB abpmos
+X48 Q a_1062_300# VPWR VPB abpmos
+.ends DFXTPD4B

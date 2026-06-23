@@ -1,0 +1,48 @@
+* LPFLOW_CLKBUFKAPWRD8 : abstract conversion of sky130_fd_sc_hd__lpflow_clkbufkapwr_8
+* 40 abstract devices (width -> parallel min-width fingers) ; secondary power ['KAPWR'] collapsed onto VPWR
+.subckt LPFLOW_CLKBUFKAPWRD8 A VGND VPWR X
+XLPFLOW_CLKBUFKAPWRD8B A VPWR VGND VGND VPWR VPWR X LPFLOW_CLKBUFKAPWRD8B
+.ends LPFLOW_CLKBUFKAPWRD8
+
+.subckt LPFLOW_CLKBUFKAPWRD8B A KAPWR VGND VNB VPB VPWR X
+X0 X a_110_47# VGND VNB abnmos
+X1 a_110_47# A KAPWR VPB abpmos
+X2 a_110_47# A KAPWR VPB abpmos
+X3 a_110_47# A KAPWR VPB abpmos
+X4 X a_110_47# VGND VNB abnmos
+X5 KAPWR A a_110_47# VPB abpmos
+X6 KAPWR A a_110_47# VPB abpmos
+X7 KAPWR A a_110_47# VPB abpmos
+X8 X a_110_47# VGND VNB abnmos
+X9 a_110_47# A VGND VNB abnmos
+X10 X a_110_47# VGND VNB abnmos
+X11 X a_110_47# KAPWR VPB abpmos
+X12 X a_110_47# KAPWR VPB abpmos
+X13 X a_110_47# KAPWR VPB abpmos
+X14 KAPWR a_110_47# X VPB abpmos
+X15 KAPWR a_110_47# X VPB abpmos
+X16 KAPWR a_110_47# X VPB abpmos
+X17 KAPWR a_110_47# X VPB abpmos
+X18 KAPWR a_110_47# X VPB abpmos
+X19 KAPWR a_110_47# X VPB abpmos
+X20 X a_110_47# VGND VNB abnmos
+X21 X a_110_47# VGND VNB abnmos
+X22 X a_110_47# KAPWR VPB abpmos
+X23 X a_110_47# KAPWR VPB abpmos
+X24 X a_110_47# KAPWR VPB abpmos
+X25 KAPWR a_110_47# X VPB abpmos
+X26 KAPWR a_110_47# X VPB abpmos
+X27 KAPWR a_110_47# X VPB abpmos
+X28 KAPWR a_110_47# X VPB abpmos
+X29 KAPWR a_110_47# X VPB abpmos
+X30 KAPWR a_110_47# X VPB abpmos
+X31 X a_110_47# KAPWR VPB abpmos
+X32 X a_110_47# KAPWR VPB abpmos
+X33 X a_110_47# KAPWR VPB abpmos
+X34 X a_110_47# KAPWR VPB abpmos
+X35 X a_110_47# KAPWR VPB abpmos
+X36 X a_110_47# KAPWR VPB abpmos
+X37 a_110_47# A VGND VNB abnmos
+X38 X a_110_47# VGND VNB abnmos
+X39 X a_110_47# VGND VNB abnmos
+.ends LPFLOW_CLKBUFKAPWRD8B

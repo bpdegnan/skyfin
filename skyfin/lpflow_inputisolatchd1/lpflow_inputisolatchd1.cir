@@ -1,0 +1,33 @@
+* LPFLOW_INPUTISOLATCHD1 : abstract conversion of sky130_fd_sc_hd__lpflow_inputisolatch_1
+* 25 abstract devices (width -> parallel min-width fingers)
+.subckt LPFLOW_INPUTISOLATCHD1 D SLEEP_B VGND VPWR Q
+XLPFLOW_INPUTISOLATCHD1B D SLEEP_B VGND VGND VPWR VPWR Q LPFLOW_INPUTISOLATCHD1B
+.ends LPFLOW_INPUTISOLATCHD1
+
+.subckt LPFLOW_INPUTISOLATCHD1B D SLEEP_B VGND VNB VPB VPWR Q
+X0 a_560_413# a_629_21# VPWR VPB abpmos
+X1 Q a_476_47# VPWR VPB abpmos
+X2 Q a_476_47# VPWR VPB abpmos
+X3 Q a_476_47# VPWR VPB abpmos
+X4 a_575_47# a_629_21# VGND VNB abnmos
+X5 a_476_47# a_193_47# a_560_413# VPB abpmos
+X6 a_476_47# a_27_47# a_575_47# VNB abnmos
+X7 a_381_47# a_193_47# a_476_47# VNB abnmos
+X8 Q a_476_47# VGND VNB abnmos
+X9 Q a_476_47# VGND VNB abnmos
+X10 a_381_369# D VPWR VPB abpmos
+X11 a_381_369# D VPWR VPB abpmos
+X12 a_27_47# SLEEP_B VPWR VPB abpmos
+X13 a_27_47# SLEEP_B VPWR VPB abpmos
+X14 a_193_47# a_27_47# VPWR VPB abpmos
+X15 a_193_47# a_27_47# VPWR VPB abpmos
+X16 a_629_21# a_476_47# VGND VNB abnmos
+X17 a_629_21# a_476_47# VGND VNB abnmos
+X18 a_193_47# a_27_47# VGND VNB abnmos
+X19 a_27_47# SLEEP_B VGND VNB abnmos
+X20 a_381_47# D VGND VNB abnmos
+X21 a_629_21# a_476_47# VPWR VPB abpmos
+X22 a_629_21# a_476_47# VPWR VPB abpmos
+X23 a_629_21# a_476_47# VPWR VPB abpmos
+X24 a_381_369# a_27_47# a_476_47# VPB abpmos
+.ends LPFLOW_INPUTISOLATCHD1B

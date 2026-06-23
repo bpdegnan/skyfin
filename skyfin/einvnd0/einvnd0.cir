@@ -1,0 +1,16 @@
+* EINVND0 : abstract conversion of sky130_fd_sc_hd__einvn_0
+* 8 abstract devices (width -> parallel min-width fingers)
+.subckt EINVND0 A TE_B VGND VPWR Z
+XEINVND0B A TE_B VGND VGND VPWR VPWR Z EINVND0B
+.ends EINVND0
+
+.subckt EINVND0B A TE_B VGND VNB VPB VPWR Z
+X0 a_30_47# TE_B VPWR VPB abpmos
+X1 a_215_369# TE_B VPWR VPB abpmos
+X2 a_215_369# TE_B VPWR VPB abpmos
+X3 a_215_369# A Z VPB abpmos
+X4 a_215_369# A Z VPB abpmos
+X5 a_215_47# A Z VNB abnmos
+X6 a_30_47# TE_B VGND VNB abnmos
+X7 a_215_47# a_30_47# VGND VNB abnmos
+.ends EINVND0B

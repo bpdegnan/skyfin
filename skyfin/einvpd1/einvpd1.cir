@@ -1,0 +1,20 @@
+* EINVPD1 : abstract conversion of sky130_fd_sc_hd__einvp_1
+* 12 abstract devices (width -> parallel min-width fingers)
+.subckt EINVPD1 A TE VGND VPWR Z
+XEINVPD1B A TE VGND VGND VPWR VPWR Z EINVPD1B
+.ends EINVPD1
+
+.subckt EINVPD1B A TE VGND VNB VPB VPWR Z
+X0 a_276_297# A Z VPB abpmos
+X1 a_276_297# A Z VPB abpmos
+X2 a_276_297# A Z VPB abpmos
+X3 a_204_47# TE VGND VNB abnmos
+X4 a_204_47# TE VGND VNB abnmos
+X5 a_27_47# TE VPWR VPB abpmos
+X6 a_204_47# A Z VNB abnmos
+X7 a_204_47# A Z VNB abnmos
+X8 a_276_297# a_27_47# VPWR VPB abpmos
+X9 a_276_297# a_27_47# VPWR VPB abpmos
+X10 a_276_297# a_27_47# VPWR VPB abpmos
+X11 a_27_47# TE VGND VNB abnmos
+.ends EINVPD1B

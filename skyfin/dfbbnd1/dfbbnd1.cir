@@ -1,0 +1,68 @@
+* DFBBND1 : abstract conversion of DFBBN
+* 60 abstract devices (width -> parallel min-width fingers)
+.subckt DFBBND1 CLK_N D RESET_B SET_B Q Q_N VGND VPWR
+XDFBBND1B CLK_N D RESET_B SET_B Q Q_N VGND VGND VPWR VPWR DFBBND1B
+.ends DFBBND1
+
+.subckt DFBBND1B CLK_N D RESET_B SET_B Q Q_N VGND VNB VPB VPWR
+X0 a_1159_47# a_647_21# VGND VNB abnmos
+X1 a_1159_47# a_647_21# VGND VNB abnmos
+X2 a_2136_47# a_1415_315# VPWR VPB abpmos
+X3 a_2136_47# a_1415_315# VPWR VPB abpmos
+X4 a_647_21# a_941_21# a_791_47# VNB abnmos
+X5 a_647_21# a_941_21# a_791_47# VNB abnmos
+X6 a_1256_413# a_27_47# a_1340_413# VPB abpmos
+X7 a_473_413# a_27_47# a_581_47# VNB abnmos
+X8 a_381_47# a_193_47# a_473_413# VNB abnmos
+X9 a_381_47# D VPWR VPB abpmos
+X10 a_647_21# SET_B VPWR VPB abpmos
+X11 a_1112_329# a_647_21# VPWR VPB abpmos
+X12 a_1112_329# a_647_21# VPWR VPB abpmos
+X13 a_581_47# a_647_21# VGND VNB abnmos
+X14 a_1159_47# a_27_47# a_1256_413# VNB abnmos
+X15 a_941_21# RESET_B VPWR VPB abpmos
+X16 a_941_21# RESET_B VPWR VPB abpmos
+X17 a_1363_47# a_1415_315# VGND VNB abnmos
+X18 a_791_47# SET_B VGND VNB abnmos
+X19 a_891_329# a_941_21# VPWR VPB abpmos
+X20 a_891_329# a_941_21# VPWR VPB abpmos
+X21 a_1415_315# SET_B VPWR VPB abpmos
+X22 a_2136_47# a_1415_315# VGND VNB abnmos
+X23 a_791_47# a_473_413# a_647_21# VNB abnmos
+X24 a_791_47# a_473_413# a_647_21# VNB abnmos
+X25 a_557_413# a_647_21# VPWR VPB abpmos
+X26 a_647_21# a_473_413# a_891_329# VPB abpmos
+X27 a_647_21# a_473_413# a_891_329# VPB abpmos
+X28 a_1415_315# a_1256_413# a_1672_329# VPB abpmos
+X29 a_1415_315# a_1256_413# a_1672_329# VPB abpmos
+X30 a_1672_329# a_941_21# VPWR VPB abpmos
+X31 a_1672_329# a_941_21# VPWR VPB abpmos
+X32 Q a_2136_47# VGND VNB abnmos
+X33 Q a_2136_47# VGND VNB abnmos
+X34 a_1340_413# a_1415_315# VPWR VPB abpmos
+X35 Q_N a_1415_315# VGND VNB abnmos
+X36 Q_N a_1415_315# VGND VNB abnmos
+X37 a_473_413# a_193_47# a_557_413# VPB abpmos
+X38 a_193_47# a_27_47# VGND VNB abnmos
+X39 Q a_2136_47# VPWR VPB abpmos
+X40 Q a_2136_47# VPWR VPB abpmos
+X41 Q a_2136_47# VPWR VPB abpmos
+X42 a_27_47# CLK_N VGND VNB abnmos
+X43 a_27_47# CLK_N VPWR VPB abpmos
+X44 a_27_47# CLK_N VPWR VPB abpmos
+X45 a_381_47# a_27_47# a_473_413# VPB abpmos
+X46 a_1415_315# a_941_21# a_1555_47# VNB abnmos
+X47 a_1415_315# a_941_21# a_1555_47# VNB abnmos
+X48 a_193_47# a_27_47# VPWR VPB abpmos
+X49 a_193_47# a_27_47# VPWR VPB abpmos
+X50 a_381_47# D VGND VNB abnmos
+X51 a_1555_47# SET_B VGND VNB abnmos
+X52 a_1256_413# a_193_47# a_1363_47# VNB abnmos
+X53 a_1112_329# a_193_47# a_1256_413# VPB abpmos
+X54 a_1555_47# a_1256_413# a_1415_315# VNB abnmos
+X55 a_1555_47# a_1256_413# a_1415_315# VNB abnmos
+X56 a_941_21# RESET_B VGND VNB abnmos
+X57 Q_N a_1415_315# VPWR VPB abpmos
+X58 Q_N a_1415_315# VPWR VPB abpmos
+X59 Q_N a_1415_315# VPWR VPB abpmos
+.ends DFBBND1B

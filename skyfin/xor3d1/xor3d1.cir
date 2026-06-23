@@ -1,0 +1,54 @@
+* XOR3D1 : abstract conversion of sky130_fd_sc_hd__xor3_1
+* 46 abstract devices (width -> parallel min-width fingers)
+.subckt XOR3D1 A B C VGND VPWR X
+XXOR3D1B A B C VGND VGND VPWR VPWR X XOR3D1B
+.ends XOR3D1
+
+.subckt XOR3D1B A B C VGND VNB VPB VPWR X
+X0 a_112_21# a_266_93# a_404_49# VPB abpmos
+X1 a_112_21# a_266_93# a_404_49# VPB abpmos
+X2 a_386_325# a_827_297# a_1198_49# VPB abpmos
+X3 a_386_325# a_827_297# a_1198_49# VPB abpmos
+X4 X a_112_21# VPWR VPB abpmos
+X5 X a_112_21# VPWR VPB abpmos
+X6 X a_112_21# VPWR VPB abpmos
+X7 a_386_325# a_827_297# a_931_365# VNB abnmos
+X8 a_386_325# a_827_297# a_931_365# VNB abnmos
+X9 a_404_49# a_827_297# a_931_365# VPB abpmos
+X10 a_404_49# a_827_297# a_931_365# VPB abpmos
+X11 a_931_365# B a_404_49# VNB abnmos
+X12 a_931_365# B a_404_49# VNB abnmos
+X13 a_404_49# C a_112_21# VNB abnmos
+X14 a_404_49# C a_112_21# VNB abnmos
+X15 a_931_365# A VPWR VPB abpmos
+X16 a_931_365# A VPWR VPB abpmos
+X17 a_931_365# A VPWR VPB abpmos
+X18 a_404_49# a_827_297# a_1198_49# VNB abnmos
+X19 a_386_325# C a_112_21# VPB abpmos
+X20 a_386_325# C a_112_21# VPB abpmos
+X21 a_1198_49# a_931_365# VGND VNB abnmos
+X22 a_1198_49# a_931_365# VGND VNB abnmos
+X23 a_1198_49# a_931_365# VPWR VPB abpmos
+X24 a_1198_49# a_931_365# VPWR VPB abpmos
+X25 a_1198_49# a_931_365# VPWR VPB abpmos
+X26 a_827_297# B VPWR VPB abpmos
+X27 a_827_297# B VPWR VPB abpmos
+X28 a_827_297# B VPWR VPB abpmos
+X29 a_266_93# C VGND VNB abnmos
+X30 a_112_21# a_266_93# a_386_325# VNB abnmos
+X31 a_112_21# a_266_93# a_386_325# VNB abnmos
+X32 a_827_297# B VGND VNB abnmos
+X33 a_827_297# B VGND VNB abnmos
+X34 a_931_365# B a_386_325# VPB abpmos
+X35 a_931_365# B a_386_325# VPB abpmos
+X36 a_1198_49# B a_404_49# VPB abpmos
+X37 a_1198_49# B a_404_49# VPB abpmos
+X38 a_1198_49# B a_386_325# VNB abnmos
+X39 a_1198_49# B a_386_325# VNB abnmos
+X40 a_931_365# A VGND VNB abnmos
+X41 a_931_365# A VGND VNB abnmos
+X42 a_266_93# C VPWR VPB abpmos
+X43 a_266_93# C VPWR VPB abpmos
+X44 X a_112_21# VGND VNB abnmos
+X45 X a_112_21# VGND VNB abnmos
+.ends XOR3D1B

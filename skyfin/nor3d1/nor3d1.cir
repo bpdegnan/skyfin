@@ -1,0 +1,23 @@
+* NOR3D1 : abstract conversion of sky130_fd_sc_hd__nor3_1
+* 15 abstract devices (width -> parallel min-width fingers)
+.subckt NOR3D1 A B C VGND VPWR Y
+XNOR3D1B A B C VGND VGND VPWR VPWR Y NOR3D1B
+.ends NOR3D1
+
+.subckt NOR3D1B A B C VGND VNB VPB VPWR Y
+X0 Y A VGND VNB abnmos
+X1 Y A VGND VNB abnmos
+X2 Y B VGND VNB abnmos
+X3 Y B VGND VNB abnmos
+X4 a_193_297# A VPWR VPB abpmos
+X5 a_193_297# A VPWR VPB abpmos
+X6 a_193_297# A VPWR VPB abpmos
+X7 Y C VGND VNB abnmos
+X8 Y C VGND VNB abnmos
+X9 Y C a_109_297# VPB abpmos
+X10 Y C a_109_297# VPB abpmos
+X11 Y C a_109_297# VPB abpmos
+X12 a_109_297# B a_193_297# VPB abpmos
+X13 a_109_297# B a_193_297# VPB abpmos
+X14 a_109_297# B a_193_297# VPB abpmos
+.ends NOR3D1B

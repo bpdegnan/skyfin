@@ -1,0 +1,23 @@
+* auto-generated runcell for O311AID2
+.lib "$SPICE_LIB/sky130.lib.spice" tt
+.include "$SPICE_DEVICES/devices.cir"
+.include "o311aid2.cir"
+
+.param pvdd=1.8V
+VVPWR VDD 0 {pvdd}
+V_GND VGND 0 0
+
+V_A1 A1 0 PWL( 0ns 0 10ns 0 10.1ns {pvdd} 20ns {pvdd} 20.1ns 0 30ns 0 30.1ns {pvdd} 40ns {pvdd} 40.1ns 0 50ns 0 50.1ns {pvdd} 60ns {pvdd} 60.1ns 0 70ns 0 70.1ns {pvdd} 80ns {pvdd} 80.1ns 0 90ns 0 90.1ns {pvdd} 100ns {pvdd} 100.1ns 0 110ns 0 110.1ns {pvdd} 120ns {pvdd} 120.1ns 0 130ns 0 130.1ns {pvdd} 140ns {pvdd} 140.1ns 0 150ns 0 150.1ns {pvdd} 160ns {pvdd} 160.1ns 0 170ns 0 170.1ns {pvdd} 180ns {pvdd} 180.1ns 0 190ns 0 190.1ns {pvdd} 200ns {pvdd} 200.1ns 0 210ns 0 210.1ns {pvdd} 220ns {pvdd} 220.1ns 0 230ns 0 230.1ns {pvdd} 240ns {pvdd} 240.1ns 0 250ns 0 250.1ns {pvdd} 260ns {pvdd} 260.1ns 0 270ns 0 270.1ns {pvdd} 280ns {pvdd} 280.1ns 0 290ns 0 290.1ns {pvdd} 300ns {pvdd} 300.1ns 0 310ns 0 310.1ns {pvdd} 320ns {pvdd} )
+V_A2 A2 0 PWL( 0ns 0 20ns 0 20.1ns {pvdd} 40ns {pvdd} 40.1ns 0 60ns 0 60.1ns {pvdd} 80ns {pvdd} 80.1ns 0 100ns 0 100.1ns {pvdd} 120ns {pvdd} 120.1ns 0 140ns 0 140.1ns {pvdd} 160ns {pvdd} 160.1ns 0 180ns 0 180.1ns {pvdd} 200ns {pvdd} 200.1ns 0 220ns 0 220.1ns {pvdd} 240ns {pvdd} 240.1ns 0 260ns 0 260.1ns {pvdd} 280ns {pvdd} 280.1ns 0 300ns 0 300.1ns {pvdd} 320ns {pvdd} )
+V_A3 A3 0 PWL( 0ns 0 40ns 0 40.1ns {pvdd} 80ns {pvdd} 80.1ns 0 120ns 0 120.1ns {pvdd} 160ns {pvdd} 160.1ns 0 200ns 0 200.1ns {pvdd} 240ns {pvdd} 240.1ns 0 280ns 0 280.1ns {pvdd} 320ns {pvdd} )
+V_B1 B1 0 PWL( 0ns 0 80ns 0 80.1ns {pvdd} 160ns {pvdd} 160.1ns 0 240ns 0 240.1ns {pvdd} 320ns {pvdd} )
+V_C1 C1 0 PWL( 0ns 0 160ns 0 160.1ns {pvdd} 320ns {pvdd} )
+
+X1 A1 A2 A3 B1 C1 VGND VDD Y O311AID2
+CL_Y Y VGND 0.1f
+
+.control
+tran 0.05n 320n
+wrdata result.raw v(A1) v(A2) v(A3) v(B1) v(C1) v(Y)
+.endc
+.end

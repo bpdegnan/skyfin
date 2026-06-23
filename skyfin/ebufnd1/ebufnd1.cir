@@ -1,0 +1,24 @@
+* EBUFND1 : abstract conversion of sky130_fd_sc_hd__ebufn_1
+* 16 abstract devices (width -> parallel min-width fingers)
+.subckt EBUFND1 A TE_B VGND VPWR Z
+XEBUFND1B A TE_B VGND VGND VPWR VPWR Z EBUFND1B
+.ends EBUFND1
+
+.subckt EBUFND1B A TE_B VGND VNB VPB VPWR Z
+X0 a_193_369# TE_B VGND VNB abnmos
+X1 a_531_47# a_193_369# VGND VNB abnmos
+X2 a_531_47# a_193_369# VGND VNB abnmos
+X3 a_531_47# a_27_47# Z VNB abnmos
+X4 a_531_47# a_27_47# Z VNB abnmos
+X5 a_383_297# TE_B VPWR VPB abpmos
+X6 a_383_297# TE_B VPWR VPB abpmos
+X7 a_383_297# TE_B VPWR VPB abpmos
+X8 a_383_297# a_27_47# Z VPB abpmos
+X9 a_383_297# a_27_47# Z VPB abpmos
+X10 a_383_297# a_27_47# Z VPB abpmos
+X11 a_27_47# A VPWR VPB abpmos
+X12 a_27_47# A VPWR VPB abpmos
+X13 a_193_369# TE_B VPWR VPB abpmos
+X14 a_193_369# TE_B VPWR VPB abpmos
+X15 a_27_47# A VGND VNB abnmos
+.ends EBUFND1B

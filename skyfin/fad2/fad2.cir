@@ -1,0 +1,64 @@
+* FAD2 : abstract conversion of sky130_fd_sc_hd__fa_2
+* 56 abstract devices (width -> parallel min-width fingers)
+.subckt FAD2 A B CIN VGND VPWR COUT SUM
+XFAD2B A B CIN VGND VGND VPWR VPWR COUT SUM FAD2B
+.ends FAD2
+
+.subckt FAD2B A B CIN VGND VNB VPB VPWR COUT SUM
+X0 a_80_21# CIN a_473_371# VPB abpmos
+X1 a_80_21# CIN a_473_371# VPB abpmos
+X2 a_289_371# B a_80_21# VPB abpmos
+X3 a_289_371# B a_80_21# VPB abpmos
+X4 a_1086_47# CIN a_1171_369# VPB abpmos
+X5 a_1086_47# CIN a_1171_369# VPB abpmos
+X6 a_829_47# CIN VGND VNB abnmos
+X7 a_473_371# B VPWR VPB abpmos
+X8 a_473_371# B VPWR VPB abpmos
+X9 a_294_47# A VGND VNB abnmos
+X10 a_80_21# CIN a_473_47# VNB abnmos
+X11 COUT a_80_21# VPWR VPB abpmos
+X12 COUT a_80_21# VPWR VPB abpmos
+X13 COUT a_80_21# VPWR VPB abpmos
+X14 SUM a_1086_47# VGND VNB abnmos
+X15 SUM a_1086_47# VGND VNB abnmos
+X16 COUT a_80_21# VGND VNB abnmos
+X17 COUT a_80_21# VGND VNB abnmos
+X18 a_1266_47# A VGND VNB abnmos
+X19 a_1194_47# B a_1266_47# VNB abnmos
+X20 COUT a_80_21# VGND VNB abnmos
+X21 COUT a_80_21# VGND VNB abnmos
+X22 a_829_47# B VGND VNB abnmos
+X23 a_294_47# B a_80_21# VNB abnmos
+X24 SUM a_1086_47# VPWR VPB abpmos
+X25 SUM a_1086_47# VPWR VPB abpmos
+X26 SUM a_1086_47# VPWR VPB abpmos
+X27 SUM a_1086_47# VGND VNB abnmos
+X28 SUM a_1086_47# VGND VNB abnmos
+X29 a_473_47# B VGND VNB abnmos
+X30 a_289_371# A VPWR VPB abpmos
+X31 a_289_371# A VPWR VPB abpmos
+X32 a_829_47# a_80_21# a_1086_47# VNB abnmos
+X33 a_829_369# B VPWR VPB abpmos
+X34 a_829_369# B VPWR VPB abpmos
+X35 SUM a_1086_47# VPWR VPB abpmos
+X36 SUM a_1086_47# VPWR VPB abpmos
+X37 SUM a_1086_47# VPWR VPB abpmos
+X38 a_829_369# A VPWR VPB abpmos
+X39 a_829_369# A VPWR VPB abpmos
+X40 a_1086_47# CIN a_1194_47# VNB abnmos
+X41 a_829_369# a_80_21# a_1086_47# VPB abpmos
+X42 a_829_369# a_80_21# a_1086_47# VPB abpmos
+X43 a_1266_371# A VPWR VPB abpmos
+X44 a_1266_371# A VPWR VPB abpmos
+X45 a_829_369# CIN VPWR VPB abpmos
+X46 a_829_369# CIN VPWR VPB abpmos
+X47 a_473_371# A VPWR VPB abpmos
+X48 a_473_371# A VPWR VPB abpmos
+X49 a_1171_369# B a_1266_371# VPB abpmos
+X50 a_1171_369# B a_1266_371# VPB abpmos
+X51 a_829_47# A VGND VNB abnmos
+X52 COUT a_80_21# VPWR VPB abpmos
+X53 COUT a_80_21# VPWR VPB abpmos
+X54 COUT a_80_21# VPWR VPB abpmos
+X55 a_473_47# A VGND VNB abnmos
+.ends FAD2B

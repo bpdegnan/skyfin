@@ -1,0 +1,54 @@
+* XNOR3D1 : abstract conversion of sky130_fd_sc_hd__xnor3_1
+* 46 abstract devices (width -> parallel min-width fingers)
+.subckt XNOR3D1 A B C VGND VPWR X
+XXNOR3D1B A B C VGND VGND VPWR VPWR X XNOR3D1B
+.ends XNOR3D1
+
+.subckt XNOR3D1B A B C VGND VNB VPB VPWR X
+X0 a_355_49# C a_78_199# VNB abnmos
+X1 a_355_49# C a_78_199# VNB abnmos
+X2 a_216_93# C VGND VNB abnmos
+X3 a_841_297# B a_331_325# VNB abnmos
+X4 a_841_297# B a_331_325# VNB abnmos
+X5 a_331_325# a_735_297# a_1106_49# VNB abnmos
+X6 X a_78_199# VPWR VPB abpmos
+X7 X a_78_199# VPWR VPB abpmos
+X8 X a_78_199# VPWR VPB abpmos
+X9 a_1106_49# B a_331_325# VPB abpmos
+X10 a_1106_49# B a_331_325# VPB abpmos
+X11 a_1106_49# a_841_297# VGND VNB abnmos
+X12 a_1106_49# a_841_297# VGND VNB abnmos
+X13 a_735_297# B VGND VNB abnmos
+X14 a_735_297# B VGND VNB abnmos
+X15 a_216_93# C VPWR VPB abpmos
+X16 a_216_93# C VPWR VPB abpmos
+X17 a_355_49# a_735_297# a_1106_49# VPB abpmos
+X18 a_355_49# a_735_297# a_1106_49# VPB abpmos
+X19 a_1106_49# B a_355_49# VNB abnmos
+X20 a_1106_49# B a_355_49# VNB abnmos
+X21 a_841_297# A VGND VNB abnmos
+X22 a_841_297# A VGND VNB abnmos
+X23 a_331_325# C a_78_199# VPB abpmos
+X24 a_331_325# C a_78_199# VPB abpmos
+X25 a_735_297# B VPWR VPB abpmos
+X26 a_735_297# B VPWR VPB abpmos
+X27 a_735_297# B VPWR VPB abpmos
+X28 a_841_297# B a_355_49# VPB abpmos
+X29 a_841_297# B a_355_49# VPB abpmos
+X30 a_331_325# a_735_297# a_841_297# VPB abpmos
+X31 a_331_325# a_735_297# a_841_297# VPB abpmos
+X32 X a_78_199# VGND VNB abnmos
+X33 X a_78_199# VGND VNB abnmos
+X34 a_1106_49# a_841_297# VPWR VPB abpmos
+X35 a_1106_49# a_841_297# VPWR VPB abpmos
+X36 a_1106_49# a_841_297# VPWR VPB abpmos
+X37 a_78_199# a_216_93# a_355_49# VPB abpmos
+X38 a_78_199# a_216_93# a_355_49# VPB abpmos
+X39 a_841_297# A VPWR VPB abpmos
+X40 a_841_297# A VPWR VPB abpmos
+X41 a_841_297# A VPWR VPB abpmos
+X42 a_78_199# a_216_93# a_331_325# VNB abnmos
+X43 a_78_199# a_216_93# a_331_325# VNB abnmos
+X44 a_355_49# a_735_297# a_841_297# VNB abnmos
+X45 a_355_49# a_735_297# a_841_297# VNB abnmos
+.ends XNOR3D1B

@@ -1,0 +1,19 @@
+* AND2BD1 : abstract conversion of sky130_fd_sc_hd__and2b_1
+* 11 abstract devices (width -> parallel min-width fingers)
+.subckt AND2BD1 A_N B VGND VPWR X
+XAND2BD1B A_N B VGND VGND VPWR VPWR X AND2BD1B
+.ends AND2BD1
+
+.subckt AND2BD1B A_N B VGND VNB VPB VPWR X
+X0 a_207_413# B VPWR VPB abpmos
+X1 X a_207_413# VPWR VPB abpmos
+X2 X a_207_413# VPWR VPB abpmos
+X3 X a_207_413# VPWR VPB abpmos
+X4 X a_207_413# VGND VNB abnmos
+X5 X a_207_413# VGND VNB abnmos
+X6 a_207_413# a_27_413# a_297_47# VNB abnmos
+X7 a_27_413# A_N VPWR VPB abpmos
+X8 a_207_413# a_27_413# VPWR VPB abpmos
+X9 a_27_413# A_N VGND VNB abnmos
+X10 a_297_47# B VGND VNB abnmos
+.ends AND2BD1B

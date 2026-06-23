@@ -1,0 +1,14 @@
+* Abstract devices so I can swap them out.
+* One abstract device == one minimum-size sky130 fet (the parallel-finger unit).
+* w/l are in microns under the PDK's SCALE=1e-6 (do NOT add a 'u' suffix here,
+* or it would be scaled twice).  l=0.15 is the 01v8 minimum length used by every
+* hd standard cell.  Width is each model's smallest L=0.15 bin: nfet_01v8 -> 0.36,
+* pfet_01v8 (non-hvt) -> 0.42 (it has no 0.36 bin; pfet_01v8_hvt does).
+* NMOS transistor subcircuit definition
+.subckt abnmos D G S B
+X1 D G S B sky130_fd_pr__nfet_01v8 w=0.36 l=0.15
+.ends abnmos
+* PMOS transistor subcircuit definition
+.subckt abpmos D G S B
+X1 D G S B sky130_fd_pr__pfet_01v8 w=0.42 l=0.15
+.ends abpmos

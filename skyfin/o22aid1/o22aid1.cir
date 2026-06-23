@@ -1,0 +1,28 @@
+* O22AID1 : abstract conversion of sky130_fd_sc_hd__o22ai_1
+* 20 abstract devices (width -> parallel min-width fingers)
+.subckt O22AID1 A1 A2 B1 B2 VGND VPWR Y
+XO22AID1B A1 A2 B1 B2 VGND VGND VPWR VPWR Y O22AID1B
+.ends O22AID1
+
+.subckt O22AID1B A1 A2 B1 B2 VGND VNB VPB VPWR Y
+X0 Y A2 a_307_297# VPB abpmos
+X1 Y A2 a_307_297# VPB abpmos
+X2 Y A2 a_307_297# VPB abpmos
+X3 a_307_297# A1 VPWR VPB abpmos
+X4 a_307_297# A1 VPWR VPB abpmos
+X5 a_307_297# A1 VPWR VPB abpmos
+X6 a_109_297# B2 Y VPB abpmos
+X7 a_109_297# B2 Y VPB abpmos
+X8 a_109_297# B2 Y VPB abpmos
+X9 a_27_47# A2 VGND VNB abnmos
+X10 a_27_47# A2 VGND VNB abnmos
+X11 a_27_47# B1 Y VNB abnmos
+X12 a_27_47# B1 Y VNB abnmos
+X13 Y B2 a_27_47# VNB abnmos
+X14 Y B2 a_27_47# VNB abnmos
+X15 a_109_297# B1 VPWR VPB abpmos
+X16 a_109_297# B1 VPWR VPB abpmos
+X17 a_109_297# B1 VPWR VPB abpmos
+X18 a_27_47# A1 VGND VNB abnmos
+X19 a_27_47# A1 VGND VNB abnmos
+.ends O22AID1B

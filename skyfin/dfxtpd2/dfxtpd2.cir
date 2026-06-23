@@ -1,0 +1,47 @@
+* DFXTPD2 : abstract conversion of sky130_fd_sc_hd__dfxtp_2
+* 39 abstract devices (width -> parallel min-width fingers)
+.subckt DFXTPD2 CLK D VGND VPWR Q
+XDFXTPD2B CLK D VGND VGND VPWR VPWR Q DFXTPD2B
+.ends DFXTPD2
+
+.subckt DFXTPD2B CLK D VGND VNB VPB VPWR Q
+X0 a_891_413# a_193_47# a_975_413# VPB abpmos
+X1 a_1059_315# a_891_413# VGND VNB abnmos
+X2 a_1059_315# a_891_413# VGND VNB abnmos
+X3 a_466_413# a_27_47# a_561_413# VPB abpmos
+X4 a_634_159# a_27_47# a_891_413# VPB abpmos
+X5 a_381_47# a_193_47# a_466_413# VPB abpmos
+X6 a_381_47# D VPWR VPB abpmos
+X7 a_634_159# a_466_413# VPWR VPB abpmos
+X8 a_634_159# a_466_413# VPWR VPB abpmos
+X9 a_634_159# a_466_413# VGND VNB abnmos
+X10 a_634_159# a_466_413# VGND VNB abnmos
+X11 a_1017_47# a_1059_315# VGND VNB abnmos
+X12 a_1059_315# a_891_413# VPWR VPB abpmos
+X13 a_1059_315# a_891_413# VPWR VPB abpmos
+X14 a_1059_315# a_891_413# VPWR VPB abpmos
+X15 Q a_1059_315# VPWR VPB abpmos
+X16 Q a_1059_315# VPWR VPB abpmos
+X17 Q a_1059_315# VPWR VPB abpmos
+X18 a_561_413# a_634_159# VPWR VPB abpmos
+X19 Q a_1059_315# VPWR VPB abpmos
+X20 Q a_1059_315# VPWR VPB abpmos
+X21 Q a_1059_315# VPWR VPB abpmos
+X22 a_891_413# a_27_47# a_1017_47# VNB abnmos
+X23 a_634_159# a_193_47# a_891_413# VNB abnmos
+X24 a_592_47# a_634_159# VGND VNB abnmos
+X25 a_466_413# a_193_47# a_592_47# VNB abnmos
+X26 a_193_47# a_27_47# VGND VNB abnmos
+X27 a_381_47# a_27_47# a_466_413# VNB abnmos
+X28 a_27_47# CLK VGND VNB abnmos
+X29 a_27_47# CLK VPWR VPB abpmos
+X30 a_27_47# CLK VPWR VPB abpmos
+X31 Q a_1059_315# VGND VNB abnmos
+X32 Q a_1059_315# VGND VNB abnmos
+X33 a_193_47# a_27_47# VPWR VPB abpmos
+X34 a_193_47# a_27_47# VPWR VPB abpmos
+X35 a_381_47# D VGND VNB abnmos
+X36 a_975_413# a_1059_315# VPWR VPB abpmos
+X37 Q a_1059_315# VGND VNB abnmos
+X38 Q a_1059_315# VGND VNB abnmos
+.ends DFXTPD2B

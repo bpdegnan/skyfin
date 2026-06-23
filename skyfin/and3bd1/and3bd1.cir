@@ -1,0 +1,21 @@
+* AND3BD1 : abstract conversion of sky130_fd_sc_hd__and3b_1
+* 13 abstract devices (width -> parallel min-width fingers)
+.subckt AND3BD1 A_N B C VGND VPWR X
+XAND3BD1B A_N B C VGND VGND VPWR VPWR X AND3BD1B
+.ends AND3BD1
+
+.subckt AND3BD1B A_N B C VGND VNB VPB VPWR X
+X0 a_209_311# a_109_93# a_296_53# VNB abnmos
+X1 X a_209_311# VGND VNB abnmos
+X2 X a_209_311# VGND VNB abnmos
+X3 a_109_93# A_N VGND VNB abnmos
+X4 X a_209_311# VPWR VPB abpmos
+X5 X a_209_311# VPWR VPB abpmos
+X6 X a_209_311# VPWR VPB abpmos
+X7 a_109_93# A_N VPWR VPB abpmos
+X8 a_368_53# C VGND VNB abnmos
+X9 a_209_311# B VPWR VPB abpmos
+X10 a_209_311# C VPWR VPB abpmos
+X11 a_296_53# B a_368_53# VNB abnmos
+X12 a_209_311# a_109_93# VPWR VPB abpmos
+.ends AND3BD1B

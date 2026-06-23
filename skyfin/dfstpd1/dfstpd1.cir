@@ -1,0 +1,50 @@
+* DFSTPD1 : abstract conversion of sky130_fd_sc_hd__dfstp_1
+* 42 abstract devices (width -> parallel min-width fingers)
+.subckt DFSTPD1 CLK D SET_B VGND VPWR Q
+XDFSTPD1B CLK D SET_B VGND VGND VPWR VPWR Q DFSTPD1B
+.ends DFSTPD1
+
+.subckt DFSTPD1B CLK D SET_B VGND VNB VPB VPWR Q
+X0 a_562_413# a_652_21# VPWR VPB abpmos
+X1 a_1296_47# SET_B VGND VNB abnmos
+X2 a_381_47# a_193_47# a_476_47# VPB abpmos
+X3 a_1602_47# a_1032_413# VPWR VPB abpmos
+X4 a_1602_47# a_1032_413# VPWR VPB abpmos
+X5 a_1140_413# a_1182_261# VPWR VPB abpmos
+X6 a_1032_413# a_27_47# a_1224_47# VNB abnmos
+X7 a_1182_261# a_1032_413# VGND VNB abnmos
+X8 a_1182_261# a_1032_413# VGND VNB abnmos
+X9 a_476_47# a_27_47# a_562_413# VPB abpmos
+X10 a_381_47# a_27_47# a_476_47# VNB abnmos
+X11 a_1056_47# a_476_47# VGND VNB abnmos
+X12 a_1602_47# a_1032_413# VGND VNB abnmos
+X13 a_1056_47# a_193_47# a_1032_413# VNB abnmos
+X14 a_652_21# SET_B VPWR VPB abpmos
+X15 a_796_47# a_476_47# a_652_21# VNB abnmos
+X16 a_956_413# a_476_47# VPWR VPB abpmos
+X17 a_586_47# a_652_21# VGND VNB abnmos
+X18 a_381_47# D VPWR VPB abpmos
+X19 a_381_47# D VPWR VPB abpmos
+X20 a_652_21# a_476_47# VPWR VPB abpmos
+X21 a_1032_413# a_193_47# a_1140_413# VPB abpmos
+X22 Q a_1602_47# VGND VNB abnmos
+X23 Q a_1602_47# VGND VNB abnmos
+X24 a_476_47# a_193_47# a_586_47# VNB abnmos
+X25 a_1032_413# SET_B VPWR VPB abpmos
+X26 a_193_47# a_27_47# VGND VNB abnmos
+X27 a_956_413# a_27_47# a_1032_413# VPB abpmos
+X28 a_27_47# CLK VGND VNB abnmos
+X29 a_27_47# CLK VPWR VPB abpmos
+X30 a_27_47# CLK VPWR VPB abpmos
+X31 a_1182_261# a_1032_413# VPWR VPB abpmos
+X32 a_1182_261# a_1032_413# VPWR VPB abpmos
+X33 a_1224_47# a_1182_261# a_1296_47# VNB abnmos
+X34 a_193_47# a_27_47# VPWR VPB abpmos
+X35 a_193_47# a_27_47# VPWR VPB abpmos
+X36 a_381_47# D VGND VNB abnmos
+X37 a_381_47# D VGND VNB abnmos
+X38 a_796_47# SET_B VGND VNB abnmos
+X39 Q a_1602_47# VPWR VPB abpmos
+X40 Q a_1602_47# VPWR VPB abpmos
+X41 Q a_1602_47# VPWR VPB abpmos
+.ends DFSTPD1B

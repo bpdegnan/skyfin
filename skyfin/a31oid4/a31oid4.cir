@@ -1,0 +1,88 @@
+* A31OID4 : abstract conversion of sky130_fd_sc_hd__a31oi_4
+* 80 abstract devices (width -> parallel min-width fingers)
+.subckt A31OID4 A1 A2 A3 B1 VGND VPWR Y
+XA31OID4B A1 A2 A3 B1 VGND VGND VPWR VPWR Y A31OID4B
+.ends A31OID4
+
+.subckt A31OID4B A1 A2 A3 B1 VGND VNB VPB VPWR Y
+X0 Y B1 a_27_297# VPB abpmos
+X1 Y B1 a_27_297# VPB abpmos
+X2 Y B1 a_27_297# VPB abpmos
+X3 Y A1 a_445_47# VNB abnmos
+X4 Y A1 a_445_47# VNB abnmos
+X5 a_27_47# A2 a_445_47# VNB abnmos
+X6 a_27_47# A2 a_445_47# VNB abnmos
+X7 Y B1 VGND VNB abnmos
+X8 Y B1 VGND VNB abnmos
+X9 a_27_47# A2 a_445_47# VNB abnmos
+X10 a_27_47# A2 a_445_47# VNB abnmos
+X11 a_27_297# B1 Y VPB abpmos
+X12 a_27_297# B1 Y VPB abpmos
+X13 a_27_297# B1 Y VPB abpmos
+X14 Y A1 a_445_47# VNB abnmos
+X15 Y A1 a_445_47# VNB abnmos
+X16 a_27_297# A2 VPWR VPB abpmos
+X17 a_27_297# A2 VPWR VPB abpmos
+X18 a_27_297# A2 VPWR VPB abpmos
+X19 a_27_297# A1 VPWR VPB abpmos
+X20 a_27_297# A1 VPWR VPB abpmos
+X21 a_27_297# A1 VPWR VPB abpmos
+X22 a_27_297# A2 VPWR VPB abpmos
+X23 a_27_297# A2 VPWR VPB abpmos
+X24 a_27_297# A2 VPWR VPB abpmos
+X25 a_27_47# A3 VGND VNB abnmos
+X26 a_27_47# A3 VGND VNB abnmos
+X27 a_27_297# A2 VPWR VPB abpmos
+X28 a_27_297# A2 VPWR VPB abpmos
+X29 a_27_297# A2 VPWR VPB abpmos
+X30 a_445_47# A2 a_27_47# VNB abnmos
+X31 a_445_47# A2 a_27_47# VNB abnmos
+X32 Y B1 VGND VNB abnmos
+X33 Y B1 VGND VNB abnmos
+X34 a_27_297# A1 VPWR VPB abpmos
+X35 a_27_297# A1 VPWR VPB abpmos
+X36 a_27_297# A1 VPWR VPB abpmos
+X37 a_27_297# A1 VPWR VPB abpmos
+X38 a_27_297# A1 VPWR VPB abpmos
+X39 a_27_297# A1 VPWR VPB abpmos
+X40 a_27_47# A3 VGND VNB abnmos
+X41 a_27_47# A3 VGND VNB abnmos
+X42 a_27_297# A1 VPWR VPB abpmos
+X43 a_27_297# A1 VPWR VPB abpmos
+X44 a_27_297# A1 VPWR VPB abpmos
+X45 a_27_47# A3 VGND VNB abnmos
+X46 a_27_47# A3 VGND VNB abnmos
+X47 a_27_297# A3 VPWR VPB abpmos
+X48 a_27_297# A3 VPWR VPB abpmos
+X49 a_27_297# A3 VPWR VPB abpmos
+X50 a_27_47# A3 VGND VNB abnmos
+X51 a_27_47# A3 VGND VNB abnmos
+X52 Y B1 VGND VNB abnmos
+X53 Y B1 VGND VNB abnmos
+X54 a_27_297# A2 VPWR VPB abpmos
+X55 a_27_297# A2 VPWR VPB abpmos
+X56 a_27_297# A2 VPWR VPB abpmos
+X57 a_27_297# A3 VPWR VPB abpmos
+X58 a_27_297# A3 VPWR VPB abpmos
+X59 a_27_297# A3 VPWR VPB abpmos
+X60 a_27_297# B1 Y VPB abpmos
+X61 a_27_297# B1 Y VPB abpmos
+X62 a_27_297# B1 Y VPB abpmos
+X63 a_27_297# A3 VPWR VPB abpmos
+X64 a_27_297# A3 VPWR VPB abpmos
+X65 a_27_297# A3 VPWR VPB abpmos
+X66 a_445_47# A1 Y VNB abnmos
+X67 a_445_47# A1 Y VNB abnmos
+X68 a_445_47# A2 a_27_47# VNB abnmos
+X69 a_445_47# A2 a_27_47# VNB abnmos
+X70 Y B1 VGND VNB abnmos
+X71 Y B1 VGND VNB abnmos
+X72 a_27_297# A3 VPWR VPB abpmos
+X73 a_27_297# A3 VPWR VPB abpmos
+X74 a_27_297# A3 VPWR VPB abpmos
+X75 Y B1 a_27_297# VPB abpmos
+X76 Y B1 a_27_297# VPB abpmos
+X77 Y B1 a_27_297# VPB abpmos
+X78 a_445_47# A1 Y VNB abnmos
+X79 a_445_47# A1 Y VNB abnmos
+.ends A31OID4B

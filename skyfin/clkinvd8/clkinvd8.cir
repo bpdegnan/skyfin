@@ -1,0 +1,52 @@
+* CLKINVD8 : abstract conversion of sky130_fd_sc_hd__clkinv_8
+* 44 abstract devices (width -> parallel min-width fingers)
+.subckt CLKINVD8 A VGND VPWR Y
+XCLKINVD8B A VGND VGND VPWR VPWR Y CLKINVD8B
+.ends CLKINVD8
+
+.subckt CLKINVD8B A VGND VNB VPB VPWR Y
+X0 Y A VPWR VPB abpmos
+X1 Y A VPWR VPB abpmos
+X2 Y A VPWR VPB abpmos
+X3 Y A VGND VNB abnmos
+X4 Y A VGND VNB abnmos
+X5 Y A VPWR VPB abpmos
+X6 Y A VPWR VPB abpmos
+X7 Y A VPWR VPB abpmos
+X8 Y A VGND VNB abnmos
+X9 Y A VGND VNB abnmos
+X10 Y A VPWR VPB abpmos
+X11 Y A VPWR VPB abpmos
+X12 Y A VPWR VPB abpmos
+X13 Y A VGND VNB abnmos
+X14 Y A VPWR VPB abpmos
+X15 Y A VPWR VPB abpmos
+X16 Y A VPWR VPB abpmos
+X17 Y A VGND VNB abnmos
+X18 Y A VPWR VPB abpmos
+X19 Y A VPWR VPB abpmos
+X20 Y A VPWR VPB abpmos
+X21 Y A VPWR VPB abpmos
+X22 Y A VPWR VPB abpmos
+X23 Y A VPWR VPB abpmos
+X24 Y A VPWR VPB abpmos
+X25 Y A VPWR VPB abpmos
+X26 Y A VPWR VPB abpmos
+X27 Y A VPWR VPB abpmos
+X28 Y A VPWR VPB abpmos
+X29 Y A VPWR VPB abpmos
+X30 Y A VPWR VPB abpmos
+X31 Y A VPWR VPB abpmos
+X32 Y A VPWR VPB abpmos
+X33 Y A VPWR VPB abpmos
+X34 Y A VPWR VPB abpmos
+X35 Y A VPWR VPB abpmos
+X36 Y A VPWR VPB abpmos
+X37 Y A VPWR VPB abpmos
+X38 Y A VPWR VPB abpmos
+X39 Y A VGND VNB abnmos
+X40 Y A VGND VNB abnmos
+X41 Y A VPWR VPB abpmos
+X42 Y A VPWR VPB abpmos
+X43 Y A VPWR VPB abpmos
+.ends CLKINVD8B

@@ -1,0 +1,63 @@
+* SDFSTPD1 : abstract conversion of sky130_fd_sc_hd__sdfstp_1
+* 55 abstract devices (width -> parallel min-width fingers)
+.subckt SDFSTPD1 CLK D SCD SCE SET_B VGND VPWR Q
+XSDFSTPD1B CLK D SCD SCE SET_B VGND VGND VPWR VPWR Q SDFSTPD1B
+.ends SDFSTPD1
+
+.subckt SDFSTPD1B CLK D SCD SCE SET_B VGND VNB VPB VPWR Q
+X0 a_1087_47# a_1129_21# VGND VNB abnmos
+X1 a_1525_329# a_997_413# VPWR VPB abpmos
+X2 a_1525_329# a_997_413# VPWR VPB abpmos
+X3 a_1525_329# a_643_369# a_1597_329# VPB abpmos
+X4 a_1525_329# a_643_369# a_1597_329# VPB abpmos
+X5 a_1597_329# a_809_369# a_1723_413# VPB abpmos
+X6 a_1597_329# a_643_369# a_1815_47# VNB abnmos
+X7 a_809_369# a_643_369# VPWR VPB abpmos
+X8 a_809_369# a_643_369# VPWR VPB abpmos
+X9 a_1129_21# a_997_413# a_1347_47# VNB abnmos
+X10 a_319_21# SCE VPWR VPB abpmos
+X11 a_319_21# SCE VPWR VPB abpmos
+X12 a_1129_21# SET_B VPWR VPB abpmos
+X13 a_265_47# a_319_21# VGND VNB abnmos
+X14 a_1347_47# SET_B VGND VNB abnmos
+X15 a_643_369# CLK VPWR VPB abpmos
+X16 a_643_369# CLK VPWR VPB abpmos
+X17 Q a_2227_47# VPWR VPB abpmos
+X18 Q a_2227_47# VPWR VPB abpmos
+X19 Q a_2227_47# VPWR VPB abpmos
+X20 a_1129_21# a_997_413# VPWR VPB abpmos
+X21 a_181_47# D a_265_47# VNB abnmos
+X22 a_319_21# SCE VGND VNB abnmos
+X23 a_997_413# a_809_369# a_1087_47# VNB abnmos
+X24 a_1514_47# a_997_413# VGND VNB abnmos
+X25 a_1514_47# a_997_413# VGND VNB abnmos
+X26 a_1514_47# a_809_369# a_1597_329# VNB abnmos
+X27 a_1514_47# a_809_369# a_1597_329# VNB abnmos
+X28 a_1781_295# a_1597_329# VGND VNB abnmos
+X29 a_1723_413# a_1781_295# VPWR VPB abpmos
+X30 a_109_47# SCE a_181_47# VNB abnmos
+X31 a_643_369# CLK VGND VNB abnmos
+X32 a_997_413# a_643_369# a_1081_413# VPB abpmos
+X33 a_181_47# a_319_21# a_27_369# VPB abpmos
+X34 a_181_47# a_319_21# a_27_369# VPB abpmos
+X35 a_1887_47# SET_B VGND VNB abnmos
+X36 a_27_369# SCD VPWR VPB abpmos
+X37 a_27_369# SCD VPWR VPB abpmos
+X38 a_193_369# SCE VPWR VPB abpmos
+X39 a_193_369# SCE VPWR VPB abpmos
+X40 a_181_47# a_809_369# a_997_413# VPB abpmos
+X41 a_193_369# D a_181_47# VPB abpmos
+X42 a_193_369# D a_181_47# VPB abpmos
+X43 a_1815_47# a_1781_295# a_1887_47# VNB abnmos
+X44 a_1781_295# a_1597_329# VPWR VPB abpmos
+X45 a_109_47# SCD VGND VNB abnmos
+X46 a_2227_47# a_1597_329# VPWR VPB abpmos
+X47 a_2227_47# a_1597_329# VPWR VPB abpmos
+X48 a_809_369# a_643_369# VGND VNB abnmos
+X49 Q a_2227_47# VGND VNB abnmos
+X50 Q a_2227_47# VGND VNB abnmos
+X51 a_1597_329# SET_B VPWR VPB abpmos
+X52 a_1081_413# a_1129_21# VPWR VPB abpmos
+X53 a_181_47# a_643_369# a_997_413# VNB abnmos
+X54 a_2227_47# a_1597_329# VGND VNB abnmos
+.ends SDFSTPD1B

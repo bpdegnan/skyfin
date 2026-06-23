@@ -1,0 +1,22 @@
+* auto-generated runcell for NOR4BBD1
+.lib "$SPICE_LIB/sky130.lib.spice" tt
+.include "$SPICE_DEVICES/devices.cir"
+.include "nor4bbd1.cir"
+
+.param pvdd=1.8V
+VVPWR VDD 0 {pvdd}
+V_GND VGND 0 0
+
+V_A A 0 PWL( 0ns 0 10ns 0 10.1ns {pvdd} 20ns {pvdd} 20.1ns 0 30ns 0 30.1ns {pvdd} 40ns {pvdd} 40.1ns 0 50ns 0 50.1ns {pvdd} 60ns {pvdd} 60.1ns 0 70ns 0 70.1ns {pvdd} 80ns {pvdd} 80.1ns 0 90ns 0 90.1ns {pvdd} 100ns {pvdd} 100.1ns 0 110ns 0 110.1ns {pvdd} 120ns {pvdd} 120.1ns 0 130ns 0 130.1ns {pvdd} 140ns {pvdd} 140.1ns 0 150ns 0 150.1ns {pvdd} 160ns {pvdd} )
+V_B B 0 PWL( 0ns 0 20ns 0 20.1ns {pvdd} 40ns {pvdd} 40.1ns 0 60ns 0 60.1ns {pvdd} 80ns {pvdd} 80.1ns 0 100ns 0 100.1ns {pvdd} 120ns {pvdd} 120.1ns 0 140ns 0 140.1ns {pvdd} 160ns {pvdd} )
+V_C_N C_N 0 PWL( 0ns 0 40ns 0 40.1ns {pvdd} 80ns {pvdd} 80.1ns 0 120ns 0 120.1ns {pvdd} 160ns {pvdd} )
+V_D_N D_N 0 PWL( 0ns 0 80ns 0 80.1ns {pvdd} 160ns {pvdd} )
+
+X1 A B C_N D_N VGND VDD Y NOR4BBD1
+CL_Y Y VGND 0.1f
+
+.control
+tran 0.05n 160n
+wrdata result.raw v(A) v(B) v(C_N) v(D_N) v(Y)
+.endc
+.end

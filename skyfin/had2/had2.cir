@@ -1,0 +1,43 @@
+* HAD2 : abstract conversion of sky130_fd_sc_hd__ha_2
+* 35 abstract devices (width -> parallel min-width fingers)
+.subckt HAD2 A B VGND VPWR COUT SUM
+XHAD2B A B VGND VGND VPWR VPWR COUT SUM HAD2B
+.ends HAD2
+
+.subckt HAD2B A B VGND VNB VPB VPWR COUT SUM
+X0 COUT a_342_199# VPWR VPB abpmos
+X1 COUT a_342_199# VPWR VPB abpmos
+X2 COUT a_342_199# VPWR VPB abpmos
+X3 a_766_47# A VGND VNB abnmos
+X4 SUM a_79_21# VGND VNB abnmos
+X5 SUM a_79_21# VGND VNB abnmos
+X6 a_389_47# B VGND VNB abnmos
+X7 COUT a_342_199# VPWR VPB abpmos
+X8 COUT a_342_199# VPWR VPB abpmos
+X9 COUT a_342_199# VPWR VPB abpmos
+X10 COUT a_342_199# VGND VNB abnmos
+X11 COUT a_342_199# VGND VNB abnmos
+X12 a_79_21# B a_468_369# VPB abpmos
+X13 a_79_21# B a_468_369# VPB abpmos
+X14 a_468_369# A VPWR VPB abpmos
+X15 a_468_369# A VPWR VPB abpmos
+X16 a_79_21# a_342_199# VPWR VPB abpmos
+X17 a_79_21# a_342_199# VPWR VPB abpmos
+X18 a_342_199# B a_766_47# VNB abnmos
+X19 a_79_21# a_342_199# a_389_47# VNB abnmos
+X20 SUM a_79_21# VPWR VPB abpmos
+X21 SUM a_79_21# VPWR VPB abpmos
+X22 SUM a_79_21# VPWR VPB abpmos
+X23 SUM a_79_21# VGND VNB abnmos
+X24 SUM a_79_21# VGND VNB abnmos
+X25 a_342_199# B VPWR VPB abpmos
+X26 a_342_199# B VPWR VPB abpmos
+X27 SUM a_79_21# VPWR VPB abpmos
+X28 SUM a_79_21# VPWR VPB abpmos
+X29 SUM a_79_21# VPWR VPB abpmos
+X30 a_342_199# A VPWR VPB abpmos
+X31 a_342_199# A VPWR VPB abpmos
+X32 COUT a_342_199# VGND VNB abnmos
+X33 COUT a_342_199# VGND VNB abnmos
+X34 a_389_47# A VGND VNB abnmos
+.ends HAD2B

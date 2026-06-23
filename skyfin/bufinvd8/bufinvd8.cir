@@ -1,0 +1,68 @@
+* BUFINVD8 : abstract conversion of sky130_fd_sc_hd__bufinv_8
+* 60 abstract devices (width -> parallel min-width fingers)
+.subckt BUFINVD8 A VGND VPWR Y
+XBUFINVD8B A VGND VGND VPWR VPWR Y BUFINVD8B
+.ends BUFINVD8
+
+.subckt BUFINVD8B A VGND VNB VPB VPWR Y
+X0 Y a_215_47# VGND VNB abnmos
+X1 Y a_215_47# VGND VNB abnmos
+X2 Y a_215_47# VGND VNB abnmos
+X3 Y a_215_47# VGND VNB abnmos
+X4 Y a_215_47# VGND VNB abnmos
+X5 Y a_215_47# VGND VNB abnmos
+X6 a_215_47# a_109_47# VGND VNB abnmos
+X7 a_215_47# a_109_47# VGND VNB abnmos
+X8 Y a_215_47# VGND VNB abnmos
+X9 Y a_215_47# VGND VNB abnmos
+X10 Y a_215_47# VPWR VPB abpmos
+X11 Y a_215_47# VPWR VPB abpmos
+X12 Y a_215_47# VPWR VPB abpmos
+X13 a_215_47# a_109_47# VPWR VPB abpmos
+X14 a_215_47# a_109_47# VPWR VPB abpmos
+X15 a_215_47# a_109_47# VPWR VPB abpmos
+X16 a_215_47# a_109_47# VPWR VPB abpmos
+X17 a_215_47# a_109_47# VPWR VPB abpmos
+X18 a_215_47# a_109_47# VPWR VPB abpmos
+X19 Y a_215_47# VPWR VPB abpmos
+X20 Y a_215_47# VPWR VPB abpmos
+X21 Y a_215_47# VPWR VPB abpmos
+X22 Y a_215_47# VPWR VPB abpmos
+X23 Y a_215_47# VPWR VPB abpmos
+X24 Y a_215_47# VPWR VPB abpmos
+X25 a_215_47# a_109_47# VPWR VPB abpmos
+X26 a_215_47# a_109_47# VPWR VPB abpmos
+X27 a_215_47# a_109_47# VPWR VPB abpmos
+X28 Y a_215_47# VGND VNB abnmos
+X29 Y a_215_47# VGND VNB abnmos
+X30 Y a_215_47# VPWR VPB abpmos
+X31 Y a_215_47# VPWR VPB abpmos
+X32 Y a_215_47# VPWR VPB abpmos
+X33 Y a_215_47# VGND VNB abnmos
+X34 Y a_215_47# VGND VNB abnmos
+X35 Y a_215_47# VPWR VPB abpmos
+X36 Y a_215_47# VPWR VPB abpmos
+X37 Y a_215_47# VPWR VPB abpmos
+X38 a_215_47# a_109_47# VGND VNB abnmos
+X39 a_215_47# a_109_47# VGND VNB abnmos
+X40 Y a_215_47# VPWR VPB abpmos
+X41 Y a_215_47# VPWR VPB abpmos
+X42 Y a_215_47# VPWR VPB abpmos
+X43 a_109_47# A VGND VNB abnmos
+X44 a_109_47# A VGND VNB abnmos
+X45 Y a_215_47# VPWR VPB abpmos
+X46 Y a_215_47# VPWR VPB abpmos
+X47 Y a_215_47# VPWR VPB abpmos
+X48 a_109_47# A VPWR VPB abpmos
+X49 a_109_47# A VPWR VPB abpmos
+X50 a_109_47# A VPWR VPB abpmos
+X51 a_215_47# a_109_47# VGND VNB abnmos
+X52 a_215_47# a_109_47# VGND VNB abnmos
+X53 Y a_215_47# VGND VNB abnmos
+X54 Y a_215_47# VGND VNB abnmos
+X55 Y a_215_47# VPWR VPB abpmos
+X56 Y a_215_47# VPWR VPB abpmos
+X57 Y a_215_47# VPWR VPB abpmos
+X58 Y a_215_47# VGND VNB abnmos
+X59 Y a_215_47# VGND VNB abnmos
+.ends BUFINVD8B

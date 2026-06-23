@@ -1,0 +1,33 @@
+* O41AID1 : abstract conversion of sky130_fd_sc_hd__o41ai_1
+* 25 abstract devices (width -> parallel min-width fingers)
+.subckt O41AID1 A1 A2 A3 A4 B1 VGND VPWR Y
+XO41AID1B A1 A2 A3 A4 B1 VGND VGND VPWR VPWR Y O41AID1B
+.ends O41AID1
+
+.subckt O41AID1B A1 A2 A3 A4 B1 VGND VNB VPB VPWR Y
+X0 a_432_297# A1 VPWR VPB abpmos
+X1 a_432_297# A1 VPWR VPB abpmos
+X2 a_432_297# A1 VPWR VPB abpmos
+X3 a_109_47# A2 VGND VNB abnmos
+X4 a_109_47# A2 VGND VNB abnmos
+X5 a_109_47# A3 VGND VNB abnmos
+X6 a_109_47# A3 VGND VNB abnmos
+X7 a_109_47# A4 VGND VNB abnmos
+X8 a_109_47# A4 VGND VNB abnmos
+X9 a_193_297# A3 a_348_297# VPB abpmos
+X10 a_193_297# A3 a_348_297# VPB abpmos
+X11 a_193_297# A3 a_348_297# VPB abpmos
+X12 Y B1 a_109_47# VNB abnmos
+X13 Y B1 a_109_47# VNB abnmos
+X14 a_109_47# A1 VGND VNB abnmos
+X15 a_109_47# A1 VGND VNB abnmos
+X16 Y B1 VPWR VPB abpmos
+X17 Y B1 VPWR VPB abpmos
+X18 Y B1 VPWR VPB abpmos
+X19 Y A4 a_193_297# VPB abpmos
+X20 Y A4 a_193_297# VPB abpmos
+X21 Y A4 a_193_297# VPB abpmos
+X22 a_348_297# A2 a_432_297# VPB abpmos
+X23 a_348_297# A2 a_432_297# VPB abpmos
+X24 a_348_297# A2 a_432_297# VPB abpmos
+.ends O41AID1B

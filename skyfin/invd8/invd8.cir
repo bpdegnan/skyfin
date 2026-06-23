@@ -1,0 +1,48 @@
+* INVD8 : abstract conversion of sky130_fd_sc_hd__inv_8
+* 40 abstract devices (width -> parallel min-width fingers)
+.subckt INVD8 A VGND VPWR Y
+XINVD8B A VGND VGND VPWR VPWR Y INVD8B
+.ends INVD8
+
+.subckt INVD8B A VGND VNB VPB VPWR Y
+X0 Y A VGND VNB abnmos
+X1 Y A VGND VNB abnmos
+X2 Y A VPWR VPB abpmos
+X3 Y A VPWR VPB abpmos
+X4 Y A VPWR VPB abpmos
+X5 Y A VGND VNB abnmos
+X6 Y A VGND VNB abnmos
+X7 Y A VGND VNB abnmos
+X8 Y A VGND VNB abnmos
+X9 Y A VPWR VPB abpmos
+X10 Y A VPWR VPB abpmos
+X11 Y A VPWR VPB abpmos
+X12 Y A VPWR VPB abpmos
+X13 Y A VPWR VPB abpmos
+X14 Y A VPWR VPB abpmos
+X15 Y A VPWR VPB abpmos
+X16 Y A VPWR VPB abpmos
+X17 Y A VPWR VPB abpmos
+X18 Y A VPWR VPB abpmos
+X19 Y A VPWR VPB abpmos
+X20 Y A VPWR VPB abpmos
+X21 Y A VPWR VPB abpmos
+X22 Y A VPWR VPB abpmos
+X23 Y A VPWR VPB abpmos
+X24 Y A VPWR VPB abpmos
+X25 Y A VPWR VPB abpmos
+X26 Y A VPWR VPB abpmos
+X27 Y A VGND VNB abnmos
+X28 Y A VGND VNB abnmos
+X29 Y A VGND VNB abnmos
+X30 Y A VGND VNB abnmos
+X31 Y A VGND VNB abnmos
+X32 Y A VGND VNB abnmos
+X33 Y A VGND VNB abnmos
+X34 Y A VGND VNB abnmos
+X35 Y A VGND VNB abnmos
+X36 Y A VGND VNB abnmos
+X37 Y A VPWR VPB abpmos
+X38 Y A VPWR VPB abpmos
+X39 Y A VPWR VPB abpmos
+.ends INVD8B

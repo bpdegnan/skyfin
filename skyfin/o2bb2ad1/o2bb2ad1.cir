@@ -1,0 +1,23 @@
+* O2BB2AD1 : abstract conversion of sky130_fd_sc_hd__o2bb2a_1
+* 15 abstract devices (width -> parallel min-width fingers)
+.subckt O2BB2AD1 A1_N A2_N B1 B2 VGND VPWR X
+XO2BB2AD1B A1_N A2_N B1 B2 VGND VGND VPWR VPWR X O2BB2AD1B
+.ends O2BB2AD1
+
+.subckt O2BB2AD1B A1_N A2_N B1 B2 VGND VNB VPB VPWR X
+X0 a_76_199# a_206_369# a_489_47# VNB abnmos
+X1 a_76_199# a_206_369# VPWR VPB abpmos
+X2 a_206_369# A1_N VPWR VPB abpmos
+X3 a_206_369# A2_N VPWR VPB abpmos
+X4 a_489_47# B1 VGND VNB abnmos
+X5 X a_76_199# VGND VNB abnmos
+X6 X a_76_199# VGND VNB abnmos
+X7 a_489_47# B2 VGND VNB abnmos
+X8 X a_76_199# VPWR VPB abpmos
+X9 X a_76_199# VPWR VPB abpmos
+X10 X a_76_199# VPWR VPB abpmos
+X11 a_205_47# A2_N a_206_369# VNB abnmos
+X12 a_76_199# B2 a_585_369# VPB abpmos
+X13 a_585_369# B1 VPWR VPB abpmos
+X14 a_205_47# A1_N VGND VNB abnmos
+.ends O2BB2AD1B

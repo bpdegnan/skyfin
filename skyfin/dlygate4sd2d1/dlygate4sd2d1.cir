@@ -1,0 +1,19 @@
+* DLYGATE4SD2D1 : abstract conversion of sky130_fd_sc_hd__dlygate4sd2_1
+* 11 abstract devices (width -> parallel min-width fingers)
+.subckt DLYGATE4SD2D1 A VGND VPWR X
+XDLYGATE4SD2D1B A VGND VGND VPWR VPWR X DLYGATE4SD2D1B
+.ends DLYGATE4SD2D1
+
+.subckt DLYGATE4SD2D1B A VGND VNB VPB VPWR X
+X0 a_327_47# a_221_47# VGND VNB abnmos
+X1 a_327_47# a_221_47# VPWR VPB abpmos
+X2 X a_327_47# VGND VNB abnmos
+X3 X a_327_47# VGND VNB abnmos
+X4 a_221_47# a_49_47# VPWR VPB abpmos
+X5 a_49_47# A VGND VNB abnmos
+X6 a_221_47# a_49_47# VGND VNB abnmos
+X7 a_49_47# A VPWR VPB abpmos
+X8 X a_327_47# VPWR VPB abpmos
+X9 X a_327_47# VPWR VPB abpmos
+X10 X a_327_47# VPWR VPB abpmos
+.ends DLYGATE4SD2D1B

@@ -1,0 +1,20 @@
+* auto-generated runcell for EINVPD2
+.lib "$SPICE_LIB/sky130.lib.spice" tt
+.include "$SPICE_DEVICES/devices.cir"
+.include "einvpd2.cir"
+
+.param pvdd=1.8V
+VVPWR VDD 0 {pvdd}
+V_GND VGND 0 0
+
+V_A A 0 PWL( 0ns 0 10ns 0 10.1ns {pvdd} 20ns {pvdd} 20.1ns 0 30ns 0 30.1ns {pvdd} 40ns {pvdd} )
+V_TE TE 0 PWL( 0ns 0 20ns 0 20.1ns {pvdd} 40ns {pvdd} )
+
+X1 A TE VGND VDD Z EINVPD2
+CL_Z Z VGND 0.1f
+
+.control
+tran 0.05n 40n
+wrdata result.raw v(A) v(TE) v(Z)
+.endc
+.end

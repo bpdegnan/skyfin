@@ -1,0 +1,24 @@
+* auto-generated runcell for A222OID1
+.lib "$SPICE_LIB/sky130.lib.spice" tt
+.include "$SPICE_DEVICES/devices.cir"
+.include "a222oid1.cir"
+
+.param pvdd=1.8V
+VVPWR VDD 0 {pvdd}
+V_GND VGND 0 0
+
+V_A1 A1 0 PWL( 0ns 0 10ns 0 10.1ns {pvdd} 20ns {pvdd} 20.1ns 0 30ns 0 30.1ns {pvdd} 40ns {pvdd} 40.1ns 0 50ns 0 50.1ns {pvdd} 60ns {pvdd} 60.1ns 0 70ns 0 70.1ns {pvdd} 80ns {pvdd} 80.1ns 0 90ns 0 90.1ns {pvdd} 100ns {pvdd} 100.1ns 0 110ns 0 110.1ns {pvdd} 120ns {pvdd} 120.1ns 0 130ns 0 130.1ns {pvdd} 140ns {pvdd} 140.1ns 0 150ns 0 150.1ns {pvdd} 160ns {pvdd} 160.1ns 0 170ns 0 170.1ns {pvdd} 180ns {pvdd} 180.1ns 0 190ns 0 190.1ns {pvdd} 200ns {pvdd} 200.1ns 0 210ns 0 210.1ns {pvdd} 220ns {pvdd} 220.1ns 0 230ns 0 230.1ns {pvdd} 240ns {pvdd} 240.1ns 0 250ns 0 250.1ns {pvdd} 260ns {pvdd} 260.1ns 0 270ns 0 270.1ns {pvdd} 280ns {pvdd} 280.1ns 0 290ns 0 290.1ns {pvdd} 300ns {pvdd} 300.1ns 0 310ns 0 310.1ns {pvdd} 320ns {pvdd} 320.1ns 0 330ns 0 330.1ns {pvdd} 340ns {pvdd} 340.1ns 0 350ns 0 350.1ns {pvdd} 360ns {pvdd} 360.1ns 0 370ns 0 370.1ns {pvdd} 380ns {pvdd} 380.1ns 0 390ns 0 390.1ns {pvdd} 400ns {pvdd} 400.1ns 0 410ns 0 410.1ns {pvdd} 420ns {pvdd} 420.1ns 0 430ns 0 430.1ns {pvdd} 440ns {pvdd} 440.1ns 0 450ns 0 450.1ns {pvdd} 460ns {pvdd} 460.1ns 0 470ns 0 470.1ns {pvdd} 480ns {pvdd} 480.1ns 0 490ns 0 490.1ns {pvdd} 500ns {pvdd} 500.1ns 0 510ns 0 510.1ns {pvdd} 520ns {pvdd} 520.1ns 0 530ns 0 530.1ns {pvdd} 540ns {pvdd} 540.1ns 0 550ns 0 550.1ns {pvdd} 560ns {pvdd} 560.1ns 0 570ns 0 570.1ns {pvdd} 580ns {pvdd} 580.1ns 0 590ns 0 590.1ns {pvdd} 600ns {pvdd} 600.1ns 0 610ns 0 610.1ns {pvdd} 620ns {pvdd} 620.1ns 0 630ns 0 630.1ns {pvdd} 640ns {pvdd} )
+V_A2 A2 0 PWL( 0ns 0 20ns 0 20.1ns {pvdd} 40ns {pvdd} 40.1ns 0 60ns 0 60.1ns {pvdd} 80ns {pvdd} 80.1ns 0 100ns 0 100.1ns {pvdd} 120ns {pvdd} 120.1ns 0 140ns 0 140.1ns {pvdd} 160ns {pvdd} 160.1ns 0 180ns 0 180.1ns {pvdd} 200ns {pvdd} 200.1ns 0 220ns 0 220.1ns {pvdd} 240ns {pvdd} 240.1ns 0 260ns 0 260.1ns {pvdd} 280ns {pvdd} 280.1ns 0 300ns 0 300.1ns {pvdd} 320ns {pvdd} 320.1ns 0 340ns 0 340.1ns {pvdd} 360ns {pvdd} 360.1ns 0 380ns 0 380.1ns {pvdd} 400ns {pvdd} 400.1ns 0 420ns 0 420.1ns {pvdd} 440ns {pvdd} 440.1ns 0 460ns 0 460.1ns {pvdd} 480ns {pvdd} 480.1ns 0 500ns 0 500.1ns {pvdd} 520ns {pvdd} 520.1ns 0 540ns 0 540.1ns {pvdd} 560ns {pvdd} 560.1ns 0 580ns 0 580.1ns {pvdd} 600ns {pvdd} 600.1ns 0 620ns 0 620.1ns {pvdd} 640ns {pvdd} )
+V_B1 B1 0 PWL( 0ns 0 40ns 0 40.1ns {pvdd} 80ns {pvdd} 80.1ns 0 120ns 0 120.1ns {pvdd} 160ns {pvdd} 160.1ns 0 200ns 0 200.1ns {pvdd} 240ns {pvdd} 240.1ns 0 280ns 0 280.1ns {pvdd} 320ns {pvdd} 320.1ns 0 360ns 0 360.1ns {pvdd} 400ns {pvdd} 400.1ns 0 440ns 0 440.1ns {pvdd} 480ns {pvdd} 480.1ns 0 520ns 0 520.1ns {pvdd} 560ns {pvdd} 560.1ns 0 600ns 0 600.1ns {pvdd} 640ns {pvdd} )
+V_B2 B2 0 PWL( 0ns 0 80ns 0 80.1ns {pvdd} 160ns {pvdd} 160.1ns 0 240ns 0 240.1ns {pvdd} 320ns {pvdd} 320.1ns 0 400ns 0 400.1ns {pvdd} 480ns {pvdd} 480.1ns 0 560ns 0 560.1ns {pvdd} 640ns {pvdd} )
+V_C1 C1 0 PWL( 0ns 0 160ns 0 160.1ns {pvdd} 320ns {pvdd} 320.1ns 0 480ns 0 480.1ns {pvdd} 640ns {pvdd} )
+V_C2 C2 0 PWL( 0ns 0 320ns 0 320.1ns {pvdd} 640ns {pvdd} )
+
+X1 A1 A2 B1 B2 C1 C2 VGND VDD Y A222OID1
+CL_Y Y VGND 0.1f
+
+.control
+tran 0.05n 640n
+wrdata result.raw v(A1) v(A2) v(B1) v(B2) v(C1) v(C2) v(Y)
+.endc
+.end

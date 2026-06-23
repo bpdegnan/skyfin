@@ -1,0 +1,75 @@
+* SDFRTPD4 : abstract conversion of sky130_fd_sc_hd__sdfrtp_4
+* 67 abstract devices (width -> parallel min-width fingers)
+.subckt SDFRTPD4 CLK D RESET_B SCD SCE VGND VPWR Q
+XSDFRTPD4B CLK D RESET_B SCD SCE VGND VGND VPWR VPWR Q SDFRTPD4B
+.ends SDFRTPD4
+
+.subckt SDFRTPD4B CLK D RESET_B SCD SCE VGND VNB VPB VPWR Q
+X0 a_1245_303# a_193_47# a_1592_47# VNB abnmos
+X1 Q a_1767_21# VGND VNB abnmos
+X2 Q a_1767_21# VGND VNB abnmos
+X3 a_193_47# a_27_47# VPWR VPB abpmos
+X4 a_193_47# a_27_47# VPWR VPB abpmos
+X5 a_193_47# a_27_47# VPWR VPB abpmos
+X6 a_1079_413# a_193_47# a_1187_47# VNB abnmos
+X7 Q a_1767_21# VPWR VPB abpmos
+X8 Q a_1767_21# VPWR VPB abpmos
+X9 Q a_1767_21# VPWR VPB abpmos
+X10 a_569_119# a_299_66# VGND VNB abnmos
+X11 a_538_389# D a_620_389# VPB abpmos
+X12 a_538_389# D a_620_389# VPB abpmos
+X13 a_620_389# a_193_47# a_1079_413# VPB abpmos
+X14 a_1592_47# a_193_47# a_1758_413# VPB abpmos
+X15 a_1245_303# a_27_47# a_1592_47# VPB abpmos
+X16 a_1758_413# a_1767_21# VPWR VPB abpmos
+X17 a_1946_47# a_1592_47# a_1767_21# VNB abnmos
+X18 Q a_1767_21# VGND VNB abnmos
+X19 Q a_1767_21# VGND VNB abnmos
+X20 a_620_389# a_27_47# a_1079_413# VNB abnmos
+X21 a_1293_47# RESET_B VGND VNB abnmos
+X22 Q a_1767_21# VGND VNB abnmos
+X23 Q a_1767_21# VGND VNB abnmos
+X24 a_1191_413# a_1245_303# VPWR VPB abpmos
+X25 a_1946_47# RESET_B VGND VNB abnmos
+X26 a_780_389# SCD VPWR VPB abpmos
+X27 a_780_389# SCD VPWR VPB abpmos
+X28 a_569_119# D a_620_389# VNB abnmos
+X29 a_620_389# a_299_66# a_780_389# VPB abpmos
+X30 a_620_389# a_299_66# a_780_389# VPB abpmos
+X31 a_620_389# SCE a_817_66# VNB abnmos
+X32 a_1245_303# a_1079_413# VPWR VPB abpmos
+X33 a_1245_303# a_1079_413# VPWR VPB abpmos
+X34 a_538_389# SCE VPWR VPB abpmos
+X35 a_538_389# SCE VPWR VPB abpmos
+X36 a_1079_413# a_27_47# a_1191_413# VPB abpmos
+X37 a_1191_413# RESET_B VPWR VPB abpmos
+X38 a_299_66# SCE VPWR VPB abpmos
+X39 a_299_66# SCE VPWR VPB abpmos
+X40 a_1187_47# a_1245_303# a_1293_47# VNB abnmos
+X41 a_193_47# a_27_47# VGND VNB abnmos
+X42 a_193_47# a_27_47# VGND VNB abnmos
+X43 a_27_47# CLK VGND VNB abnmos
+X44 a_27_47# CLK VGND VNB abnmos
+X45 a_1767_21# RESET_B VPWR VPB abpmos
+X46 a_1767_21# a_1592_47# VPWR VPB abpmos
+X47 Q a_1767_21# VPWR VPB abpmos
+X48 Q a_1767_21# VPWR VPB abpmos
+X49 Q a_1767_21# VPWR VPB abpmos
+X50 a_1592_47# a_27_47# a_1701_47# VNB abnmos
+X51 a_27_47# CLK VPWR VPB abpmos
+X52 a_27_47# CLK VPWR VPB abpmos
+X53 a_27_47# CLK VPWR VPB abpmos
+X54 a_299_66# SCE VGND VNB abnmos
+X55 a_817_66# SCD VGND VNB abnmos
+X56 a_1245_303# a_1079_413# VGND VNB abnmos
+X57 a_1245_303# a_1079_413# VGND VNB abnmos
+X58 Q a_1767_21# VPWR VPB abpmos
+X59 Q a_1767_21# VPWR VPB abpmos
+X60 Q a_1767_21# VPWR VPB abpmos
+X61 a_1701_47# a_1767_21# VGND VNB abnmos
+X62 Q a_1767_21# VPWR VPB abpmos
+X63 Q a_1767_21# VPWR VPB abpmos
+X64 Q a_1767_21# VPWR VPB abpmos
+X65 Q a_1767_21# VGND VNB abnmos
+X66 Q a_1767_21# VGND VNB abnmos
+.ends SDFRTPD4B

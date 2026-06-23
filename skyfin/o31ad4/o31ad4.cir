@@ -1,0 +1,68 @@
+* O31AD4 : abstract conversion of sky130_fd_sc_hd__o31a_4
+* 60 abstract devices (width -> parallel min-width fingers)
+.subckt O31AD4 A1 A2 A3 B1 VGND VPWR X
+XO31AD4B A1 A2 A3 B1 VGND VGND VPWR VPWR X O31AD4B
+.ends O31AD4
+
+.subckt O31AD4B A1 A2 A3 B1 VGND VNB VPB VPWR X
+X0 X a_102_21# VPWR VPB abpmos
+X1 X a_102_21# VPWR VPB abpmos
+X2 X a_102_21# VPWR VPB abpmos
+X3 a_496_47# A3 VGND VNB abnmos
+X4 a_496_47# A3 VGND VNB abnmos
+X5 a_496_47# A1 VGND VNB abnmos
+X6 a_496_47# A1 VGND VNB abnmos
+X7 a_102_21# B1 VPWR VPB abpmos
+X8 a_102_21# B1 VPWR VPB abpmos
+X9 a_102_21# B1 VPWR VPB abpmos
+X10 a_926_297# A1 VPWR VPB abpmos
+X11 a_926_297# A1 VPWR VPB abpmos
+X12 a_926_297# A1 VPWR VPB abpmos
+X13 X a_102_21# VGND VNB abnmos
+X14 X a_102_21# VGND VNB abnmos
+X15 X a_102_21# VPWR VPB abpmos
+X16 X a_102_21# VPWR VPB abpmos
+X17 X a_102_21# VPWR VPB abpmos
+X18 X a_102_21# VPWR VPB abpmos
+X19 X a_102_21# VPWR VPB abpmos
+X20 X a_102_21# VPWR VPB abpmos
+X21 X a_102_21# VGND VNB abnmos
+X22 X a_102_21# VGND VNB abnmos
+X23 a_672_297# A3 a_102_21# VPB abpmos
+X24 a_672_297# A3 a_102_21# VPB abpmos
+X25 a_672_297# A3 a_102_21# VPB abpmos
+X26 a_102_21# B1 VPWR VPB abpmos
+X27 a_102_21# B1 VPWR VPB abpmos
+X28 a_102_21# B1 VPWR VPB abpmos
+X29 X a_102_21# VGND VNB abnmos
+X30 X a_102_21# VGND VNB abnmos
+X31 X a_102_21# VPWR VPB abpmos
+X32 X a_102_21# VPWR VPB abpmos
+X33 X a_102_21# VPWR VPB abpmos
+X34 a_102_21# A3 a_672_297# VPB abpmos
+X35 a_102_21# A3 a_672_297# VPB abpmos
+X36 a_102_21# A3 a_672_297# VPB abpmos
+X37 a_926_297# A2 a_672_297# VPB abpmos
+X38 a_926_297# A2 a_672_297# VPB abpmos
+X39 a_926_297# A2 a_672_297# VPB abpmos
+X40 a_496_47# A1 VGND VNB abnmos
+X41 a_496_47# A1 VGND VNB abnmos
+X42 a_496_47# A3 VGND VNB abnmos
+X43 a_496_47# A3 VGND VNB abnmos
+X44 a_926_297# A1 VPWR VPB abpmos
+X45 a_926_297# A1 VPWR VPB abpmos
+X46 a_926_297# A1 VPWR VPB abpmos
+X47 a_102_21# B1 a_496_47# VNB abnmos
+X48 a_102_21# B1 a_496_47# VNB abnmos
+X49 a_496_47# B1 a_102_21# VNB abnmos
+X50 a_496_47# B1 a_102_21# VNB abnmos
+X51 a_496_47# A2 VGND VNB abnmos
+X52 a_496_47# A2 VGND VNB abnmos
+X53 a_672_297# A2 a_926_297# VPB abpmos
+X54 a_672_297# A2 a_926_297# VPB abpmos
+X55 a_672_297# A2 a_926_297# VPB abpmos
+X56 X a_102_21# VGND VNB abnmos
+X57 X a_102_21# VGND VNB abnmos
+X58 a_496_47# A2 VGND VNB abnmos
+X59 a_496_47# A2 VGND VNB abnmos
+.ends O31AD4B

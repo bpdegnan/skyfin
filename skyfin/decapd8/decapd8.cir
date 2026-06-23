@@ -1,0 +1,12 @@
+* DECAPD8 : abstract conversion of sky130_fd_sc_hd__decap_8
+* 4 abstract devices (width -> parallel min-width fingers)
+.subckt DECAPD8 VGND VPWR
+XDECAPD8B VGND VGND VPWR VPWR DECAPD8B
+.ends DECAPD8
+
+.subckt DECAPD8B VGND VNB VPB VPWR
+X0 VPWR VGND VPWR VPB abpmos
+X1 VPWR VGND VPWR VPB abpmos
+X2 VGND VPWR VGND VNB abnmos
+X3 VGND VPWR VGND VNB abnmos
+.ends DECAPD8B

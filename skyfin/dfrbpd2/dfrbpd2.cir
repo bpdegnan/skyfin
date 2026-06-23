@@ -1,0 +1,61 @@
+* DFRBPD2 : abstract conversion of sky130_fd_sc_hd__dfrbp_2
+* 53 abstract devices (width -> parallel min-width fingers)
+.subckt DFRBPD2 CLK D RESET_B VGND VPWR Q Q_N
+XDFRBPD2B CLK D RESET_B VGND VGND VPWR VPWR Q Q_N DFRBPD2B
+.ends DFRBPD2
+
+.subckt DFRBPD2B CLK D RESET_B VGND VNB VPB VPWR Q Q_N
+X0 a_1270_413# a_1283_21# VPWR VPB abpmos
+X1 Q a_1283_21# VPWR VPB abpmos
+X2 Q a_1283_21# VPWR VPB abpmos
+X3 Q a_1283_21# VPWR VPB abpmos
+X4 Q_N a_1659_47# VGND VNB abnmos
+X5 Q_N a_1659_47# VGND VNB abnmos
+X6 a_761_289# a_543_47# VPWR VPB abpmos
+X7 a_761_289# a_543_47# VPWR VPB abpmos
+X8 a_761_289# a_543_47# VGND VNB abnmos
+X9 a_761_289# a_543_47# VGND VNB abnmos
+X10 a_448_47# D VGND VNB abnmos
+X11 a_1108_47# a_193_47# a_1270_413# VPB abpmos
+X12 Q_N a_1659_47# VPWR VPB abpmos
+X13 Q_N a_1659_47# VPWR VPB abpmos
+X14 Q_N a_1659_47# VPWR VPB abpmos
+X15 a_1217_47# a_1283_21# VGND VNB abnmos
+X16 a_448_47# a_27_47# a_543_47# VNB abnmos
+X17 Q a_1283_21# VGND VNB abnmos
+X18 Q a_1283_21# VGND VNB abnmos
+X19 Q a_1283_21# VGND VNB abnmos
+X20 Q a_1283_21# VGND VNB abnmos
+X21 a_448_47# a_193_47# a_543_47# VPB abpmos
+X22 a_543_47# a_193_47# a_639_47# VNB abnmos
+X23 a_1108_47# a_27_47# a_1217_47# VNB abnmos
+X24 a_1462_47# a_1108_47# a_1283_21# VNB abnmos
+X25 a_1659_47# a_1283_21# VPWR VPB abpmos
+X26 a_1659_47# a_1283_21# VPWR VPB abpmos
+X27 a_1659_47# a_1283_21# VGND VNB abnmos
+X28 a_543_47# a_27_47# a_651_413# VPB abpmos
+X29 a_805_47# RESET_B VGND VNB abnmos
+X30 a_761_289# a_193_47# a_1108_47# VNB abnmos
+X31 a_651_413# RESET_B VPWR VPB abpmos
+X32 a_193_47# a_27_47# VGND VNB abnmos
+X33 Q_N a_1659_47# VGND VNB abnmos
+X34 Q_N a_1659_47# VGND VNB abnmos
+X35 a_27_47# CLK VGND VNB abnmos
+X36 a_27_47# CLK VPWR VPB abpmos
+X37 a_27_47# CLK VPWR VPB abpmos
+X38 a_193_47# a_27_47# VPWR VPB abpmos
+X39 a_193_47# a_27_47# VPWR VPB abpmos
+X40 a_1283_21# a_1108_47# VPWR VPB abpmos
+X41 a_1462_47# RESET_B VGND VNB abnmos
+X42 a_448_47# D VPWR VPB abpmos
+X43 Q a_1283_21# VPWR VPB abpmos
+X44 Q a_1283_21# VPWR VPB abpmos
+X45 Q a_1283_21# VPWR VPB abpmos
+X46 a_651_413# a_761_289# VPWR VPB abpmos
+X47 a_761_289# a_27_47# a_1108_47# VPB abpmos
+X48 a_1283_21# RESET_B VPWR VPB abpmos
+X49 a_639_47# a_761_289# a_805_47# VNB abnmos
+X50 Q_N a_1659_47# VPWR VPB abpmos
+X51 Q_N a_1659_47# VPWR VPB abpmos
+X52 Q_N a_1659_47# VPWR VPB abpmos
+.ends DFRBPD2B
