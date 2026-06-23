@@ -6,6 +6,44 @@ standard-cell SPICE netlists into **process-portable** cells built from an
 abstract transistor, so the same logic can be retargeted to a different process
 by swapping a single device file.
 
+These are basic netlists for standard cells that are modified from skywater130 
+to only use a single transistor as the driver.  This is because advanced nodes, 
+such as <14nm, do not allow gate scaling.  You need to put two devices in 
+parallel if you want a 2x device.  
+
+Go to bin and execute "source adddirtopath.sh" to add the path temporarily
+ to the system $PATH.  This is needed fro any of the scripts in ./bin  All 
+ of the nfets and pfets have been replaced with abnmos and abpmos that abstracts 
+ away the devices so that you can easily replace the device with something else.
+
+As an example, mine live here:
+export SPICE_LIB="$HOME/private/projects/semi/skywater-pdk/libraries/sky130_fd_pr/latest/models"
+export SPICE_DEVICES="$HOME/private/projects/semi/ngspicecells/basic/abstractdevice/sky130"
+export SPICE_STDCELLS="$HOME/private/projects/semi/ngspicecells/basic"
+
+
+The top of a spice deck usually starts with this: 
+.lib "$SPICE_LIB/sky130.lib.spice" tt
+.include "$SPICE_DEVICES/devices.cir"
+This shows where the simulation devices are and where the abstracted device is.
+
+Each device has two version for simulation purposes, one with the well tie and 
+one that does not.  An inverter to illustrate this follows:
+
+
+* INVD! gate subcircuit definition
+.subckt INVD1 A VGND VPWR Y
+XNAND2D1B A VGND VGND VPWR VPWR Y INVD1B
+.ends INVD1
+* NAND2 gate subcircuit definition with Bulk connections
+
+.subckt INVD1B A VGND VNB VPB VPWR Y
+X0 Y A VGND VNB abnmos
+X1 Y A VPWR VPB abpmos
+.ends
+
+
+
 ## Why
 
 sky130 is open; many real processes are not. A standard cell from a vendor PDK
